@@ -1,0 +1,246 @@
+{
+  "layout": {
+    "title": "Agencia de viajes Centralia",
+    "description": "Descubre viajes inolvidables con Centralia Travel Agency. Explora tours personalizados, experiencias culturales y viajes sin complicaciones a los mejores destinos del mundo. ¡Reserva tu próxima aventura hoy mismo!"
+  },
+  "navbar": {
+    "btn": "planificar viaje",
+    "links": [
+      { "label": "tours" },
+      { "label": "blog" },
+      { "label": "acerca de" },
+      { "label": "contacto" }
+    ]
+  },
+  "HomePage": {
+    "head": {
+      "title": "Descubre el Corazón de Asia Central",
+      "description": "Emprende viajes extraordinarios a través de antiguas ciudades de la Ruta de la Seda, montañas vírgenes y culturas vibrantes",
+      "btn": "Explorar Tours"
+    },
+    "countries": {
+      "item": "Cuatro naciones, aventuras infinitas",
+      "title": "Explora Asia Central",
+      "description": "Desde antiguas ciudades de la Ruta de la Seda hasta lagos de montaña prístinos, cada destino ofrece experiencias extraordinarias por descubrir",
+      "items": [
+        {
+          "image": "https://ychef.files.bbci.co.uk/1920x960/p0hc5x2w.jpeg",
+          "title": "Uzbekistán",
+          "description": "Ciudades antiguas de la Ruta de la Seda y magnífica arquitectura islámica",
+          "tourNumber": "24 Tours",
+          "status": "Disponible",
+          "type": "Más Popular"
+        },
+        {
+          "image": "https://media.cntraveller.com/photos/637e00eece1c9bd657a981ea/16:9/w_1280,c_limit/NAU(1280x720).jpg",
+          "title": "Kazajistán",
+          "description": "Estepas interminables y auténtica herencia nómada",
+          "tourNumber": "18 Tours",
+          "status": "Disponible",
+          "type": ""
+        },
+        {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Bishkek_City%27s_business_center.jpg/1200px-Bishkek_City%27s_business_center.jpg",
+          "title": "Kirguistán",
+          "description": "Lagos montañosos vírgenes y aventuras alpinas",
+          "tourNumber": "16 Tours",
+          "status": "Disponible",
+          "type": ""
+        },
+        {
+          "image": "https://www.omct.org/imager/images/360913/Tajikistan_Dushanbe-Palace-of-Nations_2018_shutterstock_1342086032_807349237a62c113cb6ba73378f90d7e.jpg",
+          "title": "Tayikistán",
+          "description": "Techo del mundo y culturas montañosas antiguas",
+          "tourNumber": "12 Tours",
+          "status": "Disponible",
+          "type": "Aventura"
+        }
+      ]
+    },
+    "signatureJourneys": {
+      "item": "Experiencias seleccionadas",
+      "title": "Viajes exclusivos",
+      "description": "Descubre nuestras aventuras más vendidas elegidas por miles de viajeros",
+      "btn": "Ver todos los tours",
+      "cardBtn": "Ver detalles",
+      "difficultyTitle": "Dificultad",
+      "countryItem": "países",
+      "priceItem": "persona",
+      "dayItem": "Día",
+      "items": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
+          "title": "Explorador de la Ruta de la Seda de 15 días",
+          "description": "Viaja por Uzbekistán y Kazajistán, explorando antiguas ciudades, arquitectura impresionante y tradiciones nómadas a lo largo de las legendarias rutas comerciales.",
+          "difficulty": 1,
+          "tourDay": 15,
+          "countryNumber": 2,
+          "status": "Más vendido",
+          "price": 3.299
+        },
+        {
+          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
+          "title": "Viaje de 10 días a la herencia nómada",
+          "description": "Vive la auténtica cultura nómada en Kazajistán y Kirguistán con estancias tradicionales en yurtas y aventuras a caballo en paisajes vírgenes.",
+          "difficulty": 2,
+          "tourDay": 10,
+          "countryNumber": 2,
+          "status": "Nuevo",
+          "price": 2.299
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
+          "title": "Aventura por la Carretera del Pamir de 12 días",
+          "description": "Conquista la segunda carretera internacional más alta del mundo a través de las cordilleras más espectaculares de Tayikistán y Kirguistán.",
+          "difficulty": 3,
+          "tourDay": 12,
+          "countryNumber": 2,
+          "status": "Limitado",
+          "price": 3.899
+        }
+      ]
+    },
+    "travelersComment": {
+      "item": "Testimonios",
+      "title": "Lo que dicen nuestros viajeros",
+      "description": "Experiencias reales de aventureros que exploraron Asia Central con nosotros",
+      "items": [
+        {
+          "image": "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg",
+          "fullName": "Sarah Johnson",
+          "comment": "¡Una experiencia absolutamente increíble! La arquitectura de Samarcanda es impresionante y nuestro guía sabía mucho sobre la historia.",
+          "citizenship": "EE. UU.",
+          "grade": 4,
+          "tourTitle": "Tour Patrimonial de Samarcanda y Bujará",
+          "date": "hace 2 semanas"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/portrait-du-sourire-latin-de-type-118256247.jpg",
+          "fullName": "Marco Rossi",
+          "comment": "¡El viaje más aventurero de mi vida! Los paisajes son de otro mundo y la hospitalidad local es increíble.",
+          "citizenship": "Italia",
+          "grade": 5,
+          "tourTitle": "Expedición por la Carretera del Pamir",
+          "date": "hace 1 mes"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+          "fullName": "Emma Chen",
+          "comment": "Una mezcla perfecta de naturaleza y cultura. El lago es impresionante y la experiencia nómada fue auténtica.",
+          "citizenship": "Australia",
+          "grade": 4,
+          "tourTitle": "Experiencia en el Lago Issyk-Kul",
+          "date": "hace 3 semanas"
+        }
+      ]
+    },
+    "travelInsights": {
+      "item": "Conocimiento experto",
+      "title": "Consejos de Viaje",
+      "description": "Guías de expertos, ideas culturales y consejos prácticos para aprovechar al máximo tu aventura en Asia Central",
+      "btn": "Visita nuestro blog",
+      "cardBtn": "Leer más",
+      "read": "min de lectura",
+      "items": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
+          "title": "Mejor época para visitar los Stans: Guía estacional",
+          "description": "Descubre las mejores estaciones para explorar Asia Central, desde las flores silvestres de primavera hasta las cosechas de otoño y las aventuras de invierno.",
+          "insights": "Consejos de viaje",
+          "date": "25 de enero de 2025"
+        },
+        {
+          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
+          "title": "Visados para Asia Central: Guía completa",
+          "description": "Todo lo que necesitas saber sobre requisitos de visado, solicitudes y cruces fronterizos para un viaje sin problemas.",
+          "insights": "Documentación",
+          "date": "22 de enero de 2025"
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
+          "title": "Etiqueta cultural: Viajar con respeto en Asia Central",
+          "description": "Aprende las costumbres, tradiciones y normas sociales para enriquecer tus conexiones culturales y experiencias de viaje.",
+          "insights": "Cultura",
+          "date": "20 de enero de 2025"
+        }
+      ]
+    },
+    "activityAndStories": {
+      "btn": "Ver todas las fotos",
+      "item1": "Actividad en Vivo",
+      "item2": "Historias de Viajeros",
+      "title1": "Reservas Recientes",
+      "title2": "Momentos Capturados",
+      "activites": [
+        {
+          "image": "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg",
+          "fullName": "Sarah Johnson",
+          "tourTitle": "Tour Patrimonial de Samarcanda y Bujará",
+          "date": "hace 2 minutos"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/portrait-du-sourire-latin-de-type-118256247.jpg",
+          "fullName": "Marco Rossi",
+          "tourTitle": "Expedición por la Carretera del Pamir",
+          "date": "hace 3 minutos"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+          "fullName": "Emma Chen",
+          "tourTitle": "Experiencia en el Lago Issyk-Kul",
+          "date": "hace 1 minuto"
+        }
+      ],
+      "stories": [
+        {
+          "image": "https://cdn.pixabay.com/photo/2014/09/17/11/47/man-449406_640.jpg"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/portrait-brunette-young-woman-glasses-pointing-up_176420-15359.jpg?semt=ais_hybrid&w=740"
+        },
+        {
+          "image": "https://img.freepik.com/photos-gratuite/je-suis-fou-toi-portrait-femme-blonde-mignonne-mecontente-enfantine-qui-boude-lunettes-coiffure-chignon-croisant-bras-poitrine_176420-34850.jpg"
+        },
+        {
+          "image": "https://media.istockphoto.com/id/1251308867/photo/smiling-friendly-young-woman-wearing-spectacles.jpg?s=612x612&w=0&k=20&c=CCQIn3bIJZ0zT3uqXwFxqqePh7c2Sv30ts4EyNXT5-s="
+        }
+      ]
+    }
+  },
+  "footer": {
+    "description": "Tu puerta confiable a los tesoros ocultos de Asia Central. Creamos viajes extraordinarios que van más allá de lo común, conectándote con experiencias auténticas y recuerdos duraderos.",
+    "copyright": "© 2025 Centralia Travel. Todos los derechos reservados.",
+    "quiskLinks": {
+      "title": "Enlaces Rápidos",
+      "links": [
+        { "url": "/", "label": "Sobre Nosotros" },
+        { "url": "", "label": "Nuestro Equipo" },
+        { "url": "", "label": "Seguridad" },
+        { "url": "", "label": "Seguro de Viaje" },
+        { "url": "", "label": "Términos y Condiciones" }
+      ]
+    },
+    "destinations": {
+      "title": "Destinos",
+      "links": [
+        { "url": "", "label": "Tours en Uzbekistán" },
+        { "url": "", "label": "Aventuras en Kazajistán" },
+        { "url": "", "label": "Expediciones en Kirguistán" },
+        { "url": "", "label": "Viajes en Tayikistán" },
+        { "url": "", "label": "Tours Multipaís" }
+      ]
+    },
+    "footBottom": [
+      { "url": "", "label": "Política de Privacidad" },
+      { "url": "", "label": "Política de Cookies" },
+      { "url": "", "label": "Mapa del Sitio" }
+    ],
+    "sotcialNetworks": [
+      { "url": "", "label": "+1 (555) 123-4567", "lucideName": "Phone" },
+      { "url": "", "label": "info@centralia.travel", "lucideName": "Mail" },
+      { "url": "", "label": "123 Calle de Viajes", "lucideName": "MapPin" },
+      { "url": "", "label": "Twitter", "lucideName": "Twitter" },
+      { "url": "", "label": "Telegrama", "lucideName": "Send" }
+    ]
+  }
+}

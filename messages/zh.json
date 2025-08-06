@@ -1,0 +1,246 @@
+{
+  "layout": {
+    "title": "中环旅游公司",
+    "description": "与 Centralia 旅行社一起开启难忘的旅程。探索个性化旅行、文化体验以及前往全球热门目的地的无忧旅行。立即预订您的下一次冒险=！"
+  },
+  "navbar": {
+    "btn": "规划行程",
+    "links": [
+      { "label": "旅游团" },
+      { "label": "博客" },
+      { "label": "关于我们" },
+      { "label": "联系我们" }
+    ]
+  },
+  "HomePage": {
+    "head": {
+      "title": "探索中亚的心脏",
+      "description": "踏上穿越古丝绸之路城市、原始山脉和充满活力文化的非凡旅程",
+      "btn": "探索旅游团"
+    },
+    "countries": {
+      "item": "四个国家，无尽的冒险",
+      "title": "探索中亚",
+      "description": "从古老的丝绸之路城市到原始的高山湖泊，每一个目的地都蕴藏着等待发现的非凡体验",
+      "items": [
+        {
+          "image": "https://ychef.files.bbci.co.uk/1920x960/p0hc5x2w.jpeg",
+          "title": "乌兹别克斯坦",
+          "description": "古丝绸之路城市和壮丽的伊斯兰建筑",
+          "tourNumber": "24次旅游",
+          "status": "可用",
+          "type": "最受欢迎"
+        },
+        {
+          "image": "https://media.cntraveller.com/photos/637e00eece1c9bd657a981ea/16:9/w_1280,c_limit/NAU(1280x720).jpg",
+          "title": "哈萨克斯坦",
+          "description": "无尽的草原和真实的游牧文化遗产",
+          "tourNumber": "18次旅游",
+          "status": "可用",
+          "type": ""
+        },
+        {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Bishkek_City%27s_business_center.jpg/1200px-Bishkek_City%27s_business_center.jpg",
+          "title": "吉尔吉斯斯坦",
+          "description": "原始的高山湖泊和高山探险",
+          "tourNumber": "16次旅游",
+          "status": "可用",
+          "type": ""
+        },
+        {
+          "image": "https://www.omct.org/imager/images/360913/Tajikistan_Dushanbe-Palace-of-Nations_2018_shutterstock_1342086032_807349237a62c113cb6ba73378f90d7e.jpg",
+          "title": "塔吉克斯坦",
+          "description": "世界屋脊和古老的高山文化",
+          "tourNumber": "12次旅游",
+          "status": "可用",
+          "type": "探险"
+        }
+      ]
+    },
+    "signatureJourneys": {
+      "item": "精选体验",
+      "title": "特色旅程",
+      "description": "探索我们最畅销的旅行，受到成千上万旅行者的喜爱",
+      "btn": "查看所有行程",
+      "cardBtn": "查看详情",
+      "difficultyTitle": "难度",
+      "countryItem": "国家",
+      "priceItem": "每人",
+      "dayItem": "天",
+      "items": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
+          "title": "15天丝绸之路探险之旅",
+          "description": "穿越乌兹别克斯坦和哈萨克斯坦，探索古老城市、壮丽建筑和永恒的游牧传统。",
+          "difficulty": 1,
+          "tourDay": 15,
+          "countryNumber": 2,
+          "status": "畅销",
+          "price": 3.299
+        },
+        {
+          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
+          "title": "10天游牧文化遗产之旅",
+          "description": "在哈萨克斯坦和吉尔吉斯斯坦体验正宗的游牧文化，住在传统毡房，骑马穿越原始风光。",
+          "difficulty": 2,
+          "tourDay": 10,
+          "countryNumber": 2,
+          "status": "全新",
+          "price": 2.299
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
+          "title": "12天帕米尔公路探险之旅",
+          "description": "征服世界第二高的国际公路，穿越塔吉克斯坦和吉尔吉斯斯坦最壮观的山脉和偏远山谷。",
+          "difficulty": 3,
+          "tourDay": 12,
+          "countryNumber": 2,
+          "status": "限量",
+          "price": 3.899
+        }
+      ]
+    },
+    "travelersComment": {
+      "item": "感言",
+      "title": "我们的旅行者怎么说",
+      "description": "真正探险者分享的中亚旅行真实经历",
+      "items": [
+        {
+          "image": "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg",
+          "fullName": "Sarah Johnson",
+          "comment": "绝对令人难以置信的体验！撒马尔罕的建筑令人叹为观止，我们的导游对历史非常了解。",
+          "citizenship": "美国",
+          "grade": 4,
+          "tourTitle": "撒马尔罕和布哈拉文化遗产之旅",
+          "date": "2周前"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/portrait-du-sourire-latin-de-type-118256247.jpg",
+          "fullName": "Marco Rossi",
+          "comment": "这是我人生中最刺激的旅行！风景如画，当地人的热情好客令人难忘。",
+          "citizenship": "意大利",
+          "grade": 5,
+          "tourTitle": "帕米尔公路探险之旅",
+          "date": "1个月前"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+          "fullName": "Emma Chen",
+          "comment": "完美结合了自然与文化。湖泊非常迷人，游牧体验非常真实。",
+          "citizenship": "澳大利亚",
+          "grade": 4,
+          "tourTitle": "伊塞克湖体验之旅",
+          "date": "3周前"
+        }
+      ]
+    },
+    "travelInsights": {
+      "item": "专家知识",
+      "title": "旅行见解",
+      "description": "专家指南、文化见解和实用建议，助您充分体验中亚之旅",
+      "btn": "访问我们的博客",
+      "cardBtn": "阅读更多",
+      "read": "分钟阅读",
+      "items": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
+          "title": "前往斯坦国家的最佳时间：季节性指南",
+          "description": "探索中亚的最佳旅游季节，从春天的野花到秋天的丰收和冬季冒险。",
+          "insights": "旅行建议",
+          "date": "2025年1月25日"
+        },
+        {
+          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
+          "title": "中亚签证指南：全方位攻略",
+          "description": "了解签证要求、申请流程和边境通关的所有信息，助您顺利旅行。",
+          "insights": "签证文件",
+          "date": "2025年1月22日"
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
+          "title": "文化礼仪：在中亚的尊重旅行",
+          "description": "了解风俗、传统和社会规范，提升您的文化交流和旅行体验。",
+          "insights": "文化",
+          "date": "2025年1月20日"
+        }
+      ]
+    },
+    "activityAndStories": {
+      "btn": "查看所有照片",
+      "item1": "实时活动",
+      "item2": "旅行者故事",
+      "title1": "最新预订",
+      "title2": "精彩瞬间",
+      "activites": [
+        {
+          "image": "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg",
+          "fullName": "Sarah Johnson",
+          "tourTitle": "撒马尔罕与布哈拉文化遗产之旅",
+          "date": "2分钟前"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/portrait-du-sourire-latin-de-type-118256247.jpg",
+          "fullName": "Marco Rossi",
+          "tourTitle": "帕米尔公路探险之旅",
+          "date": "3分钟前"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+          "fullName": "Emma Chen",
+          "tourTitle": "伊塞克湖体验之旅",
+          "date": "1分钟前"
+        }
+      ],
+      "stories": [
+        {
+          "image": "https://cdn.pixabay.com/photo/2014/09/17/11/47/man-449406_640.jpg"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/portrait-brunette-young-woman-glasses-pointing-up_176420-15359.jpg?semt=ais_hybrid&w=740"
+        },
+        {
+          "image": "https://img.freepik.com/photos-gratuite/je-suis-fou-toi-portrait-femme-blonde-mignonne-mecontente-enfantine-qui-boude-lunettes-coiffure-chignon-croisant-bras-poitrine_176420-34850.jpg"
+        },
+        {
+          "image": "https://media.istockphoto.com/id/1251308867/photo/smiling-friendly-young-woman-wearing-spectacles.jpg?s=612x612&w=0&k=20&c=CCQIn3bIJZ0zT3uqXwFxqqePh7c2Sv30ts4EyNXT5-s="
+        }
+      ]
+    }
+  },
+  "footer": {
+    "description": "您通往中亚隐藏宝藏的可信门户。我们打造超越寻常的非凡旅程，为您带来真实体验和珍贵回忆。",
+    "copyright": "© 2025 Centralia Travel。版权所有。",
+    "quiskLinks": {
+      "title": "快速链接",
+      "links": [
+        { "url": "/", "label": "关于我们" },
+        { "url": "", "label": "我们的团队" },
+        { "url": "", "label": "安全与保障" },
+        { "url": "", "label": "旅游保险" },
+        { "url": "", "label": "条款与条件" }
+      ]
+    },
+    "destinations": {
+      "title": "目的地",
+      "links": [
+        { "url": "", "label": "乌兹别克斯坦旅游" },
+        { "url": "", "label": "哈萨克斯坦探险" },
+        { "url": "", "label": "吉尔吉斯斯坦探险" },
+        { "url": "", "label": "塔吉克斯坦之旅" },
+        { "url": "", "label": "多国联合旅游" }
+      ]
+    },
+    "footBottom": [
+      { "url": "", "label": "隐私政策" },
+      { "url": "", "label": "Cookie 政策" },
+      { "url": "", "label": "网站地图" }
+    ],
+    "sotcialNetworks": [
+      { "url": "", "label": "+1 (555) 123-4567", "lucideName": "Phone" },
+      { "url": "", "label": "info@centralia.travel", "lucideName": "Mail" },
+      { "url": "", "label": "旅行街123号", "lucideName": "MapPin" },
+      { "url": "", "label": "推特", "lucideName": "Twitter" },
+      { "url": "", "label": "电报", "lucideName": "Send" }
+    ]
+  }
+}

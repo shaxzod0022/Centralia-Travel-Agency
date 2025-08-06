@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.navbar_shadow {
+  box-shadow: 0px 1px 2px 0px #0000000d;
+  backdrop-filter: blur(12px);
+}
+
+.shadow__signature {
+  box-shadow: 0px 4px 12px 0px #0000001a;
+}
+
+.shadow__comments {
+  box-shadow: 0px 4px 6px -4px #0000001a;
+  /* box-shadow: 0px 10px 15px -3px #0000001a; */
+}
+
+.shadow__insigths{
+  box-shadow: 0px 4px 12px 0px #0000001A;
+}
+

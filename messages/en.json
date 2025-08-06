@@ -1,0 +1,305 @@
+{
+  "layout": {
+    "title": "Centralia Travel Agency",
+    "description": "Discover unforgettable journeys with Centralia Travel Agency. Explore customized tours, cultural experiences, and hassle-free travel to top destinations worldwide. Book your next adventure today!"
+  },
+  "navbar": {
+    "btn": "plan journey",
+    "links": [
+      { "label": "#tours" },
+      { "label": "#blog" },
+      { "label": "/about" },
+      { "label": "#contact" }
+    ]
+  },
+  "footer": {
+    "description": "Your trusted gateway to Central Asia's hidden treasures. We craft extraordinary journeys that go beyond the ordinary, connecting you with authentic experiences and lasting memories.",
+    "copyright": "© 2025 Centralia Travel. All Rights Reserved.",
+    "quiskLinks": {
+      "title": "Quisk Links",
+      "links": [
+        {
+          "url": "/",
+          "label": "About Us"
+        },
+        {
+          "url": "",
+          "label": "Our Team"
+        },
+        {
+          "url": "",
+          "label": "Safety & Security"
+        },
+        {
+          "url": "",
+          "label": "Travel Insurance"
+        },
+        {
+          "url": "",
+          "label": "Terms & Conditions"
+        }
+      ]
+    },
+    "destinations": {
+      "title": "Destinations",
+      "links": [
+        {
+          "url": "",
+          "label": "Uzbekistan Tours"
+        },
+        {
+          "url": "",
+          "label": "Kazakhstan Adventures"
+        },
+        {
+          "url": "",
+          "label": "Kyrgyzstan Expeditions"
+        },
+        {
+          "url": "",
+          "label": "Tajikistan Journeys"
+        },
+        {
+          "url": "",
+          "label": "Multi-Country Tours"
+        }
+      ]
+    },
+    "footBottom": [
+      {
+        "url": "",
+        "label": "Privacy Policy"
+      },
+      {
+        "url": "",
+        "label": "Cookie Policy"
+      },
+      {
+        "url": "",
+        "label": "Sitemap"
+      }
+    ],
+    "sotcialNetworks": [
+      {
+        "url": "",
+        "label": "+1 (555) 123-4567",
+        "lucideName": "Phone"
+      },
+      {
+        "url": "",
+        "label": "info@centralia.travel",
+        "lucideName": "Mail"
+      },
+      {
+        "url": "",
+        "label": "123 Travel Street",
+        "lucideName": "MapPin"
+      },
+      {
+        "url": "",
+        "label": "Twitter",
+        "lucideName": "Twitter"
+      },
+      {
+        "url": "",
+        "label": "Telepraph",
+        "lucideName": "Send"
+      }
+    ]
+  },
+  "HomePage": {
+    "head": {
+      "title": "Discover the Heart of Central Asia",
+      "description": "Embark on extraordinary journeys through ancient Silk Road cities, pristine mountains, and vibrant cultures",
+      "btn": "Explore Tours"
+    },
+    "countries": {
+      "item": "Four nations, infinite adventures",
+      "title": "Explore Central Asia",
+      "description": "From ancient Silk Road cities to pristine mountine lakes, each destination offers extraordinary experiense waiting to be discovered",
+      "items": [
+        {
+          "image": "https://ychef.files.bbci.co.uk/1920x960/p0hc5x2w.jpeg",
+          "title": "Uzbekistan",
+          "description": "Anciend Silk Road cities and magnificent Islamic architecture",
+          "tourNumber": "24 Tours",
+          "status": "Available",
+          "type": "Most Popular"
+        },
+        {
+          "image": "https://media.cntraveller.com/photos/637e00eece1c9bd657a981ea/16:9/w_1280,c_limit/NAU(1280x720).jpg",
+          "title": "Kazakhstan",
+          "description": "Endless steppes and authentic nomadic heritage",
+          "tourNumber": "18 Tours",
+          "status": "Available",
+          "type": ""
+        },
+        {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Bishkek_City%27s_business_center.jpg/1200px-Bishkek_City%27s_business_center.jpg",
+          "title": "Kyrgyzstan",
+          "description": "Pristine mountain lakes and alpine adventures",
+          "tourNumber": "16 Tours",
+          "status": "Available",
+          "type": ""
+        },
+        {
+          "image": "https://www.omct.org/imager/images/360913/Tajikistan_Dushanbe-Palace-of-Nations_2018_shutterstock_1342086032_807349237a62c113cb6ba73378f90d7e.jpg",
+          "title": "Tajikistan",
+          "description": "Roof of the world and ancient mountain cultures",
+          "tourNumber": "12 Tours",
+          "status": "Available",
+          "type": "Adventure"
+        }
+      ]
+    },
+    "signatureJourneys": {
+      "item": "Curated Experiences",
+      "title": "Signature Journeys",
+      "description": "Discover our best-selling adventures chosen by thousands of travelers",
+      "btn": "View All Tours",
+      "cardBtn": "View Details",
+      "difficultyTitle": "Difficulty",
+      "countryItem": "countries",
+      "priceItem": "person",
+      "dayItem": "Day",
+      "items": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
+          "title": "15-Day Silk Road Explorer",
+          "description": "Journey through Uzbekistan and Kazakhstan, exploring ancient cities, stunning architecture, and timeless nomadic traditions along the legendary trade routes.",
+          "difficulty": 1,
+          "tourDay": 15,
+          "countryNumber": 2,
+          "status": "Best Seller",
+          "price": 3.299
+        },
+        {
+          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
+          "title": "10-Day Nomadic Heritage Journey",
+          "description": "Experience authentic nomadic culture in Kazakhstan and Kyrgyzstan with traditional yurt stays and horseback adventures across pristine landscapes.",
+          "difficulty": 2,
+          "tourDay": 10,
+          "countryNumber": 2,
+          "status": "New",
+          "price": 2.299
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
+          "title": "12-Day Pamir Highway Adventure",
+          "description": "Conquer the world's second-highest international highway through Tajikistan and Kyrgyzstan's most spectacular mountain ranges and remote valleys.",
+          "difficulty": 3,
+          "tourDay": 12,
+          "countryNumber": 2,
+          "status": "Limited",
+          "price": 3.899
+        }
+      ]
+    },
+    "travelersComment": {
+      "item": "Testimonials",
+      "title": "What Our Travelers Say",
+      "description": "Real experiences from real adventurers who've explored Central Asia with us",
+      "items": [
+        {
+          "image": "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg",
+          "fullName": "Sarah Johnson",
+          "comment": "Absolutely incredible experience! The architecture in Samarkand is breathtaking, and our guide was so knowledgeable about the history.",
+          "citizenship": "usa",
+          "grade": 4,
+          "tourTitle": "Samarkand & Bukhara Heritage Tour",
+          "date": "2 weeks ago"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/portrait-du-sourire-latin-de-type-118256247.jpg",
+          "fullName": "Marco Rossi",
+          "comment": "The most adventurous trip of my life! The landscapes are otherworldly and the local hospitality is amazing.",
+          "citizenship": "italy",
+          "grade": 5,
+          "tourTitle": "Pamir Highway Expedition",
+          "date": "1 month ago"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+          "fullName": "Emma Chen",
+          "comment": "Perfect blend of nature and culture. The lake is stunning and the nomad experience was authentic.",
+          "citizenship": "australia",
+          "grade": 4,
+          "tourTitle": "Issyk-Kul Lake Experience",
+          "date": "3 weeks ago"
+        }
+      ]
+    },
+    "travelInsights": {
+      "item": "Expert Knowledge",
+      "title": "Travel Insights",
+      "description": "Expert guides, cultural insights, and practical tips to help you make the most of your Central Asian adventure",
+      "btn": "Visit Our Blog",
+      "cardBtn": "Read More",
+      "read": "min read",
+      "items": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
+          "title": "Best Time to Visit the Stans: A Seasonal Guide",
+          "description": "Discover the optimal seasons for exploring Central Asia, from spring wildflowers to autumn harvests and winter adventures.",
+          "insights": "Travel Tips",
+          "date": "January 25, 2025"
+        },
+        {
+          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
+          "title": "Navigating Central Asian Visas: Complete Guide",
+          "description": "Everything you need to know about visa requirements, applications, and border crossings for seamless travel.",
+          "insights": "Documentation",
+          "date": "January 22, 2025"
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
+          "title": "Cultural Etiquette: Respectful Travel in Central Asia",
+          "description": "Learn the customs, traditions, and social norms to enhance your cultural connections and travel experiences.",
+          "insights": "Culture",
+          "date": "January 20, 2025"
+        }
+      ]
+    },
+    "activityAndStories": {
+      "btn": "View All Photo",
+      "item1": "Live Activity",
+      "item2": "Traveler Stories",
+      "title1": "Recent Bookings",
+      "title2": "Captured Moments",
+      "activites": [
+        {
+          "image": "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg",
+          "fullName": "Sarah Johnson",
+          "tourTitle": "Samarkand & Bukhara Heritage Tour",
+          "date": "2 min ago"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/portrait-du-sourire-latin-de-type-118256247.jpg",
+          "fullName": "Marco Rossi",
+          "tourTitle": "Pamir Highway Expedition",
+          "date": "3 min ago"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg",
+          "fullName": "Emma Chen",
+          "tourTitle": "Issyk-Kul Lake Experience",
+          "date": "1 min ago"
+        }
+      ],
+      "stories": [
+        {
+          "image": "https://cdn.pixabay.com/photo/2014/09/17/11/47/man-449406_640.jpg"
+        },
+        {
+          "image": "https://img.freepik.com/free-photo/portrait-brunette-young-woman-glasses-pointing-up_176420-15359.jpg?semt=ais_hybrid&w=740"
+        },
+        {
+          "image": "https://img.freepik.com/photos-gratuite/je-suis-fou-toi-portrait-femme-blonde-mignonne-mecontente-enfantine-qui-boude-lunettes-coiffure-chignon-croisant-bras-poitrine_176420-34850.jpg"
+        },
+        {
+          "image": "https://media.istockphoto.com/id/1251308867/photo/smiling-friendly-young-woman-wearing-spectacles.jpg?s=612x612&w=0&k=20&c=CCQIn3bIJZ0zT3uqXwFxqqePh7c2Sv30ts4EyNXT5-s="
+        }
+      ]
+    }
+  }
+}
