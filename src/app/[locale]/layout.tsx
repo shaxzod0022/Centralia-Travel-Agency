@@ -7,22 +7,22 @@ import { Footer, Navbar } from "@/components";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
 
   const titles: Record<string, string> = {
     en: "Centralia Travel Agency",
     es: "Agencia de viajes Centralia",
     fr: "Agence de voyage Centralia",
-    zh: "中环旅游公司ı",
+    zh: "中环旅游公司",
   };
 
   const descriptions: Record<string, string> = {
     en: "Explore the world with Centralia Travel Agency.",
     es: "Descubre viajes inolvidables con Centralia Travel Agency. Explora tours personalizados, experiencias culturales y viajes sin complicaciones a los mejores destinos del mundo. ¡Reserva tu próxima aventura hoy mismo!",
     fr: "Découvrez des voyages inoubliables avec Centralia Travel Agency. Profitez de circuits personnalisés, d'expériences culturelles et d'un voyage sans stress vers les meilleures destinations du monde. Réservez votre prochaine aventure dès aujourd'hui !",
-    zh: "与 Centralia 旅行社一起开启难忘的旅程。探索个性化旅行、文化体验以及前往全球热门目的地的无忧旅行。立即预订您的下一次冒险=！",
+    zh: "与 Centralia 旅行社一起开启难忘的旅程。探索个性化旅行、文化体验以及前往全球热门目的地的无忧旅行。立即预订您的下一次冒险！",
   };
 
   return {
@@ -31,18 +31,14 @@ export async function generateMetadata({
   };
 }
 
-type LocaleLayoutProps = {
-  children: React.ReactNode;
-  params: { locale: string };
-};
-
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const messages = await getMessages({ locale });
 
   return (
