@@ -3,7 +3,6 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Footer, Navbar } from "@/components";
-import Head from "next/head";
 
 export async function generateMetadata({
   params,
@@ -32,24 +31,24 @@ export async function generateMetadata({
   };
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
+type LocaleLayoutProps = {
   children: React.ReactNode;
   params: { locale: string };
-}) {
+};
+
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = params;
   const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning className="hydrate">
-      <Head>
+      <head>
+        {/* Google Fontsni shu yerda link qilib qo'yamiz */}
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
           rel="stylesheet"
         />
-      </Head>
+      </head>
       <body className="antialiased mx-auto w-full max-w-[1800px]">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
