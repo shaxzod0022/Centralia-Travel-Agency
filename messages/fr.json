@@ -243,5 +243,60 @@
       { "url": "", "label": "Twitter", "lucideName": "Twitter" },
       { "url": "", "label": "Télégramme", "lucideName": "Send" }
     ]
+  },
+  "AboutPage": {
+    "title": "À Propos de Nous",
+    "description": "Notre équipe met constamment son expérience et ses connaissances à profit pour vous aider à organiser des vacances de randonnée d’abri en abri sans tracas.",
+    "title2": "Salut, je suis Samo. Laissez-moi vous présenter l’histoire derrière Hut to Hut Hiking Austria.",
+    "description2": "Comme toute grande aventure, nous avons commencé modestement, avec un petit groupe de randonneurs passionnés aimant passer leurs journées dans la nature. Bien que je sois généralement le premier contact — répondant à vos emails ou échangeant avec vous lors de vos appels vidéo pour vous aider à choisir le sentier parfait — je ne suis en réalité que le point de départ. Derrière moi se trouve toute une équipe de randonneurs, de conseillers en voyage et de planificateurs d’itinéraires qui vivent et respirent les sentiers que nous vous proposons.",
+    "title3": "Des sentiers locaux aux aventures mondiales",
+    "description3": "Basés en Slovénie, là où les Alpes juliennes commencent juste à notre porte, il nous a semblé naturel de commencer à partager la beauté de notre pays — et, finalement, du monde — avec d’autres. Ce qui a débuté comme une petite initiative est devenu bien plus. Au fur et à mesure que de plus en plus de voyageurs nous ont rejoints, notre équipe s’est agrandie en ajoutant des experts destination, des planificateurs de parcours, des concepteurs d’itinéraires et une équipe de soutien en coulisse. Pas à pas, notre offre de randonnées s’est étendue au-delà de la Slovénie, à travers l’Europe, jusqu’aux sentiers les plus pittoresques d’Asie et des Amériques. Avec tant de voyages épiques à notre actif, il est devenu évident que nous avions besoin d’une identité unifiée pour tout rassembler.",
+    "readM": "Lire la suite",
+    "readL": "Lire moins",
+    "team": {
+      "title": "Rencontrez l’équipe",
+      "items": [
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Conseiller en voyages principal",
+          "info": "L’amour des montagnes de Samo a commencé durant son enfance, inspiré par les livres d’alpinistes slovènes comme Tomaž Humar et Silvo Karo. Leurs aventures himalayennes l’ont tellement inspiré qu’il s’est voué à atteindre les sommets des Alpes slovènes. Durant ses années universitaires, il a réalisé ses premières ascensions en tant qu’alpiniste, se rapprochant de ses idoles d’enfance. De nos jours, il consacre son temps au trail, tout en restant un visiteur assidu des montagnes."
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Conseiller en voyages principal",
+          "info": "L’amour des montagnes de Samo a commencé durant son enfance, inspiré par les livres d’alpinistes slovènes comme Tomaž Humar et Silvo Karo. Leurs aventures himalayennes l’ont tellement inspiré qu’il s’est voué à atteindre les sommets des Alpes slovènes. Durant ses années universitaires, il a réalisé ses premières ascensions en tant qu’alpiniste, se rapprochant de ses idoles d’enfance. De nos jours, il consacre son temps au trail, tout en restant un visiteur assidu des montagnes."
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Conseiller en voyages principal",
+          "info": "L’amour des montagnes de Samo a commencé durant son enfance, inspiré par les livres d’alpinistes slovènes comme Tomaž Humar et Silvo Karo. Leurs aventures himalayennes l’ont tellement inspiré qu’il s’est voué à atteindre les sommets des Alpes slovènes. Durant ses années universitaires, il a réalisé ses premières ascensions en tant qu’alpiniste, se rapprochant de ses idoles d’enfance. De nos jours, il consacre son temps au trail, tout en restant un visiteur assidu des montagnes."
+        }
+      ]
+    },
+    "executiveTeam": {
+      "title": "Rencontrez l’équipe de direction",
+      "items": [
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Conseiller en voyages principal",
+          "info": "L’amour des montagnes de Samo a commencé durant son enfance, inspiré par les livres d’alpinistes slovènes comme Tomaž Humar et Silvo Karo. Leurs aventures himalayennes l’ont tellement inspiré qu’il s’est voué à atteindre les sommets des Alpes slovènes. Durant ses années universitaires, il a réalisé ses premières ascensions en tant qu’alpiniste, se rapprochant de ses idoles d’enfance. De nos jours, il consacre son temps au trail, tout en restant un visiteur assidu des montagnes."
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Conseiller principal",
+          "info": "L’amour des montagnes de Samo a commencé durant son enfance, inspiré par les livres d’alpinistes slovènes comme Tomaž Humar et Silvo Karo. Leurs aventures himalayennes l’ont tellement inspiré qu’il s’est voué à atteindre les … montagnes."
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Direction",
+          "info": "L’amour des montagnes de Samo a commencé durant son enfance, inspiré par les livres d’alpinistes slovènes comme Tomaž Humar et Silvo Karo. Leurs aventures himalayennes l’ont tellement inspiré qu’il s’est voué à atteindre les … montagnes."
+        }
+      ]
+    },
+    "expert": "Parlez à notre expert voyage",
+    "expertSocialLinks": [
+      { "icon": "Phone", "label": "+1234567", "path": "" },
+      { "icon": "Mail", "label": "Envoyez-nous un message", "path": "" }
+    ]
   }
 }

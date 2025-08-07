@@ -15,7 +15,7 @@ const SignatureJourneys = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className={`${styles.paddingCont} ${styles.flexCol} scroll-mt-20 items-center`}
+      className={`${styles.paddingCont} ${styles.flexCol} scroll-mt-16 items-center`}
     >
       <p
         className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 bg-[#F8F9FA] border-[#E9ECEF]`}

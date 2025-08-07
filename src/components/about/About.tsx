@@ -45,7 +45,7 @@ const About = () => {
         alt="travelsy"
       />
       <h4 className={`${styles.h4} mt-10 mb-5`}>{t("team.title")}</h4>
-      <ul className={`${styles.flexBetween} gap-6 mb-5`}>
+      <ul className={`${styles.flexBetween} !items-start gap-6 mb-5`}>
         {team.map((item, idx) => (
           <li
             className={`w-full md:w-[47%] xl:w-[30%] transition bg-white shadow__insigths rounded-xl`}
@@ -80,7 +80,7 @@ const About = () => {
         ))}
       </ul>
       <h4 className={`${styles.h4} mt-10 mb-5`}>{t("executiveTeam.title")}</h4>
-      <ul className={`${styles.flexBetween} gap-6 mb-10`}>
+      <ul className={`${styles.flexBetween} !items-start gap-6 mb-10`}>
         {executiveTeam.map((item, idx) => (
           <li
             className={`w-full md:w-[47%] xl:w-[30%] transition bg-white shadow__insigths rounded-xl`}

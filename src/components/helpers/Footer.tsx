@@ -118,7 +118,9 @@ const Footer = () => {
           );
         })}
       </ul>
-      <div className={`${styles.flexBetween} gap-3 max-w-[1800px] mx-auto text-gray-400`}>
+      <div
+        className={`${styles.flexBetween} gap-3 max-w-[1800px] mx-auto text-gray-400`}
+      >
         <span
           className={`${styles.span} sm:text-start text-center w-full sm:w-fit`}
         >
@@ -128,9 +130,7 @@ const Footer = () => {
           className={`w-full sm:w-fit flex sm:flex-row flex-col items-center sm:gap-5 gap-2`}
         >
           {footBottom.map((i, x) => (
-            <li key={x}>
-              <Link href={i.url}>{i.label}</Link>
-            </li>
+            <li key={x}>{i.label}</li>
           ))}
         </ul>
       </div>

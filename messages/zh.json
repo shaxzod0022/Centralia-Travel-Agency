@@ -243,5 +243,60 @@
       { "url": "", "label": "推特", "lucideName": "Twitter" },
       { "url": "", "label": "电报", "lucideName": "Send" }
     ]
+  },
+  "AboutPage": {
+    "title": "关于我们",
+    "description": "我们的团队不断将他们的经验与知识付诸实践，帮助您轻松协调“避难所到避难所”的徒步旅行假期。",
+    "title2": "嗨，我是Samo。让我向您介绍“奥地利避难所徒步”的背后故事。",
+    "description2": "像所有伟大的冒险一样，我们从小规模开始，一个亲密而充满激情的年轻徒步者小组，只热爱在大自然中度过每一天。虽然通常您首先联系到的是我——通过回复您的邮件或视频通话帮您选择完美路线——但我只是起点。支持我的，是整个徒步团队、旅行顾问和路线规划师，他们用心走过每一条我们推荐给您的线路。",
+    "title3": "从本地小径到全球冒险",
+    "description3": "我们总部位于斯洛文尼亚，朱利安阿尔卑斯山就在我们家门口。一开始我们自然地想与他人分享故乡的美丽——最终也包括世界。最初是一个小小的倡议，如今发展为更大的事业。随着越来越多的旅者加入我们的徒步行列，我们的团队也不断壮大，汇聚了目的地专家、路线策划者、行程设计师和幕后支持团队。一段一段地，我们的徒步项目从斯洛文尼亚扩展到整个欧洲，最终踏足亚洲和美洲最壮丽的线路。经历了如此多的史诗之旅，我们意识到需要一个统一的品牌来汇聚所有旅程。",
+    "readM": "阅读更多",
+    "readL": "阅读较少",
+    "team": {
+      "title": "团队介绍",
+      "items": [
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – 首席旅行顾问",
+          "info": "Samo对山的热爱始于童年，受斯洛文尼亚登山家Tomaž Humar和Silvo Karo的书籍启发。他们的喜马拉雅探险如此激励人心，以至于他立志登顶斯洛文尼亚阿尔卑斯山。大学期间，他作为登山者进行了首次登顶，这让他更接近童年偶像。如今，他投入越野跑，但仍是山间常客。"
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – 首席旅行顾问",
+          "info": "Samo对山的热爱始于童年，受斯洛文尼亚登山家启发。他目前热爱越野跑，也常去山里探险。"
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – 首席旅行顾问",
+          "info": "Samo对山的热爱始于童年…如今他仍喜欢探访山野。"
+        }
+      ]
+    },
+    "executiveTeam": {
+      "title": "执行团队介绍",
+      "items": [
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – 首席旅行顾问",
+          "info": "Samo对山的热爱始于童年…目前仍热衷山野。"
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – 高级顾问",
+          "info": "Samo对山的热爱始于童年…继续越野跑。"
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – 领导者",
+          "info": "Samo对山的热爱始于童年…依然是山野常客。"
+        }
+      ]
+    },
+    "expert": "与我们的旅行专家交谈",
+    "expertSocialLinks": [
+      { "icon": "Phone", "label": "+1234567", "path": "" },
+      { "icon": "Mail", "label": "给我们留言", "path": "" }
+    ]
   }
 }

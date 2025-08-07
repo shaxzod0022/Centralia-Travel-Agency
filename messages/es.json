@@ -243,5 +243,60 @@
       { "url": "", "label": "Twitter", "lucideName": "Twitter" },
       { "url": "", "label": "Telegrama", "lucideName": "Send" }
     ]
+  },
+  "AboutPage": {
+    "title": "Sobre Nosotros",
+    "description": "Nuestro equipo trabaja constantemente para poner en buen uso su experiencia y conocimiento, ayudándote a coordinar unas vacaciones de senderismo de refugio en refugio sin complicaciones.",
+    "title2": "Hola, soy Samo. Permíteme presentarte la historia detrás de Hut to Hut Hiking Austria.",
+    "description2": "Como toda gran aventura, comenzamos pequeños, con un grupo unido de jóvenes entusiastas del senderismo que no amaban nada más que pasar sus días en la naturaleza. Aunque normalmente soy la primera persona con la que te comunicas —respondiendo tus correos electrónicos o conversando contigo en videollamada para ayudarte a elegir el sendero perfecto—, en realidad solo soy el punto de partida. Detrás de mí está todo un equipo de senderistas, asesores de viaje y planificadores de rutas que viven y respiran los senderos que te recomendamos.",
+    "title3": "De senderos locales a aventuras mundiales",
+    "description3": "Con sede en Eslovenia, donde comienzan los Alpes Julianos justo fuera de nuestra puerta, nos pareció natural comenzar compartiendo la belleza de nuestra tierra natal — y eventualmente, del mundo — con otros. Lo que comenzó como una pequeña iniciativa se convirtió en algo mucho mayor. A medida que más y más viajeros se unieron a nuestras caminatas, nuestro equipo también creció, incorporando expertos en destinos, planificadores de rutas, diseñadores de itinerarios y un equipo de respaldo. Paso a paso, nuestro portafolio de caminatas creció más allá de Eslovenia, por toda Europa, y finalmente hasta los senderos más pintorescos de Asia y las Américas. Con tantos viajes épicos a nuestras espaldas, quedó claro que necesitábamos una identidad unificada para reunirlo todo.",
+    "readM": "Leer más",
+    "readL": "Leer menos",
+    "team": {
+      "title": "Conoce al equipo",
+      "items": [
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Asesor principal de viajes",
+          "info": "El amor de Samo por las montañas comenzó en su infancia, impulsado por los libros de alpinistas eslovenos como Tomaž Humar y Silvo Karo. Encontró sus aventuras himaláyicas tan inspiradoras que se dedicó a escalar los Alpes eslovenos. Durante sus años universitarios, realizó sus primeras ascensiones como alpinista, acercándose a sus ídolos infantiles. Hoy en día dedica su tiempo al trail running, pero sigue siendo un visitante frecuente de las montañas."
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Asesor principal de viajes",
+          "info": "El amor de Samo por las montañas comenzó en su infancia, impulsado por los libros de alpinistas eslovenos como Tomaž Humar y Silvo Karo. Encontró sus aventuras himaláyicas tan inspiradoras que se dedicó a escalar los Alpes eslovenos. Durante sus años universitarios, realizó sus primeras ascensiones como alpinista, acercándose a sus ídolos infantiles. Hoy en día dedica su tiempo al trail running."
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Asesor principal de viajes",
+          "info": "El amor de Samo por las montañas comenzó en su infancia, impulsado por los libros de alpinistas eslovenos como Tomaž Humar y Silvo Karo. Encontró sus aventuras himaláyicas tan inspiradoras que se dedicó a escalar los Alpes eslovenos. Durante sus años universitarios, realizó sus primeras ascensiones como alpinista. Hoy en día dedica su tiempo al trail running."
+        }
+      ]
+    },
+    "executiveTeam": {
+      "title": "Conoce al equipo ejecutivo",
+      "items": [
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Asesor principal de viajes",
+          "info": "El amor de Samo por las montañas comenzó en su infancia, impulsado por los libros de alpinistas eslovenos como Tomaž Humar y Silvo Karo. Eso lo inspiró tanto que se dedicó a escalar los Alpes eslovenos. Actualmente corre por senderos y sigue visitando montañas."
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Jefe de Asesoría",
+          "info": "El amor de Samo por las montañas comenzó en su infancia... continúa corriendo por senderos."
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Liderazgo",
+          "info": "El amor de Samo por las montañas comenzó en su infancia... continúa visitando montañas."
+        }
+      ]
+    },
+    "expert": "Habla con nuestro experto en viajes",
+    "expertSocialLinks": [
+      { "icon": "Phone", "label": "+1234567", "path": "" },
+      { "icon": "Mail", "label": "Envíanos un mensaje", "path": "" }
+    ]
   }
 }
