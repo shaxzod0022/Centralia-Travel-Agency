@@ -6,8 +6,7 @@ const page = () => {
   return (
     <div className="mt-20">
       <AboutHead />
-      <div className={`${styles.flexBetween} !items-start ${styles.paddingCont} mx-auto max-w-[2200px] gap-5`}>
-        <QuickLinks />
+      <div className={`${styles.paddingCont} mx-auto max-w-[2200px]`}>
         <About />
       </div>
     </div>

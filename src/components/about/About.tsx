@@ -27,7 +27,7 @@ const About = () => {
   });
 
   return (
-    <div className={`w-full md:w-[70%]`}>
+    <>
       <div className={`${styles.flex} gap-5 mb-5`}>
         <img
           className="rounded-full xl:w-44 w-20 h-20 xl:h-44 object-cover"
@@ -44,11 +44,11 @@ const About = () => {
         src="https://v.imgi.no/4nedkupb7h-MOODBOARD/2042"
         alt="travelsy"
       />
-      <h4 className={`${styles.h4} mb-5`}>{t("team.title")}</h4>
+      <h4 className={`${styles.h4} mt-10 mb-5`}>{t("team.title")}</h4>
       <ul className={`${styles.flexBetween} gap-6 mb-5`}>
         {team.map((item, idx) => (
           <li
-            className={`w-full lg:w-[47%] transition bg-white shadow__insigths rounded-xl`}
+            className={`w-full md:w-[47%] xl:w-[30%] transition bg-white shadow__insigths rounded-xl`}
             key={idx}
           >
             <img
@@ -59,7 +59,7 @@ const About = () => {
             <div className="p-8">
               <h4 className={`${styles.h4} mb-3`}>{item.title}</h4>
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out mb-3 ${
                   more.modal && more.id === item.title
                     ? "max-h-[1000px]"
                     : "max-h-[100px]"
@@ -71,7 +71,7 @@ const About = () => {
                 onClick={() =>
                   setMore({ ...more, id: item.title, modal: !more.modal })
                 }
-                className={`${styles.p} hover:text-green-600 transition cursor-pointer`}
+                className={`${styles.p} hover:text-green-600 text-green-950 transition cursor-pointer`}
               >
                 {more.modal && item.title === more.id ? t("readL") : t("readM")}
               </button>
@@ -79,11 +79,11 @@ const About = () => {
           </li>
         ))}
       </ul>
-      <h4 className={`${styles.h4} mb-5`}>{t("executiveTeam.title")}</h4>
+      <h4 className={`${styles.h4} mt-10 mb-5`}>{t("executiveTeam.title")}</h4>
       <ul className={`${styles.flexBetween} gap-6 mb-10`}>
         {executiveTeam.map((item, idx) => (
           <li
-            className={`w-full lg:w-[47%] transition bg-white shadow__insigths rounded-xl`}
+            className={`w-full md:w-[47%] xl:w-[30%] transition bg-white shadow__insigths rounded-xl`}
             key={idx}
           >
             <img
@@ -94,7 +94,7 @@ const About = () => {
             <div className="p-8">
               <h4 className={`${styles.h4} mb-3`}>{item.title}</h4>
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out mb-3 ${
                   more.modal && more.id === item.title
                     ? "max-h-[1000px]"
                     : "max-h-[100px]"
@@ -106,7 +106,7 @@ const About = () => {
                 onClick={() =>
                   setMore({ ...more, id: item.title, modal: !more.modal })
                 }
-                className={`${styles.p} hover:text-green-600 transition cursor-pointer`}
+                className={`${styles.p} hover:text-green-600 text-green-950 transition cursor-pointer`}
               >
                 {more.modal && item.title === more.id ? t("readL") : t("readM")}
               </button>
@@ -114,7 +114,7 @@ const About = () => {
           </li>
         ))}
       </ul>
-      <h4 className={`${styles.h4}`}>{t("expert")}</h4>
+      <h4 className={`${styles.h4} mb-5`}>{t("expert")}</h4>
       <div className={`${styles.flex} gap-4`}>
         <img
           className="rounded-full xl:w-44 w-20 h-20 xl:h-44 object-cover"
@@ -140,7 +140,7 @@ const About = () => {
           })}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
