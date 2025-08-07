@@ -13,20 +13,20 @@ const TravelInsights = () => {
       className={`${styles.paddingCont} ${styles.flexCol} bg-[#F8F9FA] items-center`}
     >
       <p
-        className={`${styles.p} text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 bg-[#F8F9FA] border-[#E9ECEF]`}
+        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 bg-[#F8F9FA] border-[#E9ECEF]`}
       >
         {t("item").toUpperCase()}
       </p>
       <h2
         style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center text-green-950 md:mb-4 mb-2 ${styles.h2}`}
+        className={`text-center text-green-950 max-w-[1800px] mx-auto md:mb-4 mb-2 ${styles.h2}`}
       >
         {t("title")}
       </h2>
-      <p className={`${styles.p} text-gray-500 mb-7 lg:mb-12 text-center`}>
+      <p className={`${styles.p} text-gray-500 max-w-[1800px] mx-auto mb-7 lg:mb-12 text-center`}>
         {t("description")}
       </p>
-      <div className={`w-full ${styles.flexBetween} gap-6 mb-10`}>
+      <div className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}>
         {signatureJourneys.map((item, idx) => (
           <div
             key={idx}

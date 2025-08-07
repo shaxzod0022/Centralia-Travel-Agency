@@ -11,7 +11,7 @@ import React from "react";
 const HomePage = async () => {
   //   const blogs = await BlogService.getAllBlogs();
   return (
-    <div className={`mt-16`}>
+    <div className={`mt-10`}>
       <Head />
       <Countries />
       <SignatureJourneys />

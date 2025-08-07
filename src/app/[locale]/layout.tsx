@@ -49,7 +49,7 @@ export default async function LocaleLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased mx-auto w-full max-w-[1800px]">
+      <body className="antialiased mx-auto w-full">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}

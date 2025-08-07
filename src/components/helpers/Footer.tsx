@@ -22,9 +22,9 @@ const Footer = () => {
   const destinations = t.raw("destinations.links") as FooterProps[];
   const footBottom = t.raw("footBottom") as FooterProps[];
   return (
-    <div className={`${styles.paddingCont} bg-[#07452a]`}>
+    <div id="contact" className={`${styles.paddingCont} bg-[#07452a]`}>
       <div
-        className={`${styles.flexBetween} !items-start gap-5 sm:text-start text-center mb-5`}
+        className={`${styles.flexBetween} max-w-[1800px] mx-auto !items-start gap-5 sm:text-start text-center mb-5`}
       >
         <div
           className={`flex flex-col sm:items-start items-center w-full lg:w-1/2 xl:w-2/5`}
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
       </div>
       <ul
-        className={`${styles.flex} flex-wrap sm:justify-between justify-center mb-5 gap-5 sm:py-6 py-3 border-y-1 border-gray-600`}
+        className={`${styles.flex} max-w-[1800px] mx-auto flex-wrap sm:justify-between justify-center mb-5 gap-5 sm:py-6 py-3 border-y-1 border-gray-600`}
       >
         {socialLinks.slice(0, 3).map((item, x) => {
           const Icon = iconMap[item.lucideName];
@@ -118,7 +118,7 @@ const Footer = () => {
           );
         })}
       </ul>
-      <div className={`${styles.flexBetween} gap-3 text-gray-400`}>
+      <div className={`${styles.flexBetween} gap-3 max-w-[1800px] mx-auto text-gray-400`}>
         <span
           className={`${styles.span} sm:text-start text-center w-full sm:w-fit`}
         >
