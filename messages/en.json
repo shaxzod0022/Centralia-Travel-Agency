@@ -305,6 +305,58 @@
   },
   "AboutPage": {
     "title": "About Us",
-    "description": "Our team constantly works towards putting their experience and knowledge to good use by helping you coordinate a hassle-free hut-to-hut hiking holiday."
+    "description": "Our team constantly works towards putting their experience and knowledge to good use by helping you coordinate a hassle-free hut-to-hut hiking holiday.",
+    "title2": "Hey, I'm Samo. Let me introduce you to the story behind Hut to Hut Hiking Austria.",
+    "description2": "Like every great adventure, we started small, with a close-knit group of young, enthusiastic hikers who loved nothing more than spending our days in nature. While I’m usually the first person you’ll hear from – replying to your emails or chatting with you on a video call to help pick the perfect trail – I’m really just the starting point. Behind me is a whole team of hikers, travel advisors, and route planners who live and breathe the trails we send you on.",
+    "title3": "From Local Trails to Worldwide Adventures",
+    "description3": "Based in Slovenia, where the Julian Alps begin just beyond our doorstep, it felt only natural to start sharing the beauty of our homeland—and eventually, the world—with others. What started as a small initiative has grown into something far bigger. As more and more travellers joined our hikes, our team expanded too, bringing in destination experts, trail planners, route designers, and a behind-the-scenes support team.Step by step, our hiking portfolio grew beyond Slovenia, across Europe, and eventually to the most scenic trails in Asia and the Americas. With so many epic journeys under our belt, it became clear that we needed one united identity to bring it all together.",
+    "readM": "Read More",
+    "readL": "Read Less",
+
+    "team": {
+      "title": "Meet the Team",
+      "items": [
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Lead Travel Advisoy",
+          "info": "Samo's love for the mountains started in his childhood, sparked by the books of Slovenian alpinists like Tomaž Humar and Silvo Karo. He found their Himalayan adventures so inspiring that he dedicated himself to summiting the Slovenian Alps. During his college years, he made his first ascents as an alpinist, which brought him closer to his childhood idols. These days, he devotes his time to trail running but remains a frequent visitor of the mountains."
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Lead Travel Advisow",
+          "info": "Samo's love for the mountains started in his childhood, sparked by the books of Slovenian alpinists like Tomaž Humar and Silvo Karo. He found their Himalayan adventures so inspiring that he dedicated himself to summiting the Slovenian Alps. During his college years, he made his first ascents as an alpinist, which brought him closer to his childhood idols. These days, he devotes his time to trail running but remains a frequent visitor of the mountains."
+        },
+        {
+          "image": "https://www.clinkhostels.com/wp-content/themes/yootheme/cache/d1/Travelling-Experience-Safe-Travels-Messages-d17aac95.jpeg",
+          "title": "Samo – Lead Travel Advisor",
+          "info": "Samo's love for the mountains started in his childhood, sparked by the books of Slovenian alpinists like Tomaž Humar and Silvo Karo. He found their Himalayan adventures so inspiring that he dedicated himself to summiting the Slovenian Alps. During his college years, he made his first ascents as an alpinist, which brought him closer to his childhood idols. These days, he devotes his time to trail running but remains a frequent visitor of the mountains."
+        }
+      ]
+    },
+    "executiveTeam": {
+      "title": "Meet the Executive Team",
+      "items": [
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Lead Travel Advis",
+          "info": "Samo's love for the mountains started in his childhood, sparked by the books of Slovenian alpinists like Tomaž Humar and Silvo Karo. He found their Himalayan adventures so inspiring that he dedicated himself to summiting the Slovenian Alps. During his college years, he made his first ascents as an alpinist, which brought him closer to his childhood idols. These days, he devotes his time to trail running but remains a frequent visitor of the mountains."
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Leadsd",
+          "info": "Samo's love for the mountains started in his childhood, sparked by the books of Slovenian alpinists like Tomaž Humar and Silvo Karo. He found their Himalayan adventures so inspiring that he dedicated himself to summiting the Slovenian Alps. During his college years, he made his first ascents as an alpinist, which brought him closer to his childhood idols. These days, he devotes his time to trail running but remains a frequent visitor of the mountains."
+        },
+        {
+          "image": "https://a.storyblok.com/f/138916/568x464/8fc3eb8854/why-consider-group-travel.jpg",
+          "title": "Samo – Lead",
+          "info": "Samo's love for the mountains started in his childhood, sparked by the books of Slovenian alpinists like Tomaž Humar and Silvo Karo. He found their Himalayan adventures so inspiring that he dedicated himself to summiting the Slovenian Alps. During his college years, he made his first ascents as an alpinist, which brought him closer to his childhood idols. These days, he devotes his time to trail running but remains a frequent visitor of the mountains."
+        }
+      ]
+    },
+    "expert": "Talk to our travel expert",
+    "expertSocialLinks": [
+      { "icon": "Phone", "label": "+1234567", "path": "" },
+      { "icon": "Mail", "label": "Send us a message", "path": "" }
+    ]
   }
 }

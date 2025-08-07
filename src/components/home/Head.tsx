@@ -3,7 +3,6 @@ import { styles } from "@/styles/styles";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Btn from "../helpers/Btn";
-import { HeadSvg } from "@/assets";
 
 const Head = () => {
   const t = useTranslations("HomePage.head");

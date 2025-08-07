@@ -32,8 +32,10 @@ const RightMenu: FC<Props> = ({ links, hidden, closeMenu }) => {
             <Link
               onClick={closeMenu}
               className={`text-lg ${
-                pathname.slice(4) === item.path.slice(1) && "text-green-600"
-              } text-white hover:text-green-600 transition-all duration-150`}
+                pathname.slice(4) === item.path.slice(1)
+                  ? "text-green-600"
+                  : "text-white"
+              } hover:text-green-600 transition-all duration-150`}
               href={item.path}
             >
               {item.label.toUpperCase()}
