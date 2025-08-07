@@ -1,10 +1,13 @@
+"use client"
 import { CountryProps } from "@/interfaces/country.interface";
 import { styles } from "@/styles/styles";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Countries = () => {
+  const router = useRouter();
   const t = useTranslations("HomePage.countries");
   const countries = t.raw("items") as CountryProps[];
   return (
@@ -27,12 +30,17 @@ const Countries = () => {
       >
         {t("title")}
       </h2>
-      <p className={`${styles.p} text-gray-500 mb-7 max-w-[1800px] mx-auto lg:mb-12 text-center`}>
+      <p
+        className={`${styles.p} text-gray-500 mb-7 max-w-[1800px] mx-auto lg:mb-12 text-center`}
+      >
         {t("description")}
       </p>
-      <div className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6`}>
+      <div
+        className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6`}
+      >
         {countries.map((item, idx) => (
           <div
+            onClick={() => router.push(`/tours/${item.title}`)}
             style={{
               backgroundImage: `url("${item.image}")`,
               backgroundPosition: "contain",

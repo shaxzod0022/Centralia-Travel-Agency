@@ -1,9 +1,12 @@
-import React from 'react'
+import { SignatureJourneys } from "@/components";
+import React from "react";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className={`mt-20`}>
+      <SignatureJourneys />
+    </div>
+  );
+};
 
-export default page
+export default page;

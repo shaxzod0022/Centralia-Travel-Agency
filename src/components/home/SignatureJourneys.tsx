@@ -1,10 +1,13 @@
+"use client";
 import { SignatureProps } from "@/interfaces/signature.interface";
 import { styles } from "@/styles/styles";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Btn from "../helpers/Btn";
+import { useRouter } from "next/navigation";
 
 const SignatureJourneys = () => {
+  const router = useRouter();
   const t = useTranslations("HomePage.signatureJourneys");
   const signatureJourneys = t.raw("items") as SignatureProps[];
   return (
@@ -28,14 +31,18 @@ const SignatureJourneys = () => {
       >
         {t("title")}
       </h2>
-      <p className={`${styles.p} max-w-[1800px] mx-auto text-gray-500 mb-7 lg:mb-12 text-center`}>
+      <p
+        className={`${styles.p} max-w-[1800px] mx-auto text-gray-500 mb-7 lg:mb-12 text-center`}
+      >
         {t("description")}
       </p>
-      <div className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}>
+      <div
+        className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}
+      >
         {signatureJourneys.map((item, idx) => (
           <div
             key={idx}
-            className={`${styles.flexCol} shadow__signature bg-white justify-between w-full sm:w-[47%] xl:w-[31%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
+            className={`${styles.flexCol} shadow__signature bg-white justify-between w-full sm:w-[47%] xl:w-[31%] rounded-3xl`}
           >
             <div className="relative">
               <img
@@ -104,6 +111,7 @@ const SignatureJourneys = () => {
                   </span>
                 </div>
                 <Btn
+                  onClick={() => router.push(`/tour/${idx}`)}
                   myClass="text-white bg-green-950 w-32 leading-tight"
                   title={t("cardBtn")}
                 />

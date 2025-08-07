@@ -12,7 +12,8 @@ export { default as ActivityAndStories } from "./home/ActivityAndStories";
 
 // About page
 export { default as AboutHead } from "./about/AboutHead";
-export { default as QuickLinks } from "./about/QuickLinks"; 
-export { default as About } from "./about/About"; 
+export { default as QuickLinks } from "./about/QuickLinks";
+export { default as About } from "./about/About";
 
- 
+// Tour page
+export { default as TourInfo } from "./tour/TourInfo";

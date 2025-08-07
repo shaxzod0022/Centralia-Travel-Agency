@@ -1,11 +1,14 @@
+"use client";
 import { styles } from "@/styles/styles";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Btn from "../helpers/Btn";
 import { InsightsProps } from "@/interfaces/insights.interface";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const TravelInsights = () => {
+  const router = useRouter();
   const t = useTranslations("HomePage.travelInsights");
   const signatureJourneys = t.raw("items") as InsightsProps[];
   return (
@@ -23,12 +26,17 @@ const TravelInsights = () => {
       >
         {t("title")}
       </h2>
-      <p className={`${styles.p} text-gray-500 max-w-[1800px] mx-auto mb-7 lg:mb-12 text-center`}>
+      <p
+        className={`${styles.p} text-gray-500 max-w-[1800px] mx-auto mb-7 lg:mb-12 text-center`}
+      >
         {t("description")}
       </p>
-      <div className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}>
+      <div
+        className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}
+      >
         {signatureJourneys.map((item, idx) => (
           <div
+            onClick={() => router.push(`/blog/${item.title.slice(0,3)}`)}
             key={idx}
             className={`${styles.flexCol} shadow__insigths bg-white justify-between w-full sm:w-[47%] xl:w-[31%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
           >

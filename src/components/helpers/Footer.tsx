@@ -22,7 +22,7 @@ const Footer = () => {
   const destinations = t.raw("destinations.links") as FooterProps[];
   const footBottom = t.raw("footBottom") as FooterProps[];
   return (
-    <div id="contact" className={`${styles.paddingCont} bg-[#07452a]`}>
+    <div id="contact" className={`${styles.paddingCont} bg-[#07452a] scroll-mt-16`}>
       <div
         className={`${styles.flexBetween} max-w-[1800px] mx-auto !items-start gap-5 sm:text-start text-center mb-5`}
       >
