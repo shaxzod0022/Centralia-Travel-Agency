@@ -9,11 +9,13 @@ import { AlignJustify, X } from "lucide-react";
 import RightMenu from "./RightMenu";
 import { Logo } from "@/assets";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [close, setClose] = useState<boolean>(false);
   const t = useTranslations("navbar");
   const links: NavbarLinkProps[] = t.raw("links");
+  const pathname = usePathname();
 
   return (
     <div className="bg-white z-50 fixed top-0 w-full">
@@ -29,10 +31,12 @@ const Navbar = () => {
           {links.map((item, idx) => (
             <li key={idx}>
               <Link
-                className="text-lg font-semibold hover:text-green-600 transition-all duration-150"
-                href={item.label}
+                className={`text-lg font-semibold hover:text-green-600 transition-all duration-150 ${
+                  pathname.slice(4) === item.path.slice(1) && "text-green-600"
+                }`}
+                href={item.path}
               >
-                {item.label.slice(1).toUpperCase()}
+                {item.label.toUpperCase()}
               </Link>
             </li>
           ))}

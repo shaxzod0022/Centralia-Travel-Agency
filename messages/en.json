@@ -6,10 +6,11 @@
   "navbar": {
     "btn": "plan journey",
     "links": [
-      { "label": "#tours" },
-      { "label": "#blog" },
-      { "label": "/about" },
-      { "label": "#contact" }
+      { "label": "home", "path": "/" },
+      { "label": "tours", "path": "#tours" },
+      { "label": "blog", "path": "/blog" },
+      { "label": "about", "path": "/about" },
+      { "label": "contact", "path": "#contact" }
     ]
   },
   "footer": {
@@ -301,5 +302,9 @@
         }
       ]
     }
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "description": "Our team constantly works towards putting their experience and knowledge to good use by helping you coordinate a hassle-free hut-to-hut hiking holiday."
   }
 }

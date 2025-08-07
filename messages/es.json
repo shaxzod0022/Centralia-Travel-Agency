@@ -6,10 +6,11 @@
   "navbar": {
     "btn": "planificar viaje",
     "links": [
-      { "label": "tours" },
-      { "label": "blog" },
-      { "label": "acerca de" },
-      { "label": "contacto" }
+      { "label": "hogar", "path": "/" },
+      { "label": "tours", "path": "#tours" },
+      { "label": "blog", "path": "/blog" },
+      { "label": "acerca de", "path": "/about" },
+      { "label": "contacto", "path": "#contact" }
     ]
   },
   "HomePage": {

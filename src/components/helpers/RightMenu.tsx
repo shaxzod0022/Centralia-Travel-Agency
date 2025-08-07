@@ -5,6 +5,7 @@ import Link from "next/link";
 import { NavbarLinkProps } from "@/interfaces/navbar.interface";
 import { styles } from "@/styles/styles";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 interface Props {
   links: NavbarLinkProps[];
@@ -14,6 +15,7 @@ interface Props {
 
 const RightMenu: FC<Props> = ({ links, hidden, closeMenu }) => {
   const t = useTranslations("navbar");
+  const pathname = usePathname();
 
   return (
     <div
@@ -29,10 +31,12 @@ const RightMenu: FC<Props> = ({ links, hidden, closeMenu }) => {
           <li key={idx}>
             <Link
               onClick={closeMenu}
-              className="text-lg text-white hover:text-green-600 transition-all duration-150"
-              href={item.label}
+              className={`text-lg ${
+                pathname.slice(4) === item.path.slice(1) && "text-green-600"
+              } text-white hover:text-green-600 transition-all duration-150`}
+              href={item.path}
             >
-              {item.label.slice(1).toUpperCase()}
+              {item.label.toUpperCase()}
             </Link>
           </li>
         ))}

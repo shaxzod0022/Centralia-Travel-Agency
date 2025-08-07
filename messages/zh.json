@@ -6,10 +6,11 @@
   "navbar": {
     "btn": "规划行程",
     "links": [
-      { "label": "旅游团" },
-      { "label": "博客" },
-      { "label": "关于我们" },
-      { "label": "联系我们" }
+      { "label": "家", "path": "/" },
+      { "label": "旅游团", "path": "#tours" },
+      { "label": "博客", "path": "/blog" },
+      { "label": "关于我们", "path": "/about" },
+      { "label": "联系我们", "path": "#contact" }
     ]
   },
   "HomePage": {

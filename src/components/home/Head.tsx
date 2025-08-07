@@ -3,11 +3,12 @@ import { styles } from "@/styles/styles";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Btn from "../helpers/Btn";
+import { HeadSvg } from "@/assets";
 
 const Head = () => {
   const t = useTranslations("HomePage.head");
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[96vh] overflow-hidden">
       {/* Video background */}
       <video
         src="/head.mp4"
