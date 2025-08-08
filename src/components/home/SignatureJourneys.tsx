@@ -112,7 +112,7 @@ const SignatureJourneys = () => {
                 </div>
                 <Btn
                   onClick={() => router.push(`/tour/${idx}`)}
-                  myClass="text-white !bg-[#1B4332] active:!bg-[#2d6c52] w-32 leading-tight"
+                  myClass="text-white !bg-[#1B4332] active:!bg-[#2d6c52] leading-tight"
                   title={t("cardBtn")}
                 />
               </div>

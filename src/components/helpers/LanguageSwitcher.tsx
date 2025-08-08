@@ -8,7 +8,7 @@ import { ChevronDown } from "lucide-react";
 const languageOptions = [
   { value: "en", label: "English", icons: "us" },
   { value: "es", label: "Español", icons: "es" },
-  { value: "fr", label: "Français", icons: "fr" },
+  { value: "ru", label: "Русский", icons: "ru" },
   { value: "zh", label: "中文", icons: "cn" },
 ];
 
