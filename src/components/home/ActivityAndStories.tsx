@@ -46,7 +46,7 @@ const ActivityAndStories = () => {
                       {item.fullName}
                     </p>
                     <span
-                      className={`${styles.span} text-gray-500 font-semibold`}
+                      className={`${styles.span} text-[#6C757D] font-semibold`}
                     >
                       {item.tourTitle}
                     </span>
@@ -54,7 +54,7 @@ const ActivityAndStories = () => {
                 </div>
                 <div className={`${styles.flexCol} items-end`}>
                   <span
-                    className={`${styles.span} text-gray-500 font-semibold`}
+                    className={`${styles.span} text-[#6C757D] font-semibold`}
                   >
                     {item.date}
                   </span>

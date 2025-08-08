@@ -17,7 +17,7 @@ const TravelersComment = () => {
       className={`${styles.paddingCont} ${styles.flexCol} bg-white/10 items-center`}
     >
       <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 bg-[#F8F9FA] border-[#E9ECEF]`}
+        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 text-[#1B4332] bg-[#F8F9FA] border-[#E9ECEF]`}
       >
         {t("item").toUpperCase()}
       </p>
@@ -27,7 +27,7 @@ const TravelersComment = () => {
       >
         {t("title")}
       </h2>
-      <p className={`${styles.p} max-w-[1800px] mx-auto text-gray-500 mb-7 lg:mb-12 text-center`}>
+      <p className={`${styles.p} max-w-[1800px] mx-auto text-[#6C757D] mb-7 lg:mb-12 text-center`}>
         {t("description")}
       </p>
       <div className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}>

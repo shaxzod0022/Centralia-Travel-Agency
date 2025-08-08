@@ -31,7 +31,7 @@ const Countries = () => {
         {t("title")}
       </h2>
       <p
-        className={`${styles.p} text-gray-500 mb-7 max-w-[1800px] mx-auto lg:mb-12 text-center`}
+        className={`${styles.p} text-[#6C757D] mb-7 max-w-[1800px] mx-auto lg:mb-12 text-center`}
       >
         {t("description")}
       </p>

@@ -16,7 +16,7 @@ const TravelInsights = () => {
       className={`${styles.paddingCont} ${styles.flexCol} bg-[#F8F9FA] items-center`}
     >
       <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 bg-[#F8F9FA] border-[#E9ECEF]`}
+        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 text-[#1B4332] bg-[#F8F9FA] border-[#E9ECEF]`}
       >
         {t("item").toUpperCase()}
       </p>
@@ -27,7 +27,7 @@ const TravelInsights = () => {
         {t("title")}
       </h2>
       <p
-        className={`${styles.p} text-gray-500 max-w-[1800px] mx-auto mb-7 lg:mb-12 text-center`}
+        className={`${styles.p} text-[#6C757D] max-w-[1800px] mx-auto mb-7 lg:mb-12 text-center`}
       >
         {t("description")}
       </p>
@@ -52,11 +52,11 @@ const TravelInsights = () => {
               >
                 {item.title}
               </h3>
-              <p className={`${styles.p} text-gray-500 !leading-tight mb-4`}>
+              <p className={`${styles.p} text-[#6C757D] !leading-tight mb-4`}>
                 {item.description.slice(0, 70)} . . .
               </p>
               <div className={`${styles.flexBetween}`}>
-                <span className={`${styles.span} text-gray-500`}>
+                <span className={`${styles.span} text-[#6C757D]`}>
                   {item.date}
                 </span>
                 <p

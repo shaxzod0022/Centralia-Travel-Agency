@@ -21,7 +21,7 @@ const SignatureJourneys = () => {
       className={`${styles.paddingCont} ${styles.flexCol} scroll-mt-16 items-center`}
     >
       <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 bg-[#F8F9FA] border-[#E9ECEF]`}
+        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 text-[#1B4332] bg-[#F8F9FA] border-[#E9ECEF]`}
       >
         {t("item").toUpperCase()}
       </p>
@@ -32,7 +32,7 @@ const SignatureJourneys = () => {
         {t("title")}
       </h2>
       <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-gray-500 mb-7 lg:mb-12 text-center`}
+        className={`${styles.p} max-w-[1800px] mx-auto text-[#6C757D] mb-7 lg:mb-12 text-center`}
       >
         {t("description")}
       </p>
@@ -68,11 +68,11 @@ const SignatureJourneys = () => {
               >
                 {item.title}
               </h3>
-              <p className={`${styles.p} text-gray-500 !leading-tight mb-4`}>
+              <p className={`${styles.p} text-[#6C757D] !leading-tight mb-4`}>
                 {item.description.slice(0, 70)} . . .
               </p>
               <div className={`${styles.flexBetween} mb-5`}>
-                <div className={`${styles.flex} gap-2 text-gray-500`}>
+                <div className={`${styles.flex} gap-2 text-[#6C757D]`}>
                   <span>{t("difficultyTitle")}:</span>
                   {[1, 2, 3].map((i) => {
                     let color = "bg-gray-400";
@@ -94,7 +94,7 @@ const SignatureJourneys = () => {
                   })}
                 </div>
                 <span
-                  className={`bg-gray-100 ${styles.span} capitalize w-fit rounded-4xl px-4 py-2 font-semibold`}
+                  className={`bg-gray-100 ${styles.span} text-[#1B4332] capitalize w-fit rounded-4xl px-4 py-2 font-semibold`}
                 >
                   {item.countryNumber} {t("countryItem")}
                 </span>
@@ -106,7 +106,7 @@ const SignatureJourneys = () => {
                   >
                     ${item.price}
                   </p>
-                  <span className={`${styles.span} text-gray-500`}>
+                  <span className={`${styles.span} text-[#6C757D]`}>
                     {t("priceItem")}
                   </span>
                 </div>
