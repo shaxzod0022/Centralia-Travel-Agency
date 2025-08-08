@@ -27,7 +27,7 @@ const SignatureJourneys = () => {
       </p>
       <h2
         style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center max-w-[1800px] mx-auto text-green-950 md:mb-4 mb-2 ${styles.h2}`}
+        className={`text-center max-w-[1800px] mx-auto text-[#1B4332] md:mb-4 mb-2 ${styles.h2}`}
       >
         {t("title")}
       </h2>
@@ -56,7 +56,7 @@ const SignatureJourneys = () => {
                 {item.tourDay} {t("dayItem")}
               </span>
               <span
-                className={`bg-green-950 text-white ${styles.span} absolute top-8 left-8 capitalize w-fit rounded-4xl px-4 py-1 font-semibold`}
+                className={`bg-[#1B4332] text-white ${styles.span} absolute top-8 left-8 capitalize w-fit rounded-4xl px-4 py-1 font-semibold`}
               >
                 {item.status}
               </span>
@@ -64,7 +64,7 @@ const SignatureJourneys = () => {
             <div className="p-8">
               <h3
                 style={{ fontFamily: "Plaffair Display" }}
-                className={`${styles.h4} mb-2 text-green-950`}
+                className={`${styles.h4} mb-2 text-[#1B4332]`}
               >
                 {item.title}
               </h3>
@@ -102,7 +102,7 @@ const SignatureJourneys = () => {
               <div className={`${styles.flexBetween}`}>
                 <div>
                   <p
-                    className={`${styles.p} text-green-950 font-semibold  !leading-tight`}
+                    className={`${styles.p} text-[#1B4332] font-semibold  !leading-tight`}
                   >
                     ${item.price}
                   </p>
@@ -112,7 +112,7 @@ const SignatureJourneys = () => {
                 </div>
                 <Btn
                   onClick={() => router.push(`/tour/${idx}`)}
-                  myClass="text-white bg-green-950 w-32 leading-tight"
+                  myClass="text-white !bg-[#1B4332] active:!bg-[#2d6c52] w-32 leading-tight"
                   title={t("cardBtn")}
                 />
               </div>

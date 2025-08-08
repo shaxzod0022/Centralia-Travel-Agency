@@ -26,7 +26,7 @@ const Countries = () => {
       </p>
       <h2
         style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center text-green-950 md:mb-4 mb-2 max-w-[1800px] mx-auto ${styles.h2}`}
+        className={`text-center text-[#1B4332] md:mb-4 mb-2 max-w-[1800px] mx-auto ${styles.h2}`}
       >
         {t("title")}
       </h2>

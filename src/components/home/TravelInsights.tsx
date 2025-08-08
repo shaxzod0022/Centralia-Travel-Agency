@@ -22,7 +22,7 @@ const TravelInsights = () => {
       </p>
       <h2
         style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center text-green-950 max-w-[1800px] mx-auto md:mb-4 mb-2 ${styles.h2}`}
+        className={`text-center text-[#1B4332] max-w-[1800px] mx-auto md:mb-4 mb-2 ${styles.h2}`}
       >
         {t("title")}
       </h2>
@@ -48,7 +48,7 @@ const TravelInsights = () => {
             <div className="p-8">
               <h3
                 style={{ fontFamily: "Plaffair Display" }}
-                className={`${styles.h4} mb-2 text-green-950`}
+                className={`${styles.h4} mb-2 text-[#1B4332]`}
               >
                 {item.title}
               </h3>

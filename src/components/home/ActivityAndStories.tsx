@@ -22,7 +22,7 @@ const ActivityAndStories = () => {
           </p>
           <h3
             style={{ fontFamily: "Plaffair Display" }}
-            className={`${styles.h4} text-green-950 mb-3`}
+            className={`${styles.h4} text-[#1B4332] mb-3`}
           >
             {t("title1")}
           </h3>
@@ -73,7 +73,7 @@ const ActivityAndStories = () => {
           </p>
           <h3
             style={{ fontFamily: "Plaffair Display" }}
-            className={`${styles.h4} text-green-950 mb-3`}
+            className={`${styles.h4} text-[#1B4332] mb-3`}
           >
             {t("title2")}
           </h3>

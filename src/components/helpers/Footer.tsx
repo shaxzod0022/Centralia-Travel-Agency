@@ -42,7 +42,7 @@ const Footer = () => {
                 <li key={x} className="bg-white/30 p-3 rounded-full">
                   <Link
                     href={item.url}
-                    className="transition hover:text-green-600 text-white"
+                    className="transition hover:text-[#6EBB2F] text-white"
                   >
                     <Icon className="w-7 h-7" />
                   </Link>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className={`w-full sm:w-2/5 md:w-1/5 xl:w-1/4`}>
           <p
-            className={`${styles.p} font-semibold text-green-600 mb-4`}
+            className={`${styles.p} font-semibold text-[#6EBB2F] mb-4`}
             style={{ fontFamily: "Plaffair Display" }}
           >
             {t("quiskLinks.title")}
@@ -62,7 +62,7 @@ const Footer = () => {
             {quiskLinks.map((i, x) => (
               <li key={x}>
                 <Link
-                  className={`${styles.p} text-white hover:text-green-600 transition-all duration-150`}
+                  className={`${styles.p} text-white hover:text-[#6EBB2F] transition-all duration-150`}
                   href={i.url}
                 >
                   {i.label}
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         <div className={`w-full sm:w-2/5 md:w-1/5 xl:w-1/4`}>
           <p
-            className={`${styles.p} font-semibold text-green-600 mb-4`}
+            className={`${styles.p} font-semibold text-[#6EBB2F] mb-4`}
             style={{ fontFamily: "Plaffair Display" }}
           >
             {t("destinations.title")}
@@ -82,7 +82,7 @@ const Footer = () => {
             {destinations.map((i, x) => (
               <li key={x}>
                 <Link
-                  className={`${styles.p} text-white hover:text-green-600 transition-all duration-150`}
+                  className={`${styles.p} text-white hover:text-[#6EBB2F] transition-all duration-150`}
                   href={i.url}
                 >
                   {i.label}
@@ -110,7 +110,7 @@ const Footer = () => {
                 >
                   <Icon className="w-wull h-full text-green-400" />
                 </span>
-                <p className={`${styles.p} hover:text-green-600 text-white`}>
+                <p className={`${styles.p} hover:text-[#6EBB2F] text-white`}>
                   {item.label}
                 </p>
               </Link>

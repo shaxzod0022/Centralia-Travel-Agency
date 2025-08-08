@@ -23,7 +23,7 @@ const TravelersComment = () => {
       </p>
       <h2
         style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center max-w-[1800px] mx-auto text-green-950 md:mb-4 mb-2 ${styles.h2}`}
+        className={`text-center max-w-[1800px] mx-auto text-[#1B4332] md:mb-4 mb-2 ${styles.h2}`}
       >
         {t("title")}
       </h2>

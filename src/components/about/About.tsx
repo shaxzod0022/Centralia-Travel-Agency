@@ -71,7 +71,7 @@ const About = () => {
                 onClick={() =>
                   setMore({ ...more, id: item.title, modal: !more.modal })
                 }
-                className={`${styles.p} hover:text-green-600 text-green-950 transition cursor-pointer`}
+                className={`${styles.p} hover:text-green-600 text-[#1B4332] transition cursor-pointer`}
               >
                 {more.modal && item.title === more.id ? t("readL") : t("readM")}
               </button>
@@ -106,7 +106,7 @@ const About = () => {
                 onClick={() =>
                   setMore({ ...more, id: item.title, modal: !more.modal })
                 }
-                className={`${styles.p} hover:text-green-600 text-green-950 transition cursor-pointer`}
+                className={`${styles.p} hover:text-green-600 text-[#1B4332] transition cursor-pointer`}
               >
                 {more.modal && item.title === more.id ? t("readL") : t("readM")}
               </button>

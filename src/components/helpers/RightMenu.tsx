@@ -46,7 +46,7 @@ const RightMenu: FC<Props> = ({ links, hidden, closeMenu }) => {
           <Link
             onClick={closeMenu}
             href={"/"}
-            className="bg-green-900 w-fit hover:bg-green-700 transition-all duration-100 active:bg-green-900 capitalize rounded-4xl text-white py-2.5 px-6"
+            className="bg-[#1B4332] w-fit transition-all duration-100 active:bg-[#2d6c52] capitalize rounded-4xl text-white py-2.5 px-6"
           >
             {t("btn")}
           </Link>
