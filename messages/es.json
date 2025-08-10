@@ -7,10 +7,10 @@
     "btn": "planificar viaje",
     "links": [
       { "label": "hogar", "path": "/" },
-      { "label": "tours", "path": "#tours" },
+      { "label": "tours", "path": "/#tours" },
       { "label": "blog", "path": "/blog" },
       { "label": "acerca de", "path": "/about" },
-      { "label": "contacto", "path": "#contact" }
+      { "label": "contacto", "path": "/#contact" }
     ]
   },
   "HomePage": {

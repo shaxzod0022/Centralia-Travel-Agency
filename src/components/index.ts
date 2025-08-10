@@ -18,3 +18,7 @@ export { default as About } from "./about/About";
 
 // Tour page
 export { default as TourInfo } from "./tour/TourInfo";
+
+// Blog page
+export { default as Blog } from "./blog/Blog";
+

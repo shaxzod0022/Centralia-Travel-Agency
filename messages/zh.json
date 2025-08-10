@@ -7,10 +7,10 @@
     "btn": "规划行程",
     "links": [
       { "label": "家", "path": "/" },
-      { "label": "旅游团", "path": "#tours" },
+      { "label": "旅游团", "path": "/#tours" },
       { "label": "博客", "path": "/blog" },
       { "label": "关于我们", "path": "/about" },
-      { "label": "联系我们", "path": "#contact" }
+      { "label": "联系我们", "path": "/#contact" }
     ]
   },
   "HomePage": {

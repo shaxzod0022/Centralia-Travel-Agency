@@ -7,10 +7,10 @@
     "btn": "спланировать путешествие",
     "links": [
       { "label": "главная", "path": "/" },
-      { "label": "туры", "path": "#tours" },
+      { "label": "туры", "path": "/#tours" },
       { "label": "блог", "path": "/blog" },
       { "label": "о нас", "path": "/about" },
-      { "label": "контакты", "path": "#contact" }
+      { "label": "контакты", "path": "/#contact" }
     ]
   },
   "footer": {

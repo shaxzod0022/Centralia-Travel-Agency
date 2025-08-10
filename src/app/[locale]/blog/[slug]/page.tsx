@@ -1,5 +1,5 @@
 // app/[locale]/blog/[slug]/page.tsx
-import { TravelInsights } from "@/components";
+import { Blog } from "@/components";
 import { BlogService } from "@/services/blog.service";
 import { notFound } from "next/navigation";
 
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const { locale, slug } = await params;
+  const { slug } = await params;
   const blog = await BlogService.getBySlugBlog(slug);
 
   if (!blog) {
@@ -16,8 +16,8 @@ export default async function Page({ params }: Props) {
   }
 
   return (
-    <div className="mt-24">
-      <TravelInsights data={blog} />
+    <div className="mt-16 mx-auto max-w-[1800px]">
+      <Blog data={blog} />
     </div>
   );
 }

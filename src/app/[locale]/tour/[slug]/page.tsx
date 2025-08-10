@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const { locale, slug } = await params;
+  const { slug } = await params;
   const tour = await TourService.getBySlugTour(slug);
   return (
     <div className={`mt-16 max-w-[1800px] mx-auto`}>

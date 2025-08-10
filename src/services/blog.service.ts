@@ -12,8 +12,7 @@ export const BlogService = {
     const { data } = await axios.get<BlogProps>(
       `https://centralia-travel-agency-back.onrender.com/api/blogs/${slug}`
     );
-    const array = [data];
-    return array;
+    return data;
   },
   async updateBlog(updateData: BlogProps, id: string, token: string) {
     const { data } = await axios.patch<BlogProps>(

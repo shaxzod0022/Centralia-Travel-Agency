@@ -3,9 +3,11 @@ import { styles } from "@/styles/styles";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Btn from "../helpers/Btn";
+import { useRouter } from "next/navigation";
 
 const Head = () => {
   const t = useTranslations("HomePage.head");
+  const router = useRouter();
   return (
     <div className="relative w-full h-[96vh] overflow-hidden">
       {/* Video background */}
@@ -28,7 +30,7 @@ const Head = () => {
           {t("title")}
         </h1>
         <p className={`${styles.p} mb-4 lg:w-[50%]`}>{t("description")}</p>
-        <Btn title={t("btn")} />
+        <Btn onClick={() => router.push("#tours")} title={t("btn")} />
       </div>
     </div>
   );

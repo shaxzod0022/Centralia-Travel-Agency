@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import React, { FC } from "react";
 import Btn from "../helpers/Btn";
 import { ArrowRight } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { notFound, usePathname, useRouter } from "next/navigation";
 import { BlogProps } from "@/interfaces/insights.interface";
 import { TranslationsProps } from "@/interfaces/helper.interface";
 
@@ -17,6 +17,9 @@ const TravelInsights: FC<Props> = ({ data }) => {
   const pathname = usePathname();
   const t = useTranslations("HomePage.travelInsights");
   const lang = useLocale();
+  if (!data || data.length === 0) {
+    return notFound();
+  }
   return (
     <div className={`${styles.flexCol} items-center`}>
       <div

@@ -7,10 +7,10 @@
     "btn": "plan journey",
     "links": [
       { "label": "home", "path": "/" },
-      { "label": "tours", "path": "#tours" },
+      { "label": "tours", "path": "/#tours" },
       { "label": "blog", "path": "/blog" },
       { "label": "about", "path": "/about" },
-      { "label": "contact", "path": "#contact" }
+      { "label": "contact", "path": "/#contact" }
     ]
   },
   "footer": {

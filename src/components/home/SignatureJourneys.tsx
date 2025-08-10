@@ -15,6 +15,10 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
   const router = useRouter();
   const t = useTranslations("HomePage.signatureJourneys");
   const lang = useLocale();
+
+  if (!data) {
+    return <>Loading...</>;
+  }
   // const [fd, fdf] = useMemo()
   return (
     <div className={`${styles.flexCol} !items-center`}>
@@ -51,7 +55,7 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
                 {item.title[lang as keyof TranslationsProps]}
               </h3>
               <p className={`${styles.p} text-[#6C757D] !leading-tight mb-4`}>
-                {item.description[lang as keyof TranslationsProps].slice(0, 70)}{" "}
+                {item.description[lang as keyof TranslationsProps].slice(0, 70)}
                 . . .
               </p>
               <div className={`${styles.flexBetween} mb-5`}>
@@ -103,7 +107,6 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
           </div>
         ))}
       </div>
-      <Btn myClass="text-white font-semibold" title={t("btn")} />
     </div>
   );
 };

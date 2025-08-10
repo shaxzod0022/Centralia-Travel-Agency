@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const { locale, slug } = await params;
+  const { slug } = await params;
   const tours = await TourService.getByIdCountryTours(slug);
   return (
     <div className={`${styles.paddingCont} mt-20`}>
