@@ -52,7 +52,7 @@ const About = () => {
             key={idx}
           >
             <img
-              className="w-full h-60 object-cover rounded-t-xl"
+              className="w-full h-64 object-cover rounded-t-xl"
               src={item.image}
               alt={item.title}
             />
