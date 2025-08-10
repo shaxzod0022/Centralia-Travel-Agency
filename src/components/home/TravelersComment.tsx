@@ -3,34 +3,16 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import { TravelersCommentProps } from "@/interfaces/comment.interface";
 import { Quote, Star } from "lucide-react";
+import Btn from "../helpers/Btn";
 
 const TravelersComment = () => {
   const t = useTranslations("HomePage.travelersComment");
   const travelersComm = t.raw("items") as TravelersCommentProps[];
   return (
-    <div
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://images.theconversation.com/files/622347/original/file-20240930-18-ozn5tj.jpg?ixlib=rb-4.1.0&rect=0%2C271%2C4025%2C2009&q=45&auto=format&w=1356&h=668&fit=crop)`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-      className={`${styles.paddingCont} ${styles.flexCol} bg-white/10 items-center`}
-    >
-      <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 text-[#1B4332] bg-[#F8F9FA] border-[#E9ECEF]`}
+    <div className={`${styles.flexCol} !items-center`}>
+      <div
+        className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}
       >
-        {t("item").toUpperCase()}
-      </p>
-      <h2
-        style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center max-w-[1800px] mx-auto text-[#1B4332] md:mb-4 mb-2 ${styles.h2}`}
-      >
-        {t("title")}
-      </h2>
-      <p className={`${styles.p} max-w-[1800px] mx-auto text-[#6C757D] mb-7 lg:mb-12 text-center`}>
-        {t("description")}
-      </p>
-      <div className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}>
         {travelersComm.map((item, idx) => (
           <div
             key={idx}
@@ -69,14 +51,16 @@ const TravelersComment = () => {
                 {item.comment.slice(0, 80)} . . .
               </span>
             </p>
-            <p className={`${styles.p} text-green-600 leading-tight font-semibold`}>
+            <p
+              className={`${styles.p} text-green-600 leading-tight font-semibold`}
+            >
               {item.tourTitle}
             </p>
             <span className={`${styles.span} text-gray-600`}>{item.date}</span>
           </div>
         ))}
       </div>
-      {/* <Btn myClass="text-white font-semibold" title={t("btn")} /> */}
+      <Btn myClass="text-white font-semibold w-fit" title={"All"} />
     </div>
   );
 };

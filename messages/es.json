@@ -22,41 +22,7 @@
     "countries": {
       "item": "Cuatro naciones, aventuras infinitas",
       "title": "Explora Asia Central",
-      "description": "Desde antiguas ciudades de la Ruta de la Seda hasta lagos de montaña prístinos, cada destino ofrece experiencias extraordinarias por descubrir",
-      "items": [
-        {
-          "image": "https://ychef.files.bbci.co.uk/1920x960/p0hc5x2w.jpeg",
-          "title": "Uzbekistán",
-          "description": "Ciudades antiguas de la Ruta de la Seda y magnífica arquitectura islámica",
-          "tourNumber": "24 Tours",
-          "status": "Disponible",
-          "type": "Más Popular"
-        },
-        {
-          "image": "https://media.cntraveller.com/photos/637e00eece1c9bd657a981ea/16:9/w_1280,c_limit/NAU(1280x720).jpg",
-          "title": "Kazajistán",
-          "description": "Estepas interminables y auténtica herencia nómada",
-          "tourNumber": "18 Tours",
-          "status": "Disponible",
-          "type": ""
-        },
-        {
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Bishkek_City%27s_business_center.jpg/1200px-Bishkek_City%27s_business_center.jpg",
-          "title": "Kirguistán",
-          "description": "Lagos montañosos vírgenes y aventuras alpinas",
-          "tourNumber": "16 Tours",
-          "status": "Disponible",
-          "type": ""
-        },
-        {
-          "image": "https://www.omct.org/imager/images/360913/Tajikistan_Dushanbe-Palace-of-Nations_2018_shutterstock_1342086032_807349237a62c113cb6ba73378f90d7e.jpg",
-          "title": "Tayikistán",
-          "description": "Techo del mundo y culturas montañosas antiguas",
-          "tourNumber": "12 Tours",
-          "status": "Disponible",
-          "type": "Aventura"
-        }
-      ]
+      "description": "Desde antiguas ciudades de la Ruta de la Seda hasta lagos de montaña prístinos, cada destino ofrece experiencias extraordinarias por descubrir"
     },
     "signatureJourneys": {
       "item": "Experiencias seleccionadas",
@@ -67,39 +33,7 @@
       "difficultyTitle": "Dificultad",
       "countryItem": "países",
       "priceItem": "persona",
-      "dayItem": "Día",
-      "items": [
-        {
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
-          "title": "Explorador de la Ruta de la Seda de 15 días",
-          "description": "Viaja por Uzbekistán y Kazajistán, explorando antiguas ciudades, arquitectura impresionante y tradiciones nómadas a lo largo de las legendarias rutas comerciales.",
-          "difficulty": 1,
-          "tourDay": 15,
-          "countryNumber": 2,
-          "status": "Más vendido",
-          "price": 3.299
-        },
-        {
-          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
-          "title": "Viaje de 10 días a la herencia nómada",
-          "description": "Vive la auténtica cultura nómada en Kazajistán y Kirguistán con estancias tradicionales en yurtas y aventuras a caballo en paisajes vírgenes.",
-          "difficulty": 2,
-          "tourDay": 10,
-          "countryNumber": 2,
-          "status": "Nuevo",
-          "price": 2.299
-        },
-        {
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
-          "title": "Aventura por la Carretera del Pamir de 12 días",
-          "description": "Conquista la segunda carretera internacional más alta del mundo a través de las cordilleras más espectaculares de Tayikistán y Kirguistán.",
-          "difficulty": 3,
-          "tourDay": 12,
-          "countryNumber": 2,
-          "status": "Limitado",
-          "price": 3.899
-        }
-      ]
+      "dayItem": "Día"
     },
     "travelersComment": {
       "item": "Testimonios",
@@ -141,30 +75,7 @@
       "description": "Guías de expertos, ideas culturales y consejos prácticos para aprovechar al máximo tu aventura en Asia Central",
       "btn": "Visita nuestro blog",
       "cardBtn": "Leer más",
-      "read": "min de lectura",
-      "items": [
-        {
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s",
-          "title": "Mejor época para visitar los Stans: Guía estacional",
-          "description": "Descubre las mejores estaciones para explorar Asia Central, desde las flores silvestres de primavera hasta las cosechas de otoño y las aventuras de invierno.",
-          "insights": "Consejos de viaje",
-          "date": "25 de enero de 2025"
-        },
-        {
-          "image": "https://storage.googleapis.com/pod_public/750/251799.jpg",
-          "title": "Visados para Asia Central: Guía completa",
-          "description": "Todo lo que necesitas saber sobre requisitos de visado, solicitudes y cruces fronterizos para un viaje sin problemas.",
-          "insights": "Documentación",
-          "date": "22 de enero de 2025"
-        },
-        {
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoKBNwc0Di8Z2eGOU-wKJyNOhtENaCVinTg&s",
-          "title": "Etiqueta cultural: Viajar con respeto en Asia Central",
-          "description": "Aprende las costumbres, tradiciones y normas sociales para enriquecer tus conexiones culturales y experiencias de viaje.",
-          "insights": "Cultura",
-          "date": "20 de enero de 2025"
-        }
-      ]
+      "read": "min de lectura"
     },
     "activityAndStories": {
       "btn": "Ver todas las fotos",
@@ -298,5 +209,37 @@
       { "icon": "Phone", "label": "+1234567", "path": "" },
       { "icon": "Mail", "label": "Envíanos un mensaje", "path": "" }
     ]
+  },
+  "ToursPage": {
+    "item": "Aventuras Inolvidables",
+    "title": "Descubre las Joyas Ocultas del Mundo",
+    "description": "Emprende viajes que combinan maravillas naturales, ricas culturas y recuerdos inolvidables. Nuestros tours están diseñados para inspirar, conectar y brindarte experiencias que duren toda la vida."
+  },
+  "BlogsPage": {
+    "item": "Experiencia Global",
+    "title": "Sabiduría de Viaje",
+    "description": "Obtén valiosos consejos, conocimientos culturales y asesoramiento experto para que cada paso de tu viaje sea más rico y significativo, dondequiera que te lleven tus aventuras."
+  },
+  "TourPage": {
+    "day": "día",
+    "startLocation": "Punto de inicio",
+    "endLocation": "Punto final",
+    "season": "Temporada",
+    "technicalLevel": "Nivel técnico",
+    "fitnesLevel": "Nivel de condición física",
+    "tourItinerary": "Itinerario del viaje",
+    "includedInPrice": "¿Qué está incluido en el precio?",
+    "whatToTake": "Qué llevar al tour",
+    "moreInfo": "Más información",
+    "booking": "Reserva",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Tu correo electrónico",
+    "phone": "Tu número de teléfono (opcional)",
+    "travelNumber": "¿Cuántos viajeros?",
+    "tourDate": "¿Cuándo quieres viajar?",
+    "info": "Información adicional",
+    "infoPlaceholder": "Por favor, proporciona tantos detalles relevantes como sea posible.",
+    "btn": "Enviar"
   }
 }

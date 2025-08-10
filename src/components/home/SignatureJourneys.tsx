@@ -1,45 +1,27 @@
 "use client";
-import { SignatureProps } from "@/interfaces/signature.interface";
 import { styles } from "@/styles/styles";
-import { useTranslations } from "next-intl";
-import React from "react";
+import { useLocale, useTranslations } from "next-intl";
+import React, { FC } from "react";
 import Btn from "../helpers/Btn";
 import { useRouter } from "next/navigation";
+import { TourProps } from "@/interfaces/signature.interface";
+import { TranslationsProps } from "@/interfaces/helper.interface";
 
-const SignatureJourneys = () => {
+interface Props {
+  data: TourProps[];
+}
+
+const SignatureJourneys: FC<Props> = ({ data }) => {
   const router = useRouter();
   const t = useTranslations("HomePage.signatureJourneys");
-  const signatureJourneys = t.raw("items") as SignatureProps[];
+  const lang = useLocale();
+  // const [fd, fdf] = useMemo()
   return (
-    <div
-      id="tours"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://images.theconversation.com/files/622347/original/file-20240930-18-ozn5tj.jpg?ixlib=rb-4.1.0&rect=0%2C271%2C4025%2C2009&q=45&auto=format&w=1356&h=668&fit=crop)`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-      className={`${styles.paddingCont} ${styles.flexCol} scroll-mt-16 items-center`}
-    >
-      <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 text-[#1B4332] bg-[#F8F9FA] border-[#E9ECEF]`}
-      >
-        {t("item").toUpperCase()}
-      </p>
-      <h2
-        style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center max-w-[1800px] mx-auto text-[#1B4332] md:mb-4 mb-2 ${styles.h2}`}
-      >
-        {t("title")}
-      </h2>
-      <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-[#6C757D] mb-7 lg:mb-12 text-center`}
-      >
-        {t("description")}
-      </p>
+    <div className={`${styles.flexCol} !items-center`}>
       <div
         className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}
       >
-        {signatureJourneys.map((item, idx) => (
+        {data.map((item, idx) => (
           <div
             key={idx}
             className={`${styles.flexCol} shadow__signature bg-white justify-between w-full sm:w-[47%] xl:w-[31%] rounded-3xl`}
@@ -47,18 +29,18 @@ const SignatureJourneys = () => {
             <div className="relative">
               <img
                 className="w-full rounded-t-3xl h-56 object-cover"
-                src={item.image}
-                alt={item.title}
+                src={item.images[0]}
+                alt={item.title[lang as keyof TranslationsProps]}
               />
               <span
                 className={`bg-white ${styles.span} absolute top-8 right-8 capitalize w-fit rounded-4xl px-4 py-1 font-semibold`}
               >
-                {item.tourDay} {t("dayItem")}
+                {item.tourDays} {t("dayItem")}
               </span>
               <span
                 className={`bg-[#1B4332] text-white ${styles.span} absolute top-8 left-8 capitalize w-fit rounded-4xl px-4 py-1 font-semibold`}
               >
-                {item.status}
+                {/* {item} */}
               </span>
             </div>
             <div className="p-8">
@@ -66,10 +48,11 @@ const SignatureJourneys = () => {
                 style={{ fontFamily: "Plaffair Display" }}
                 className={`${styles.h4} mb-2 text-[#1B4332]`}
               >
-                {item.title}
+                {item.title[lang as keyof TranslationsProps]}
               </h3>
               <p className={`${styles.p} text-[#6C757D] !leading-tight mb-4`}>
-                {item.description.slice(0, 70)} . . .
+                {item.description[lang as keyof TranslationsProps].slice(0, 70)}{" "}
+                . . .
               </p>
               <div className={`${styles.flexBetween} mb-5`}>
                 <div className={`${styles.flex} gap-2 text-[#6C757D]`}>
@@ -96,7 +79,7 @@ const SignatureJourneys = () => {
                 <span
                   className={`bg-gray-100 ${styles.span} text-[#1B4332] capitalize w-fit rounded-4xl px-4 py-2 font-semibold`}
                 >
-                  {item.countryNumber} {t("countryItem")}
+                  2 {t("countryItem")}
                 </span>
               </div>
               <div className={`${styles.flexBetween}`}>
@@ -111,7 +94,7 @@ const SignatureJourneys = () => {
                   </span>
                 </div>
                 <Btn
-                  onClick={() => router.push(`/tour/${idx}`)}
+                  onClick={() => router.push(`/tour/${item.slug}`)}
                   myClass="text-white !bg-[#1B4332] active:!bg-[#2d6c52] leading-tight"
                   title={t("cardBtn")}
                 />

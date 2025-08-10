@@ -1,63 +1,52 @@
 "use client";
 import { styles } from "@/styles/styles";
-import { useTranslations } from "next-intl";
-import React from "react";
+import { useLocale, useTranslations } from "next-intl";
+import React, { FC } from "react";
 import Btn from "../helpers/Btn";
-import { InsightsProps } from "@/interfaces/insights.interface";
 import { ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { BlogProps } from "@/interfaces/insights.interface";
+import { TranslationsProps } from "@/interfaces/helper.interface";
 
-const TravelInsights = () => {
+interface Props {
+  data: BlogProps[];
+}
+
+const TravelInsights: FC<Props> = ({ data }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const t = useTranslations("HomePage.travelInsights");
-  const signatureJourneys = t.raw("items") as InsightsProps[];
+  const lang = useLocale();
   return (
-    <div
-      className={`${styles.paddingCont} ${styles.flexCol} bg-[#F8F9FA] items-center`}
-    >
-      <p
-        className={`${styles.p} max-w-[1800px] mx-auto text-center md:mb-5 mb-3 border-2 rounded-4xl w-fit px-7 text-[#1B4332] bg-[#F8F9FA] border-[#E9ECEF]`}
-      >
-        {t("item").toUpperCase()}
-      </p>
-      <h2
-        style={{ fontFamily: "Plaffair Display" }}
-        className={`text-center text-[#1B4332] max-w-[1800px] mx-auto md:mb-4 mb-2 ${styles.h2}`}
-      >
-        {t("title")}
-      </h2>
-      <p
-        className={`${styles.p} text-[#6C757D] max-w-[1800px] mx-auto mb-7 lg:mb-12 text-center`}
-      >
-        {t("description")}
-      </p>
+    <div className={`${styles.flexCol} items-center`}>
       <div
         className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}
       >
-        {signatureJourneys.map((item, idx) => (
+        {data.map((item, idx) => (
           <div
-            onClick={() => router.push(`/blog/${item.title.slice(0,3)}`)}
+            onClick={() => router.push(`/blog/${item.slug}`)}
             key={idx}
             className={`${styles.flexCol} shadow__insigths bg-white justify-between w-full sm:w-[47%] xl:w-[31%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
           >
             <img
               className="w-full rounded-t-3xl h-56 object-cover"
-              src={item.image}
-              alt={item.title}
+              src={item.coverImage}
+              alt={item.title[lang as keyof TranslationsProps]}
             />
             <div className="p-8">
               <h3
                 style={{ fontFamily: "Plaffair Display" }}
                 className={`${styles.h4} mb-2 text-[#1B4332]`}
               >
-                {item.title}
+                {item.title[lang as keyof TranslationsProps]}
               </h3>
               <p className={`${styles.p} text-[#6C757D] !leading-tight mb-4`}>
-                {item.description.slice(0, 70)} . . .
+                {item.summary[lang as keyof TranslationsProps].slice(0, 70)} . .
+                .
               </p>
               <div className={`${styles.flexBetween}`}>
                 <span className={`${styles.span} text-[#6C757D]`}>
-                  {item.date}
+                  {item.publishedAt}
                 </span>
                 <p
                   className={`${styles.p} ${styles.flex} font-semibold text-green-600`}
@@ -69,7 +58,13 @@ const TravelInsights = () => {
           </div>
         ))}
       </div>
-      <Btn myClass="text-white font-semibold" title={t("btn")} />
+      <Btn
+        onClick={() => router.push(`/blog`)}
+        myClass={`${
+          pathname.slice(4) === "blog" && "hidden"
+        } text-white font-semibold`}
+        title={t("btn")}
+      />
     </div>
   );
 };

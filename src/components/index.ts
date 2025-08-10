@@ -9,6 +9,7 @@ export { default as SignatureJourneys } from "./home/SignatureJourneys";
 export { default as TravelersComment } from "./home/TravelersComment";
 export { default as TravelInsights } from "./home/TravelInsights";
 export { default as ActivityAndStories } from "./home/ActivityAndStories";
+export { default as ComponentsHead } from "./home/ComponentsHead";
 
 // About page
 export { default as AboutHead } from "./about/AboutHead";

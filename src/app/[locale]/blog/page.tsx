@@ -1,10 +1,14 @@
-import { TravelInsights } from "@/components";
+import { ComponentsHead, TravelInsights } from "@/components";
+import { BlogService } from "@/services/blog.service";
+import { styles } from "@/styles/styles";
 import React from "react";
 
-const page = () => {
+const page = async () => {
+  const blog = await BlogService.getAllBlogs();
   return (
-    <div className="mt-20">
-      <TravelInsights />
+    <div className={`${styles.paddingCont} mt-20 scroll-mt-16`}>
+      <ComponentsHead langKey={6} />
+      <TravelInsights data={blog} />
     </div>
   );
 };

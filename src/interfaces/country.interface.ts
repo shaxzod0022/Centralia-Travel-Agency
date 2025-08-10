@@ -1,8 +1,13 @@
+import { TranslationsProps } from "./helper.interface";
+
 export interface CountryProps {
-  image: string;
-  title: string;
-  description: string;
-  tourNumber: string;
-  type: string;
+  _id: string;
+  code: string;
+  title: TranslationsProps;
+  description: TranslationsProps;
+  heroImageUrl: string;
+  slug: string;
   status: string;
+  createdAt: string;
+  updatedAt: string;
 }
