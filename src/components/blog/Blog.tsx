@@ -14,11 +14,11 @@ interface Props {
 
 const Blog: FC<Props> = ({ data }) => {
   const lang = useLocale();
+  const t = useTranslations("HomePage.travelersComment");
+  const travelersComm = t.raw("items") as TravelersCommentProps[];
   if (!data) {
     return notFound();
   }
-  const t = useTranslations("HomePage.travelersComment");
-  const travelersComm = t.raw("items") as TravelersCommentProps[];
   return (
     <div className={`${styles.paddingCont} ${styles.flexBetween} !items-start`}>
       <div
