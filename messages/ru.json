@@ -223,6 +223,8 @@
   },
   "TourPage": {
     "day": "день",
+    "group": "Группа",
+    "individual": "Индивидуально",
     "startLocation": "Начальная точка",
     "endLocation": "Конечная точка",
     "season": "Сезон",

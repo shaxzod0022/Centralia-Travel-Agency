@@ -71,7 +71,7 @@ const TourInfo: FC<Props> = ({ data }) => {
         className={`w-full ${styles.flexBetween} !flex-wrap-reverse !items-end`}
       >
         <TourDetail data={data} />
-        <Booking tourId={data?._id} />
+        <Booking price={data?.price} tourId={data?._id} />
       </div>
     </div>
   );

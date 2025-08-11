@@ -222,6 +222,8 @@
   },
   "TourPage": {
     "day": "天",
+    "group": "团体",
+    "individual": "个人",
     "startLocation": "起点",
     "endLocation": "终点",
     "season": "季节",

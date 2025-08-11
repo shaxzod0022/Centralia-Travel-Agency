@@ -172,7 +172,7 @@ const TourDetail: FC<Props> = ({ data }) => {
                     src={i}
                     key={x}
                     alt={item.title[lang as keyof TranslationsProps]}
-                    className="w-40 rounded"
+                    className="md:w-40 w-[47%] rounded"
                   />
                 ))}
               </div>
@@ -192,11 +192,13 @@ const TourDetail: FC<Props> = ({ data }) => {
               } hover:bg-gray-100 rounded-xl gap-3 transition-all duration-200 ease-in-out`}
             >
               <img
-                className="sm:w-40 sm:h-28 h-40 w-full object-cover rounded-xl"
+                className="sm:w-40 sm:h-28 h-24 w-40 object-cover rounded-xl"
                 src={item.images[0]}
                 alt={item.title[lang as keyof TranslationsProps]}
               />
-              <div className={`${styles.flexBetween} pr-5 w-full`}>
+              <div
+                className={`${styles.flexBetween} gap-5 !flex-nowrap pr-5 w-full`}
+              >
                 <p className={`${styles.p} font-semibold`}>
                   <span className="capitalize">
                     {t("day")} {idx + 1}:{" "}

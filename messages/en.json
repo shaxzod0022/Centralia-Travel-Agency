@@ -282,6 +282,8 @@
   },
   "TourPage": {
     "day": "day",
+    "group": "Group",
+    "individual": "Individual",
     "startLocation": "Starting point",
     "endLocation": "Finish point",
     "season": "Season",
