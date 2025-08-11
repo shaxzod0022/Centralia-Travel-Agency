@@ -1,11 +1,14 @@
-"use locale";
+"use client";
 import { TranslationsProps } from "@/interfaces/helper.interface";
 import { TourProps } from "@/interfaces/signature.interface";
 import { styles } from "@/styles/styles";
 import {
   CalendarDays,
+  Check,
+  ChevronRight,
   Circle,
   CircleQuestionMark,
+  Dot,
   Dumbbell,
   MapPinPlus,
   MapPinX,
@@ -22,6 +25,10 @@ const TourDetail: FC<Props> = ({ data }) => {
   const [show, setShow] = useState<{ bool: boolean; item: string }>({
     bool: false,
     item: "",
+  });
+  const [hid, setHid] = useState<{ bool: boolean; id: string }>({
+    bool: false,
+    id: "",
   });
   return (
     <div className={`lg:w-[65%] w-full ${styles.flexCol} md:gap-5 gap-3`}>
@@ -124,40 +131,110 @@ const TourDetail: FC<Props> = ({ data }) => {
         {data?.travelItinerary.map((item, idx) => (
           <div
             key={idx}
-            className={`${styles.flex} sm:flex-row flex-col sm:items-center items-start gap-3`}
+            className={`cursor-pointer relative border border-gray-400 rounded-xl sm:flex-row flex-col sm:items-center items-start`}
           >
-            <img
-              className="sm:w-52 sm:h-38 h-40 w-full object-cover rounded-xl"
-              src={item.images[0]}
-              alt={item.title[lang as keyof TranslationsProps]}
-            />
-            <div>
-              <p className={`${styles.p} font-semibold`}>
-                {item.title[lang as keyof TranslationsProps]}
+            <div
+              onClick={() =>
+                setHid({
+                  ...hid,
+                  bool: !hid.bool,
+                  id: item.title[lang as keyof TranslationsProps],
+                })
+              }
+              className={`overflow-hidden transition-all rounded-xl border-l-8 border-l-green-500 px-5 duration-300 ease-in-out ${
+                hid.bool &&
+                hid.id === item.title[lang as keyof TranslationsProps]
+                  ? "max-h-[1000px] py-5"
+                  : "max-h-0"
+              }`}
+            >
+              <p
+                className={`${styles.p} ${styles.flexBetween} w-full font-semibold`}
+              >
+                <span className="capitalize">
+                  {t("day")} {idx + 1}:{" "}
+                  {item.title[lang as keyof TranslationsProps]}
+                </span>
+                <ChevronRight
+                  className={`${
+                    hid.bool &&
+                    item.title[lang as keyof TranslationsProps] === hid.id &&
+                    "rotate-90"
+                  } transition-all duration-300`}
+                />
               </p>
-              <p className={`${styles.p}`}>
+              <p className={`${styles.p} mb-5`}>
                 {item.description[lang as keyof TranslationsProps]}
               </p>
+              <div className={`${styles.flex} flex-wrap gap-2`}>
+                {item.images.map((i, x) => (
+                  <img
+                    src={i}
+                    key={x}
+                    alt={item.title[lang as keyof TranslationsProps]}
+                    className="w-40 rounded"
+                  />
+                ))}
+              </div>
+            </div>
+            <div
+              onClick={() =>
+                setHid({
+                  ...hid,
+                  bool: !hid.bool,
+                  id: item.title[lang as keyof TranslationsProps],
+                })
+              }
+              className={`${styles.flex} ${
+                hid.bool &&
+                hid.id === item.title[lang as keyof TranslationsProps] &&
+                "opacity-0 absolute pointer-events-none"
+              } hover:bg-gray-100 rounded-xl gap-3 transition-all duration-200 ease-in-out`}
+            >
+              <img
+                className="sm:w-40 sm:h-28 h-40 w-full object-cover rounded-xl"
+                src={item.images[0]}
+                alt={item.title[lang as keyof TranslationsProps]}
+              />
+              <div className={`${styles.flexBetween} pr-5 w-full`}>
+                <p className={`${styles.p} font-semibold`}>
+                  <span className="capitalize">
+                    {t("day")} {idx + 1}:{" "}
+                  </span>
+                  {item.title[lang as keyof TranslationsProps]}
+                </p>
+
+                <ChevronRight
+                  className={`${
+                    hid.bool &&
+                    item.title[lang as keyof TranslationsProps] === hid.id &&
+                    "rotate-90"
+                  } transition-all duration-300`}
+                />
+              </div>
             </div>
           </div>
         ))}
       </div>
       <h4 className={`${styles.h4}`}>{t("includedInPrice")}</h4>
       <div
-        className={`${styles.flexCol} border rounded-xl border-gray-500 p-5`}
+        className={`${styles.flexCol} border w-fit rounded-xl border-gray-300 p-5`}
       >
         {data?.includedInPrice.map((item, idx) => (
           <p key={idx} className={`${styles.p} ${styles.flex} gap-2`}>
-            <Circle size={14} />
+            <Check className="text-[#6EBB2F]" size={20} />
             {item[lang as keyof TranslationsProps]}
           </p>
         ))}
       </div>
       <h4 className={`${styles.h4}`}>{t("whatToTake")}</h4>
-      <div className={`${styles.flexCol}`}>
+      <div className={`${styles.flexBetween} w-full`}>
         {data?.whatToTake.map((item, idx) => (
-          <p key={idx} className={`${styles.p} ${styles.flex} gap-2`}>
-            <Circle size={14} />
+          <p
+            key={idx}
+            className={`${styles.p} ${styles.flex} w-full sm:w-1/2 gap-2`}
+          >
+            <Dot size={40} className="text-[#6EBB2F]" />
             {item[lang as keyof TranslationsProps]}
           </p>
         ))}
