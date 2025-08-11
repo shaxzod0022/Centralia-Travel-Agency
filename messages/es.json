@@ -4,7 +4,7 @@
     "description": "Descubre viajes inolvidables con Centralia Travel Agency. Explora tours personalizados, experiencias culturales y viajes sin complicaciones a los mejores destinos del mundo. ¡Reserva tu próxima aventura hoy mismo!"
   },
   "navbar": {
-    "btn": "planificar viaje",
+    "btn": "Plan de viaje con IA",
     "links": [
       { "label": "hogar", "path": "/" },
       { "label": "tours", "path": "/#tours" },
@@ -29,7 +29,7 @@
       "title": "Viajes exclusivos",
       "description": "Descubre nuestras aventuras más vendidas elegidas por miles de viajeros",
       "btn": "Ver todos los tours",
-      "cardBtn": "Ver detalles",
+      "cardBtn": "Ver disponibilidad",
       "difficultyTitle": "Dificultad",
       "countryItem": "países",
       "priceItem": "persona",

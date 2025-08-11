@@ -4,7 +4,7 @@
     "description": "与 Centralia 旅行社一起开启难忘的旅程。探索个性化旅行、文化体验以及前往全球热门目的地的无忧旅行。立即预订您的下一次冒险=！"
   },
   "navbar": {
-    "btn": "规划行程",
+    "btn": "AI 旅行计划",
     "links": [
       { "label": "家", "path": "/" },
       { "label": "旅游团", "path": "/#tours" },
@@ -29,7 +29,7 @@
       "title": "特色旅程",
       "description": "探索我们最畅销的旅行，受到成千上万旅行者的喜爱",
       "btn": "查看所有行程",
-      "cardBtn": "查看详情",
+      "cardBtn": "查看可用性",
       "difficultyTitle": "难度",
       "countryItem": "国家",
       "priceItem": "每人",

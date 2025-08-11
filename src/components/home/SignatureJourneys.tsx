@@ -19,20 +19,21 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
   if (!data) {
     return <>Loading...</>;
   }
-  // const [fd, fdf] = useMemo()
+
   return (
     <div className={`${styles.flexCol} !items-center`}>
       <div
-        className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6 mb-10`}
+        className={`w-full ${styles.flex} overflow-x-auto pb-3 custom-scroll max-w-[1800px] mx-auto gap-5 mb-10`}
       >
         {data.map((item, idx) => (
           <div
             key={idx}
-            className={`${styles.flexCol} shadow__signature bg-white justify-between w-full sm:w-[47%] xl:w-[31%] rounded-3xl`}
+            className={`${styles.flexCol} flex-shrink-0 shadow__signature bg-white justify-between w-[90%] sm:w-[48%] xl:w-[32%] rounded-3xl`}
           >
+            {/* Image */}
             <div className="relative">
               <img
-                className="w-full rounded-t-3xl h-56 object-cover"
+                className="w-full rounded-t-3xl aspect-[16/9] object-cover"
                 src={item.images[0]}
                 alt={item.title[lang as keyof TranslationsProps]}
               />
@@ -41,23 +42,23 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
               >
                 {item.tourDays} {t("dayItem")}
               </span>
-              <span
-                className={`bg-[#1B4332] text-white ${styles.span} absolute top-8 left-8 capitalize w-fit rounded-4xl px-4 py-1 font-semibold`}
-              >
-                {/* {item} */}
-              </span>
             </div>
-            <div className="p-8">
-              <h3
-                style={{ fontFamily: "Plaffair Display" }}
-                className={`${styles.h4} mb-2 text-[#1B4332]`}
+
+            {/* Content */}
+            <div className="p-8 break-words">
+              <h4
+                style={{ fontFamily: "Playfair Display" }}
+                className={`${styles.h4} mb-2 text-[#1B4332] w-fulll`}
               >
                 {item.title[lang as keyof TranslationsProps]}
-              </h3>
-              <p className={`${styles.p} text-[#6C757D] !leading-tight mb-4`}>
+              </h4>
+
+              <p className={`${styles.p} text-[#6C757D]l !leading-tight mb-4`}>
                 {item.description[lang as keyof TranslationsProps].slice(0, 70)}
                 . . .
               </p>
+
+              {/* Difficulty & Country */}
               <div className={`${styles.flexBetween} mb-5`}>
                 <div className={`${styles.flex} gap-2 text-[#6C757D]`}>
                   <span>{t("difficultyTitle")}:</span>
@@ -76,7 +77,7 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
                       <span
                         key={i}
                         className={`${color} w-3 h-3 rounded-full inline-block mr-1`}
-                      ></span>
+                      />
                     );
                   })}
                 </div>
@@ -86,10 +87,12 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
                   2 {t("countryItem")}
                 </span>
               </div>
+
+              {/* Price & Button */}
               <div className={`${styles.flexBetween}`}>
                 <div>
                   <p
-                    className={`${styles.p} text-[#1B4332] font-semibold  !leading-tight`}
+                    className={`${styles.p} text-[#1B4332] font-semibold !leading-tight`}
                   >
                     ${item.price}
                   </p>

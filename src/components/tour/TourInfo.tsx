@@ -30,7 +30,7 @@ const TourInfo: FC<Props> = ({ data }) => {
   };
 
   return (
-    <div className={`${styles.paddingCont}`}>
+    <div className="mb-5">
       <h4 className={`${styles.h4}`}>
         {data?.title?.[lang as keyof TranslationsProps] || ""}
       </h4>

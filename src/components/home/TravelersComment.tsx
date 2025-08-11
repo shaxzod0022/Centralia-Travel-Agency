@@ -60,7 +60,7 @@ const TravelersComment = () => {
           </div>
         ))}
       </div>
-      <Btn myClass="text-white font-semibold w-fit" title={"All"} />
+      {/* <Btn myClass="text-white font-semibold w-fit" title={"All"} /> */}
     </div>
   );
 };

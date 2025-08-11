@@ -21,7 +21,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             {t("firstName")} <span className="text-red-500">*</span>
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="text"
             name="firstName"
             required
@@ -32,7 +32,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             {t("lastName")} <span className="text-red-500">*</span>
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="text"
             name="firstName"
             required
@@ -43,7 +43,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             {t("email")} <span className="text-red-500">*</span>
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="email"
             name="firstName"
             required
@@ -54,7 +54,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             {t("phone")}
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="text"
             name="firstName"
           />
@@ -64,7 +64,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             {t("travelNumber")} <span className="text-red-500">*</span>
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="text"
             name="firstName"
             required
@@ -76,7 +76,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             <span className="text-red-500">*</span>
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="date"
             name="firstName"
             required
@@ -87,7 +87,7 @@ const Booking: FC<Props> = ({ tourId }) => {
             {t("info")}
           </label>
           <textarea
-            className="border-1 border-gray-300 rounded-xl text-lg p-2 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             name=""
             id=""
             rows={5}

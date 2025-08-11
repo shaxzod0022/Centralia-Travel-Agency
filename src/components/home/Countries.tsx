@@ -16,7 +16,7 @@ const Countries: FC<Props> = ({ data }) => {
   const lang = useLocale();
   return (
     <div
-      className={`w-full ${styles.flexBetween} max-w-[1800px] mx-auto gap-6`}
+      className={`w-full ${styles.flex} overflow-x-auto p-4 custom-scroll max-w-[1800px] mx-auto gap-5`}
     >
       {data.map((item, idx) => (
         <div
@@ -26,7 +26,7 @@ const Countries: FC<Props> = ({ data }) => {
             backgroundPosition: "contain",
           }}
           key={idx}
-          className={`${styles.flexCol} justify-between h-64 md:h-80 p-8 w-full sm:w-[47%] lg:w-[31%] 2xl:w-[23%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
+          className={`${styles.flexCol} flex-shrink-0 justify-between h-64 md:h-80 p-8 w-full sm:w-[48%] lg:w-[32%] 2xl:w-[24%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
         >
           <p
             className={`bg-green-900 ${styles.span} uppercase text-white w-fit rounded-4xl px-4 font-semibold`}

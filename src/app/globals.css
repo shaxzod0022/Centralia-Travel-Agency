@@ -41,3 +41,28 @@ html {
     transform: rotate(360deg);
   }
 }
+
+/* Horizontal scroll uchun */
+.custom-scroll::-webkit-scrollbar {
+  height: 10px; /* faqat X scroll balandligi */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent; /* scroll track rangi */
+  border-radius: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #1b4332, #2d6c52); /* tugma rangi */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #14532d, #1b4332);
+}
+
+/* Firefox uchun */
+.custom-scroll {
+  scrollbar-color: #1b4332;
+  scrollbar-width: 10px;
+}

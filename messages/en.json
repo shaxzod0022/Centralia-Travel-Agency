@@ -4,7 +4,7 @@
     "description": "Discover unforgettable journeys with Centralia Travel Agency. Explore customized tours, cultural experiences, and hassle-free travel to top destinations worldwide. Book your next adventure today!"
   },
   "navbar": {
-    "btn": "plan journey",
+    "btn": "AI Travel Plan",
     "links": [
       { "label": "home", "path": "/" },
       { "label": "tours", "path": "/#tours" },
@@ -124,7 +124,7 @@
       "title": "Signature Journeys",
       "description": "Discover our best-selling adventures chosen by thousands of travelers",
       "btn": "View All Tours",
-      "cardBtn": "View Details",
+      "cardBtn": "View availability",
       "difficultyTitle": "Difficulty",
       "countryItem": "countries",
       "priceItem": "person",
