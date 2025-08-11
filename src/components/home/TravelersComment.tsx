@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import { TravelersCommentProps } from "@/interfaces/comment.interface";
 import { Quote, Star } from "lucide-react";
-import Btn from "../helpers/Btn";
+// import Btn from "../helpers/Btn";
 
 const TravelersComment = () => {
   const t = useTranslations("HomePage.travelersComment");
