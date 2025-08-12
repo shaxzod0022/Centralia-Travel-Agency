@@ -302,6 +302,12 @@
     "tourDate": "When would you like to travel?",
     "info": "Additional information",
     "infoPlaceholder": "Please provide as many relevant details as possible.",
-    "btn": "Submit"
+    "btn": "Submit",
+    "call": "Book a call"
+  },
+  "MeetingPage": {
+    "title": "Meeting",
+    "description": "Choose an available slot for a (video) call.",
+    "home": "Home"
   }
 }

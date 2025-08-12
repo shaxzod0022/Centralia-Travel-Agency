@@ -242,6 +242,12 @@
     "tourDate": "¿Cuándo quieres viajar?",
     "info": "Información adicional",
     "infoPlaceholder": "Por favor, proporciona tantos detalles relevantes como sea posible.",
-    "btn": "Enviar"
+    "btn": "Enviar",
+    "call":"Reservar una llamada"
+  },
+  "MeetingPage": {
+    "title": "Reunión",
+    "description": "Elija un horario disponible para una llamada (de video).",
+    "home": "Inicio"
   }
 }

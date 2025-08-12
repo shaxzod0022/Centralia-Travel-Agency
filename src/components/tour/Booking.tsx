@@ -4,6 +4,7 @@ import React, { FC, useState } from "react";
 import Btn from "../helpers/Btn";
 import { useTranslations } from "next-intl";
 import { Minus, Plus, User, Users } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface Props {
   tourId?: string;
@@ -14,6 +15,7 @@ const Booking: FC<Props> = ({ tourId, price }) => {
   const t = useTranslations("TourPage");
   const [inc, setInc] = useState<number>(1);
   const myPrice = price || 500;
+  const routing = useRouter();
   return (
     <div
       className={`lg:w-[34%] mb-5 w-full p-5 border border-gray-300 rounded-xl ${styles.flexCol} md:gap-5 gap-3`}
@@ -158,6 +160,23 @@ const Booking: FC<Props> = ({ tourId, price }) => {
         </div>
         <Btn myClass="font-semibold" title={t("btn")} />
       </form>
+      <div className={`${styles.flex} gap-2 w-full`}>
+        <img
+          className="rounded-full w-24 h-24"
+          src={
+            "https://thumbs.dreamstime.com/b/consulting-expert-advice-support-service-business-concept-98129276.jpg"
+          }
+          alt="Exprert"
+        />
+        <div>
+          <p className="mb-2">Expert</p>
+          <Btn
+            onClick={() => routing.push("/meeting")}
+            myClass="!w-full rounded-lg"
+            title={t("call")}
+          />
+        </div>
+      </div>
     </div>
   );
 };

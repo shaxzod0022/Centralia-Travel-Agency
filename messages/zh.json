@@ -243,5 +243,11 @@
     "info": "附加信息",
     "infoPlaceholder": "请尽可能提供相关细节。",
     "btn": "提交"
+  },
+  "MeetingPage": {
+    "title": "会议",
+    "description": "选择一个可用的时间进行（视频）通话。",
+    "home": "首页",
+    "call": "预约通话"
   }
 }

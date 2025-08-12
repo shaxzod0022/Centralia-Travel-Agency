@@ -22,3 +22,6 @@ export { default as TourInfo } from "./tour/TourInfo";
 // Blog page
 export { default as Blog } from "./blog/Blog";
 
+// Meeting page
+export { default as Meeting } from "./meeting/Meeting";
+export { default as MeetiingHead } from "./meeting/MeetiingHead";
