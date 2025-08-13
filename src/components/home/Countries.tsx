@@ -51,7 +51,7 @@ const Countries: FC<Props> = ({ data }) => {
             data-card
             onClick={() => router.push(`/tours/${item.slug}`)}
             style={{
-              backgroundImage: `url("${item.heroImageUrl}")`,
+              backgroundImage: `url("https://centralia-travel-agency-back.onrender.com${item.heroImageUrl}")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -63,17 +63,22 @@ const Countries: FC<Props> = ({ data }) => {
             >
               {item.status}
             </p>
-            <div>
-              <h3
-                style={{ fontFamily: "Playfair Display" }}
-                className={`${styles.h4} text-white mb-2`}
-              >
-                {item?.title[lang as keyof TranslationsProps]}
-              </h3>
-              <p className={`${styles.p} text-white !leading-tight mb-2`}>
-                {item?.description[lang as keyof TranslationsProps]}
-              </p>
-              <div className={`${styles.flexBetween}`}>
+            {/* Kontentni flex va gap bilan joylashtiramiz */}
+            <div className="flex mt-5 flex-col justify-between h-full">
+              <div>
+                <h3
+                  style={{ fontFamily: "Playfair Display" }}
+                  className={`${styles.h4} text-white mb-2`}
+                >
+                  {item?.title[lang as keyof TranslationsProps]}
+                </h3>
+                <p
+                  className={`${styles.p} text-white !leading-tight mb-2 line-clamp-3`}
+                >
+                  {item?.description[lang as keyof TranslationsProps]}
+                </p>
+              </div>
+              <div className={`${styles.flexBetween} mt-auto`}>
                 <div>
                   <p
                     className={`${styles.p} text-green-500 font-semibold  !leading-tight`}
