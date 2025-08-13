@@ -56,15 +56,25 @@ const Countries: FC<Props> = ({ data }) => {
               backgroundPosition: "center",
             }}
             key={idx}
-            className={`${styles.flexCol} flex-shrink-0 justify-between h-64 md:h-80 p-8 w-full sm:w-[50%] lg:w-[32%] 2xl:w-[24%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
+            className={`${styles.flexCol} relative flex-shrink-0 justify-between h-64 md:h-80 p-8 w-full sm:w-[50%] lg:w-[32%] 2xl:w-[24%] rounded-3xl transition-all duration-150 hover:scale-105 active:scale-100 cursor-pointer`}
           >
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                zIndex: 0,
+                background:
+                  "linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2))",
+                borderRadius: "inherit",
+              }}
+            />
             <p
-              className={`bg-green-900 ${styles.span} uppercase text-white w-fit rounded-4xl px-4 font-semibold`}
+              className={`bg-green-900 ${styles.span} z-1 uppercase text-white w-fit rounded-4xl px-4 font-semibold`}
             >
               {item.status}
             </p>
             {/* Kontentni flex va gap bilan joylashtiramiz */}
-            <div className="flex mt-5 flex-col justify-between h-full">
+            <div className="flex mt-5 flex-col z-1 justify-between h-full">
               <div>
                 <h3
                   style={{ fontFamily: "Playfair Display" }}

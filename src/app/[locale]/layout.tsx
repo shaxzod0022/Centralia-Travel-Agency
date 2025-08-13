@@ -28,6 +28,10 @@ export async function generateMetadata({
   return {
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
+    icons: [
+      { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", url: "/favicon.png", type: "image/png" },
+    ],
   };
 }
 

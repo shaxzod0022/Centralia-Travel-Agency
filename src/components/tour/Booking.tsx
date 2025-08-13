@@ -69,19 +69,19 @@ const Booking: FC<Props> = ({ tourId, price }) => {
           <label htmlFor="firstName" className={`${styles.p}`}>
             {t("travelNumber")} <span className="text-red-500">*</span>
           </label>
-          <div className={`${styles.flexCenter} gap-5`}>
+          <div className={`${styles.flexBetween} gap-3`}>
             <button
               disabled={inc <= 1}
               onClick={() => setInc(inc - 1)}
               type="button"
               className={`${
                 inc <= 1 ? "cursor-no-drop" : "cursor-pointer"
-              } active:bg-red-300 bg-red-500 text-white p-1 rounded`}
+              } active:bg-red-300 bg-red-500 text-white py-2 px-7 rounded`}
             >
               <Minus />
             </button>
             <input
-              className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] text-center w-20"
+              className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] text-center w-30"
               type="text"
               name="number"
               onChange={(e) => setInc(Number(e.target.value))}
@@ -92,7 +92,7 @@ const Booking: FC<Props> = ({ tourId, price }) => {
             <button
               onClick={() => setInc(inc + 1)}
               type="button"
-              className={`cursor-pointer active:bg-[#b6f186] bg-[#6ebb2f] text-white p-1 rounded`}
+              className={`cursor-pointer active:bg-[#b6f186] bg-[#6ebb2f] text-white py-2 px-7 rounded`}
             >
               <Plus />
             </button>
@@ -129,14 +129,15 @@ const Booking: FC<Props> = ({ tourId, price }) => {
           </label>
         </div>
         <div className={`${styles.flexCol} gap-1`}>
-          <label htmlFor="firstName" className={`${styles.p}`}>
+          <label htmlFor="date" className={`${styles.p}`}>
             {t("tourDate")}
             <span className="text-red-500">*</span>
           </label>
           <input
-            className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
+            className="border-1 w-full border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="date"
             name="date"
+            id="date"
             required
           />
         </div>
@@ -147,13 +148,13 @@ const Booking: FC<Props> = ({ tourId, price }) => {
           </p>
         </div>
         <div className={`${styles.flexCol} gap-1`}>
-          <label htmlFor="firstName" className={`${styles.p}`}>
+          <label htmlFor="description" className={`${styles.p}`}>
             {t("info")}
           </label>
           <textarea
             className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
-            name=""
-            id=""
+            name="description"
+            id="description"
             rows={5}
             placeholder={t("infoPlaceholder")}
           ></textarea>
