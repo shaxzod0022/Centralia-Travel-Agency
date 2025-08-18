@@ -40,9 +40,14 @@ export const OrderService = {
         `${API_BASE_URL}/orders/tour/${slug}`
       );
       return data;
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching tour orders:', error);
-      throw error;
+      if (error instanceof Error) {
+        showToast(error.message, 'error');
+      } else {
+        showToast('An unknown error occurred', 'error');
+      }
+      return [];
     }
   },
 
@@ -52,9 +57,14 @@ export const OrderService = {
         `${API_BASE_URL}/orders/customer/${email}`
       );
       return data;
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching customer orders:', error);
-      throw error;
+      if (error instanceof Error) {
+        showToast(error.message, 'error');
+      } else {
+        showToast('An unknown error occurred', 'error');
+      }
+      return [];
     }
   },
 
@@ -64,9 +74,14 @@ export const OrderService = {
         `${API_BASE_URL}/orders/${id}`
       );
       return data;
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error fetching order:', error);
-      throw error;
+      if (error instanceof Error) {
+        showToast(error.message, 'error');
+      } else {
+        showToast('An unknown error occurred', 'error');
+      }
+      return [];
     }
   }
 };

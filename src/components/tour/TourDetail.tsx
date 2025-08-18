@@ -44,9 +44,9 @@ const TourDetail: FC<Props> = ({ data }) => {
     );
   }
 
-  // Helper function to safely check if array exists and has items
-  const hasArrayData = (array: any[] | undefined): boolean => {
-    return Array.isArray(array) && array.length > 0;
+  // Helper function to safely check if array data exists and has elements
+  const hasArrayData = (data: unknown): data is Array<unknown> => {
+    return Array.isArray(data) && data.length > 0;
   };
 
   return (

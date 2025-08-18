@@ -5,40 +5,75 @@ import { styles } from "@/styles/styles";
 import React, { useState } from "react";
 import { notFound } from "next/navigation";
 import { BlogProps, Comment } from "@/interfaces/insights.interface";
-import { getImageUrl } from "@/utils/imageUtils";
+import Link from "next/link";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
-export default async function BlogDetailPage({ params }: Props) {
-  const { slug } = await params;
-  
-  if (!slug) {
-    notFound();
-  }
+export default function BlogDetailPage({ params }: Props) {
+  const [blog, setBlog] = useState<BlogProps | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  try {
-    console.log('Frontend: Fetching blog with comments by slug:', slug);
-    const blog: BlogProps | null = await BlogService.getBySlugBlogWithComments(slug);
-    
-    if (!blog) {
-      console.log('Frontend: Blog not found for slug:', slug);
-      notFound();
-    }
+  React.useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        const { slug } = await params;
+        if (!slug) {
+          setError('Slug not found');
+          return;
+        }
 
-    console.log('Frontend: Blog found with comments:', blog.title?.en);
-    console.log('Frontend: Comments count:', blog.comments?.length || 0);
-    
+        console.log('Frontend: Fetching blog with comments by slug:', slug);
+        const blogData = await BlogService.getBySlugBlogWithComments(slug);
+        
+        if (!blogData) {
+          setError('Blog not found');
+          return;
+        }
+
+        console.log('Frontend: Blog found with comments:', blogData.title?.en);
+        console.log('Frontend: Comments count:', blogData.comments?.length || 0);
+        setBlog(blogData);
+      } catch (error) {
+        console.error('Frontend: Error fetching blog:', error);
+        setError('Failed to fetch blog');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlog();
+  }, [params]);
+
+  if (loading) {
     return (
       <div className={`mt-16 max-w-[1800px] mx-auto ${styles.paddingCont}`}>
-        <BlogDetail data={blog} />
+        <div className="text-center py-20">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-green-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading blog...</p>
+        </div>
       </div>
     );
-  } catch (error) {
-    console.error('Frontend: Error fetching blog:', error);
-    notFound();
   }
+
+  if (error || !blog) {
+    return (
+      <div className={`mt-16 max-w-[1800px] mx-auto ${styles.paddingCont}`}>
+        <div className="text-center py-20">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Blog Not Found</h2>
+          <p className="text-gray-600">{error || 'The requested blog could not be found.'}</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`mt-16 max-w-[1800px] mx-auto ${styles.paddingCont}`}>
+      <BlogDetail data={blog} />
+    </div>
+  );
 }
 
 // Blog Detail Component
@@ -214,12 +249,12 @@ function BlogDetail({ data }: { data: BlogProps }) {
 
       {/* Back to Blogs Button */}
       <div className="text-center pt-8">
-        <a
+        <Link
           href="/"
           className="inline-flex items-center gap-2 px-6 py-3 bg-[#1B4332] text-white rounded-lg font-medium hover:bg-[#2d6c52] transition-colors duration-300"
         >
           ← Back to Home
-        </a>
+        </Link>
       </div>
     </div>
   );

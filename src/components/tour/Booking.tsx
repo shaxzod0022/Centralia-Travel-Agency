@@ -7,13 +7,12 @@ import { Minus, Plus, User, Users, AlertCircle, CheckCircle } from "lucide-react
 import { useRouter } from "next/navigation";
 import { OrderService, CreateOrderData } from "@/services/order.service";
 
-interface Props {
-  tourId?: string;
-  price?: number;
-  tourSlug?: string; // Add tourSlug prop
+interface BookingProps {
+  tourSlug: string;
+  tourPrice: number;
 }
 
-const Booking: FC<Props> = ({ tourId, price, tourSlug }) => {
+const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
   const t = useTranslations("TourPage");
   const [inc, setInc] = useState<number>(1);
   const [bookingType, setBookingType] = useState<'group' | 'individual'>('individual');
@@ -29,7 +28,7 @@ const Booking: FC<Props> = ({ tourId, price, tourSlug }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   
-  const myPrice = price || 500;
+  const myPrice = tourPrice;
   const router = useRouter();
 
   // Calculate price based on booking type and number of people
@@ -77,67 +76,63 @@ const Booking: FC<Props> = ({ tourId, price, tourSlug }) => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    if (!validateForm()) {
+    // Validate form
+    const errors: Record<string, string> = {};
+    
+    if (!formData.firstName.trim()) errors.firstName = 'First name is required';
+    if (!formData.lastName.trim()) errors.lastName = 'Last name is required';
+    if (!formData.email.trim()) errors.email = 'Email is required';
+    if (!formData.numberOfPeople || formData.numberOfPeople < 1) errors.numberOfPeople = 'Number of people must be at least 1';
+    if (!formData.bookingType) errors.bookingType = 'Please select booking type';
+    if (!formData.tourDate) errors.tourDate = 'Tour date is required';
+    
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
       return;
     }
 
     setIsSubmitting(true);
-    
+    setSubmitError(null);
+
     try {
-      // Prepare order data for backend
       const orderData: CreateOrderData = {
-        tourSlug: tourSlug!,
-        firstName: formData.firstName.trim(),
-        lastName: formData.lastName.trim(),
-        email: formData.email.trim(),
-        phoneNumber: formData.phone.trim() || undefined,
-        numberOfPeople: inc,
-        bookingType: bookingType,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phoneNumber: formData.phoneNumber || '',
+        numberOfPeople: formData.numberOfPeople,
+        bookingType: formData.bookingType,
         tourDate: formData.tourDate,
-        customerNote: formData.info.trim() || undefined
+        totalPrice: calculateTotalPrice(),
+        customerNote: formData.customerNote || '',
+        tourSlug: tourSlug
       };
 
-      console.log('Submitting order data:', orderData);
-      
-      // Send order to backend
+      console.log('Submitting order:', orderData);
       const response = await OrderService.createOrder(orderData);
       
-      console.log('Order created successfully:', response);
-      
-      // Show success state
-      setIsSuccess(true);
-      
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setIsSuccess(false);
+      if (response && response.success) {
+        setSubmitSuccess(true);
         setFormData({
           firstName: '',
           lastName: '',
           email: '',
-          phone: '',
+          phoneNumber: '',
+          numberOfPeople: 1,
+          bookingType: 'individual',
           tourDate: '',
-          info: ''
+          customerNote: ''
         });
-        setInc(1);
-        setBookingType('individual');
-      }, 3000);
-      
-    } catch (error: any) {
-      console.error('Booking error:', error);
-      
-      // Handle specific error cases
-      let errorMessage = 'Failed to submit booking. Please try again.';
-      
-      if (error.response?.data?.message) {
-        errorMessage = error.response.data.message;
-      } else if (error.message) {
-        errorMessage = error.message;
+        setFormErrors({});
+      } else {
+        setSubmitError('Failed to create order. Please try again.');
       }
-      
-      alert(errorMessage);
+    } catch (error) {
+      console.error('Error creating order:', error);
+      setSubmitError('An error occurred while creating the order.');
     } finally {
       setIsSubmitting(false);
     }
@@ -150,8 +145,8 @@ const Booking: FC<Props> = ({ tourId, price, tourSlug }) => {
         <div className="text-center">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
           <h3 className="text-xl font-bold text-green-800 mb-2">Booking Successful!</h3>
-          <p className="text-green-600 mb-4">
-            Your tour has been booked successfully. We'll send you a confirmation email shortly.
+          <p className="text-center text-green-600 font-medium">
+            Your tour has been booked successfully. We&apos;ll send you a confirmation email shortly.
           </p>
           <p className="text-sm text-green-500">
             Redirecting back to form...
