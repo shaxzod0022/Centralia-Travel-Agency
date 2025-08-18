@@ -183,7 +183,7 @@ const TravelInsights: FC<Props> = ({ data }) => {
       )}
 
       {/* View All Button */}
-      <div className="text-center mt-8">
+      <div className="text-center flex justify-center mt-8">
         <Btn
           onClick={() => router.push('/blog')}
           myClass="bg-[#1B4332] hover:bg-[#2d6c52] text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 hover:scale-105"

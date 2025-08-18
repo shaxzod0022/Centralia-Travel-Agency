@@ -17,7 +17,7 @@ export interface CreateOrderData {
 export interface OrderResponse {
   success: boolean;
   message: string;
-  data: any;
+  data: unknown;
 }
 
 export const OrderService = {

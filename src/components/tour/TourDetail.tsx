@@ -3,16 +3,20 @@ import { TranslationsProps } from "@/interfaces/helper.interface";
 import { TourProps } from "@/interfaces/signature.interface";
 import { styles } from "@/styles/styles";
 import {
-  CalendarDays,
-  Check,
-  ChevronRight,
-  Circle,
-  CircleQuestionMark,
-  Dot,
-  Dumbbell,
   MapPinPlus,
   MapPinX,
+  CalendarDays,
   Settings,
+  CircleQuestionMark,
+  Dumbbell,
+  Users,
+  Clock,
+  Star,
+  CheckCircle,
+  AlertCircle,
+  Info,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import React, { FC, useState } from "react";
