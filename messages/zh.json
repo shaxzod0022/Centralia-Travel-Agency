@@ -4,14 +4,24 @@
     "description": "与 Centralia 旅行社一起开启难忘的旅程。探索个性化旅行、文化体验以及前往全球热门目的地的无忧旅行。立即预订您的下一次冒险=！"
   },
   "navbar": {
-    "btn": "AI 旅行计划",
+    "btn": "AI旅行计划",
     "links": [
-      { "label": "家", "path": "/" },
-      { "label": "旅游团", "path": "/#tours" },
+      { "label": "首页", "path": "/" },
+      { "label": "旅游", "path": "/#tours" },
       { "label": "博客", "path": "/blog" },
-      { "label": "关于我们", "path": "/about" },
-      { "label": "联系我们", "path": "/#contact" }
+      { "label": "关于", "path": "/about" },
+      { "label": "联系", "path": "/#contact" }
     ]
+  },
+  "aiTravelPlan": {
+    "title": "AI旅行助手",
+    "subtitle": "创建您的旅行计划",
+    "welcomeMessage": "您好！我在这里帮助您创建旅行计划。您想去哪里旅行，寻找什么样的体验？",
+    "inputPlaceholder": "询问您的旅行...",
+    "sendButton": "发送",
+    "loadingMessage": "正在生成回复...",
+    "userMessage": "用户消息",
+    "aiMessage": "AI回复"
   },
   "HomePage": {
     "head": {
@@ -22,7 +32,18 @@
     "countries": {
       "item": "四个国家，无尽的冒险",
       "title": "探索中亚",
-      "description": "从古老的丝绸之路城市到原始的高山湖泊，每一个目的地都蕴藏着等待发现的非凡体验"
+      "description": "从古老的丝绸之路城市到原始的高山湖泊，每一个目的地都蕴藏着等待发现的非凡体验",
+      "noCountriesTitle": "暂无国家信息",
+      "noCountriesDescription": "国家数据目前不可用。",
+      "scrollLeft": "向左滚动",
+      "scrollRight": "向右滚动",
+      "comingSoon": "即将推出",
+      "defaultCountryName": "国家名称",
+      "defaultCountryDescription": "国家描述不可用",
+      "available": "可用",
+      "comingSoonStatus": "即将推出",
+      "readyToExplore": "准备探索",
+      "preparingAdventures": "准备冒险"
     },
     "signatureJourneys": {
       "item": "精选体验",

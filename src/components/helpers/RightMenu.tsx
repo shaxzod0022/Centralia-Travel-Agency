@@ -11,11 +11,21 @@ interface Props {
   links: NavbarLinkProps[];
   hidden: boolean;
   closeMenu?: () => void;
+  onAIClick?: () => void;
 }
 
-const RightMenu: FC<Props> = ({ links, hidden, closeMenu }) => {
+const RightMenu: FC<Props> = ({ links, hidden, closeMenu, onAIClick }) => {
   const t = useTranslations("navbar");
   const pathname = usePathname();
+
+  const handleAIClick = () => {
+    if (onAIClick) {
+      onAIClick();
+      if (closeMenu) {
+        closeMenu();
+      }
+    }
+  };
 
   return (
     <div
@@ -44,6 +54,7 @@ const RightMenu: FC<Props> = ({ links, hidden, closeMenu }) => {
         ))}
         <li className={`${styles.flexCol} gap-2`}>
           <button
+            onClick={handleAIClick}
             className="relative cursor-pointer flex items-center gap-2 px-5 py-2 rounded-full 
     text-white font-medium overflow-hidden group shadow-lg hover:shadow-xl transition"
           >

@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import React, { FC, useState } from "react";
 import TourDetail from "./TourDetail";
 import Booking from "./Booking";
+import { getImageUrl } from "@/utils/imageUtils";
 
 interface Props {
   data?: TourProps;
@@ -17,61 +18,101 @@ const TourInfo: FC<Props> = ({ data }) => {
   const t = useTranslations("TourPage");
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
+  // Check if data exists and has required fields
+  if (!data) {
+    return (
+      <div className="text-center py-20">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tour Not Found</h2>
+        <p className="text-gray-600">The requested tour could not be found or is not available.</p>
+      </div>
+    );
+  }
+
+  // Check if images array exists and has items
+  const hasImages = Array.isArray(data.images) && data.images.length > 0;
+  
+  if (!hasImages) {
+    return (
+      <div className="text-center py-20">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Tour Images Not Available</h2>
+        <p className="text-gray-600">Tour images could not be loaded.</p>
+      </div>
+    );
+  }
+
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? (data?.images ?? []).length - 1 : prev - 1
+      prev === 0 ? data.images.length - 1 : prev - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev === (data?.images ?? []).length - 1 ? 0 : prev + 1
+      prev === data.images.length - 1 ? 0 : prev + 1
     );
   };
 
   return (
     <div className="mb-5">
       <h4 className={`${styles.h4}`}>
-        {data?.title?.[lang as keyof TranslationsProps] || ""}
+        {data?.title?.[lang as keyof TranslationsProps] || "Tour Title"}
       </h4>
       <p className={`${styles.p} mb-2`}>
         {data?.tourDays} {t("day")}
       </p>
+      
+      {/* Image Gallery */}
       <div className="relative mb-5 md:p-20 p-4 bg-green-950 rounded-2xl inset-0 flex items-center justify-center">
-        <button
-          onClick={prevSlide}
-          className="absolute left-5 text-white hover:text-gray-300 transition cursor-pointer"
-        >
-          <ChevronLeft size={48} />
-        </button>
+        {data.images.length > 1 && (
+          <button
+            onClick={prevSlide}
+            className="absolute left-5 text-white hover:text-gray-300 transition cursor-pointer z-10"
+          >
+            <ChevronLeft size={48} />
+          </button>
+        )}
+        
         <img
-          src={data?.images[currentIndex]}
-          alt={`slide-${currentIndex}`}
+          src={getImageUrl(data.images[currentIndex])}
+          alt={`${data?.title?.[lang as keyof TranslationsProps] || 'Tour'} - Image ${currentIndex + 1}`}
           className="w-full md:h-80 sm:h-60 h-44 rounded-xl object-cover"
         />
-        <button
-          onClick={nextSlide}
-          className="absolute right-5 text-white hover:text-gray-300 transition cursor-pointer"
-        >
-          <ChevronRight size={48} />
-        </button>
-        <div className="absolute bottom-5 flex gap-2">
-          {data?.images.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentIndex(idx)}
-              className={`h-3 w-3 rounded-full transition cursor-pointer ${
-                idx === currentIndex ? "bg-white" : "bg-gray-500"
-              }`}
-            />
-          ))}
-        </div>
+        
+        {data.images.length > 1 && (
+          <button
+            onClick={nextSlide}
+            className="absolute right-5 text-white hover:text-gray-300 transition cursor-pointer z-10"
+          >
+            <ChevronRight size={48} />
+          </button>
+        )}
+        
+        {/* Image Indicators */}
+        {data.images.length > 1 && (
+          <div className="absolute bottom-5 flex gap-2">
+            {data.images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`h-3 w-3 rounded-full transition cursor-pointer ${
+                  idx === currentIndex ? "bg-white" : "bg-gray-500"
+                }`}
+              />
+            ))}
+          </div>
+        )}
       </div>
+      
+      {/* Tour Details and Booking */}
       <div
         className={`w-full ${styles.flexBetween} !flex-wrap-reverse !items-end`}
       >
         <TourDetail data={data} />
-        <Booking price={data?.price} tourId={data?._id} />
+        <Booking 
+          price={data?.price} 
+          tourId={data?._id} 
+          tourSlug={data?.slug} // Pass tourSlug to Booking component
+        />
       </div>
     </div>
   );

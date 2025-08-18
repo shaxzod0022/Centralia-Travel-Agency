@@ -4,14 +4,24 @@
     "description": "Descubre viajes inolvidables con Centralia Travel Agency. Explora tours personalizados, experiencias culturales y viajes sin complicaciones a los mejores destinos del mundo. ¡Reserva tu próxima aventura hoy mismo!"
   },
   "navbar": {
-    "btn": "Plan de viaje con IA",
+    "btn": "Plan de Viaje IA",
     "links": [
-      { "label": "hogar", "path": "/" },
+      { "label": "inicio", "path": "/" },
       { "label": "tours", "path": "/#tours" },
       { "label": "blog", "path": "/blog" },
-      { "label": "acerca de", "path": "/about" },
+      { "label": "sobre nosotros", "path": "/about" },
       { "label": "contacto", "path": "/#contact" }
     ]
+  },
+  "aiTravelPlan": {
+    "title": "Asistente de Viaje IA",
+    "subtitle": "Crea tu plan de viaje",
+    "welcomeMessage": "¡Hola! Estoy aquí para ayudarte a crear tu plan de viaje. ¿A dónde quieres viajar y qué tipo de experiencia buscas?",
+    "inputPlaceholder": "Pregunta sobre tu viaje...",
+    "sendButton": "Enviar",
+    "loadingMessage": "Generando respuesta...",
+    "userMessage": "Mensaje del usuario",
+    "aiMessage": "Respuesta de IA"
   },
   "HomePage": {
     "head": {
@@ -22,7 +32,18 @@
     "countries": {
       "item": "Cuatro naciones, aventuras infinitas",
       "title": "Explora Asia Central",
-      "description": "Desde antiguas ciudades de la Ruta de la Seda hasta lagos de montaña prístinos, cada destino ofrece experiencias extraordinarias por descubrir"
+      "description": "Desde antiguas ciudades de la Ruta de la Seda hasta lagos de montaña prístinos, cada destino ofrece experiencias extraordinarias por descubrir",
+      "noCountriesTitle": "Países no disponibles",
+      "noCountriesDescription": "Los datos de países no están disponibles en este momento.",
+      "scrollLeft": "Desplazar a la izquierda",
+      "scrollRight": "Desplazar a la derecha",
+      "comingSoon": "próximamente",
+      "defaultCountryName": "Nombre del país",
+      "defaultCountryDescription": "Descripción del país no disponible",
+      "available": "Disponible",
+      "comingSoonStatus": "Próximamente",
+      "readyToExplore": "Listo para explorar",
+      "preparingAdventures": "Preparando aventuras"
     },
     "signatureJourneys": {
       "item": "Experiencias seleccionadas",

@@ -4,7 +4,9 @@
   box-shadow: 0px 1px 2px 0px #0000000d;
   backdrop-filter: blur(12px);
 }
-
+button{
+  cursor: pointer;
+}
 .shadow__signature {
   box-shadow: 0px 4px 12px 0px #0000001a;
 }

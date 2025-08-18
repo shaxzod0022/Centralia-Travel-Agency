@@ -13,6 +13,16 @@
       { "label": "contact", "path": "/#contact" }
     ]
   },
+  "aiTravelPlan": {
+    "title": "AI Travel Assistant",
+    "subtitle": "Create your travel plan",
+    "welcomeMessage": "Hello! I'm here to help you create your travel plan. Where do you want to travel and what kind of experience are you looking for?",
+    "inputPlaceholder": "Ask about your trip...",
+    "sendButton": "Send",
+    "loadingMessage": "Generating response...",
+    "userMessage": "User message",
+    "aiMessage": "AI response"
+  },
   "footer": {
     "description": "Your trusted gateway to Central Asia's hidden treasures. We craft extraordinary journeys that go beyond the ordinary, connecting you with authentic experiences and lasting memories.",
     "copyright": "© 2025 Centralia Travel. All Rights Reserved.",
@@ -117,7 +127,18 @@
     "countries": {
       "item": "Four nations, infinite adventures",
       "title": "Explore Central Asia",
-      "description": "From ancient Silk Road cities to pristine mountine lakes, each destination offers extraordinary experiense waiting to be discovered"
+      "description": "From ancient Silk Road cities to pristine mountine lakes, each destination offers extraordinary experiense waiting to be discovered",
+      "noCountriesTitle": "No Countries Available",
+      "noCountriesDescription": "Countries data is not available at the moment.",
+      "scrollLeft": "Scroll left",
+      "scrollRight": "Scroll right",
+      "comingSoon": "coming soon",
+      "defaultCountryName": "Country Name",
+      "defaultCountryDescription": "Country description not available",
+      "available": "Available",
+      "comingSoonStatus": "Coming Soon",
+      "readyToExplore": "Ready to explore",
+      "preparingAdventures": "Preparing adventures"
     },
     "signatureJourneys": {
       "item": "Curated Experiences",

@@ -1,39 +1,81 @@
 import { CountryProps } from "@/interfaces/country.interface";
 import axios from "axios";
 
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080') + '/api';
+
 export const CountryService = {
-  async getAllCountries() {
-    const { data } = await axios.get<CountryProps[]>(
-      `https://centralia-travel-agency-back.onrender.com/api/countries`
-    );
-    return data;
+  async getAllCountries(): Promise<CountryProps[]> {
+    try {
+      const { data } = await axios.get<CountryProps[]>(
+        `${API_BASE_URL}/countries`
+      );
+      return data || [];
+    } catch (error) {
+      console.error('Error fetching countries:', error);
+      // Return empty array if backend is not available
+      return [];
+    }
   },
-  async getByIdCountry(id: string) {
-    const { data } = await axios.get<CountryProps>(
-      `https://centralia-travel-agency-back.onrender.com/api/countries/${id}`
-    );
-    return data;
+
+  async getByIdCountry(id: string): Promise<CountryProps | null> {
+    try {
+      const { data } = await axios.get<CountryProps>(
+        `${API_BASE_URL}/countries/${id}`
+      );
+      return data;
+    } catch (error) {
+      console.error('Error fetching country by ID:', error);
+      return null;
+    }
   },
-  async updateCountry(updateData: CountryProps, id: string, token: string) {
-    const { data } = await axios.patch<CountryProps>(
-      `https://centralia-travel-agency-back.onrender.com/api/countries/${id}`,
-      updateData,
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
-    return data;
+
+  async getBySlug(slug: string): Promise<CountryProps | null> {
+    try {
+      const { data } = await axios.get<CountryProps>(
+        `${API_BASE_URL}/countries/${slug}`
+      );
+      return data;
+    } catch (error) {
+      console.error('Error fetching country by slug:', error);
+      return null;
+    }
   },
-  async deleteCountry(id: string) {
-    const { data } = await axios.delete<CountryProps>(
-      `https://centralia-travel-agency-back.onrender.com/api/countries/${id}`
-    );
-    return data;
+
+  async updateCountry(updateData: CountryProps, id: string, token: string): Promise<CountryProps | null> {
+    try {
+      const { data } = await axios.patch<CountryProps>(
+        `${API_BASE_URL}/countries/${id}`,
+        updateData,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      return data;
+    } catch (error) {
+      console.error('Error updating country:', error);
+      return null;
+    }
   },
-  async createTour(form: CountryProps, token: string) {
-    const { data } = await axios.post<CountryProps>(
-      `https://centralia-travel-agency-back.onrender.com/api/countries`,
-      form,
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
-    return data;
+
+  async deleteCountry(id: string): Promise<boolean> {
+    try {
+      await axios.delete(`${API_BASE_URL}/countries/${id}`);
+      return true;
+    } catch (error) {
+      console.error('Error deleting country:', error);
+      return false;
+    }
+  },
+
+  async createCountry(form: CountryProps, token: string): Promise<CountryProps | null> {
+    try {
+      const { data } = await axios.post<CountryProps>(
+        `${API_BASE_URL}/countries`,
+        form,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      return data;
+    } catch (error) {
+      console.error('Error creating country:', error);
+      return null;
+    }
   },
 };
