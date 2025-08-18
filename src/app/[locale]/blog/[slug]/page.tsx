@@ -3,7 +3,6 @@
 import { BlogService } from "@/services/blog.service";
 import { styles } from "@/styles/styles";
 import React, { useState } from "react";
-import { notFound } from "next/navigation";
 import { BlogProps, Comment } from "@/interfaces/insights.interface";
 import Link from "next/link";
 
