@@ -1,7 +1,7 @@
 import { BlogProps } from "@/interfaces/insights.interface";
 import axios from "axios";
 
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080') + '/api';
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'https://centralia-travel-agency-back.onrender.com') + '/api';
 
 console.log('Frontend Blog Service - API Base URL:', API_BASE_URL);
 

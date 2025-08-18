@@ -105,7 +105,7 @@ const TravelInsights: FC<Props> = ({ data }) => {
             <div className="relative h-48 overflow-hidden">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}${item.coverImage}`}
+                src={`${process.env.NEXT_PUBLIC_API_URL || 'https://centralia-travel-agency-back.onrender.com'}${item.coverImage}`}
                 alt={item.title[lang as keyof TranslationsProps]}
                 loading="lazy"
               />

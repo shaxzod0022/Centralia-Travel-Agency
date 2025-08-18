@@ -103,7 +103,7 @@ const Countries: FC<Props> = ({ data }) => {
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
               style={{
-                backgroundImage: `url("${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}${item.heroImageUrl}")`,
+                backgroundImage: `url("${process.env.NEXT_PUBLIC_API_URL || 'https://centralia-travel-agency-back.onrender.com'}${item.heroImageUrl}")`,
               }}
             />
             

@@ -1,4 +1,5 @@
 // app/[locale]/blog/[slug]/page.tsx
+"use client"
 import { BlogService } from "@/services/blog.service";
 import { styles } from "@/styles/styles";
 import React, { useState } from "react";
@@ -69,7 +70,7 @@ function BlogDetail({ data }: { data: BlogProps }) {
       {data.coverImage && (
         <div className="relative">
           <img
-            src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}${data.coverImage}`}
+            src={`${process.env.NEXT_PUBLIC_API_URL || 'https://centralia-travel-agency-back.onrender.com'}${data.coverImage}`}
             alt={data.title?.[lang as keyof typeof data.title] || "Blog cover"}
             className="w-full h-96 md:h-[500px] object-cover rounded-2xl shadow-lg"
           />
