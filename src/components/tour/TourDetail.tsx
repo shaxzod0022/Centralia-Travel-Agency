@@ -17,6 +17,9 @@ import {
   Info,
   ChevronDown,
   ChevronUp,
+  ChevronRight,
+  Check,
+  Dot,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import React, { FC, useState } from "react";

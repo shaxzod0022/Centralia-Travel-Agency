@@ -1,11 +1,11 @@
 "use client";
-import { styles } from "@/styles/styles";
-import React, { FC, useState } from "react";
-import Btn from "../helpers/Btn";
+import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Minus, Plus, User, Users, AlertCircle, CheckCircle } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { CheckCircle, AlertCircle, Minus, Plus, Users, User } from "lucide-react";
+import { styles } from "@/styles/styles";
 import { OrderService, CreateOrderData } from "@/services/order.service";
+import Btn from "../helpers/Btn";
+import { useRouter } from "next/navigation";
 
 interface BookingProps {
   tourSlug: string;
@@ -14,22 +14,25 @@ interface BookingProps {
 
 const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
   const t = useTranslations("TourPage");
+  const router = useRouter();
   const [inc, setInc] = useState<number>(1);
   const [bookingType, setBookingType] = useState<'group' | 'individual'>('individual');
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
-    phone: '',
+    phoneNumber: '',
+    numberOfPeople: 1,
+    bookingType: 'individual' as 'group' | 'individual',
     tourDate: '',
-    info: ''
+    customerNote: ''
   });
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
   
   const myPrice = tourPrice;
-  const router = useRouter();
 
   // Calculate price based on booking type and number of people
   const calculatePrice = () => {
@@ -40,39 +43,11 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
     return basePrice;
   };
 
-  const validateForm = () => {
-    const newErrors: Record<string, string> = {};
-
-    if (!formData.firstName.trim()) {
-      newErrors.firstName = 'First name is required';
-    }
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = 'Last name is required';
-    }
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
-    }
-    if (!formData.tourDate) {
-      newErrors.tourDate = 'Tour date is required';
-    }
-    if (inc < 1) {
-      newErrors.number = 'Number of people must be at least 1';
-    }
-    if (!tourSlug) {
-      newErrors.tour = 'Tour information is missing';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     // Clear error when user starts typing
-    if (errors[field]) {
-      setErrors(prev => ({ ...prev, [field]: '' }));
+    if (formErrors[field]) {
+      setFormErrors(prev => ({ ...prev, [field]: '' }));
     }
   };
 
@@ -85,8 +60,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
     if (!formData.firstName.trim()) errors.firstName = 'First name is required';
     if (!formData.lastName.trim()) errors.lastName = 'Last name is required';
     if (!formData.email.trim()) errors.email = 'Email is required';
-    if (!formData.numberOfPeople || formData.numberOfPeople < 1) errors.numberOfPeople = 'Number of people must be at least 1';
-    if (!formData.bookingType) errors.bookingType = 'Please select booking type';
+    if (inc < 1) errors.numberOfPeople = 'Number of people must be at least 1';
     if (!formData.tourDate) errors.tourDate = 'Tour date is required';
     
     if (Object.keys(errors).length > 0) {
@@ -103,10 +77,10 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
         lastName: formData.lastName,
         email: formData.email,
         phoneNumber: formData.phoneNumber || '',
-        numberOfPeople: formData.numberOfPeople,
+        numberOfPeople: inc,
         bookingType: formData.bookingType,
         tourDate: formData.tourDate,
-        totalPrice: calculateTotalPrice(),
+        totalPrice: calculatePrice(),
         customerNote: formData.customerNote || '',
         tourSlug: tourSlug
       };
@@ -139,7 +113,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
   };
 
   // Success state
-  if (isSuccess) {
+  if (submitSuccess) {
     return (
       <div className={`lg:w-[34%] mb-5 w-full p-5 border border-green-300 rounded-xl ${styles.flexCol} md:gap-5 gap-3 bg-green-50`}>
         <div className="text-center">
@@ -170,7 +144,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
           </label>
           <input
             className={`border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] ${
-              errors.firstName ? 'border-red-500' : ''
+              formErrors.firstName ? 'border-red-500' : ''
             }`}
             type="text"
             name="firstName"
@@ -178,10 +152,10 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             onChange={(e) => handleInputChange('firstName', e.target.value)}
             required
           />
-          {errors.firstName && (
+          {formErrors.firstName && (
             <div className="flex items-center gap-1 text-red-500 text-sm">
               <AlertCircle size={14} />
-              {errors.firstName}
+              {formErrors.firstName}
             </div>
           )}
         </div>
@@ -193,7 +167,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
           </label>
           <input
             className={`border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] ${
-              errors.lastName ? 'border-red-500' : ''
+              formErrors.lastName ? 'border-red-500' : ''
             }`}
             type="text"
             name="lastName"
@@ -201,10 +175,10 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             onChange={(e) => handleInputChange('lastName', e.target.value)}
             required
           />
-          {errors.lastName && (
+          {formErrors.lastName && (
             <div className="flex items-center gap-1 text-red-500 text-sm">
               <AlertCircle size={14} />
-              {errors.lastName}
+              {formErrors.lastName}
             </div>
           )}
         </div>
@@ -216,7 +190,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
           </label>
           <input
             className={`border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] ${
-              errors.email ? 'border-red-500' : ''
+              formErrors.email ? 'border-red-500' : ''
             }`}
             type="email"
             name="email"
@@ -224,10 +198,10 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             onChange={(e) => handleInputChange('email', e.target.value)}
             required
           />
-          {errors.email && (
+          {formErrors.email && (
             <div className="flex items-center gap-1 text-red-500 text-sm">
               <AlertCircle size={14} />
-              {errors.email}
+              {formErrors.email}
             </div>
           )}
         </div>
@@ -241,8 +215,8 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             className="border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F]"
             type="tel"
             name="phone"
-            value={formData.phone}
-            onChange={(e) => handleInputChange('phone', e.target.value)}
+            value={formData.phoneNumber}
+            onChange={(e) => handleInputChange('phoneNumber', e.target.value)}
           />
         </div>
 
@@ -264,7 +238,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             </button>
             <input
               className={`border-1 border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] text-center w-30 ${
-                errors.number ? 'border-red-500' : ''
+                formErrors.numberOfPeople ? 'border-red-500' : ''
               }`}
               type="number"
               name="number"
@@ -281,10 +255,10 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
               <Plus />
             </button>
           </div>
-          {errors.number && (
+          {formErrors.numberOfPeople && (
             <div className="flex items-center gap-1 text-red-500 text-sm">
               <AlertCircle size={14} />
-              {errors.number}
+              {formErrors.numberOfPeople}
             </div>
           )}
         </div>
@@ -335,7 +309,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
           </label>
           <input
             className={`border-1 w-full border-gray-300 rounded-xl text-lg p-3 focus:outline-none focus:border-[#6EBB2F] ${
-              errors.tourDate ? 'border-red-500' : ''
+              formErrors.tourDate ? 'border-red-500' : ''
             }`}
             type="date"
             name="date"
@@ -345,10 +319,10 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             min={new Date().toISOString().split('T')[0]}
             required
           />
-          {errors.tourDate && (
+          {formErrors.tourDate && (
             <div className="flex items-center gap-1 text-red-500 text-sm">
               <AlertCircle size={14} />
-              {errors.tourDate}
+              {formErrors.tourDate}
             </div>
           )}
         </div>
@@ -372,8 +346,8 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
             id="description"
             rows={5}
             placeholder={t("infoPlaceholder")}
-            value={formData.info}
-            onChange={(e) => handleInputChange('info', e.target.value)}
+            value={formData.customerNote}
+            onChange={(e) => handleInputChange('customerNote', e.target.value)}
           ></textarea>
         </div>
 

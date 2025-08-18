@@ -1,6 +1,7 @@
-import { About, AboutHead, QuickLinks } from "@/components";
-import { styles } from "@/styles/styles";
 import React from "react";
+import { styles } from "@/styles/styles";
+import About from "@/components/about/About";
+import { getTranslations } from "next-intl/server";
 
 const page = () => {
   return (

@@ -1,10 +1,9 @@
 "use client";
+import React, { FC, useRef, useMemo, useCallback } from "react";
 import { CountryProps } from "@/interfaces/country.interface";
-import { styles } from "@/styles/styles";
 import { ArrowRight, ChevronLeft, ChevronRight, AlertCircle, MapPin } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import React, { FC, useRef, useMemo, useCallback } from "react";
 import { TranslationsProps } from "../../interfaces/helper.interface";
 
 interface Props {
