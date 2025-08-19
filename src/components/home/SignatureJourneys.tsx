@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { TourProps } from "@/interfaces/signature.interface";
 import { TranslationsProps } from "@/interfaces/helper.interface";
 import { ChevronLeft, ChevronRight, AlertCircle } from "lucide-react";
-import { getFirstImageUrl } from "@/utils/imageUtils";
+import { getSingleImageUrl } from "@/utils/imageUtils";
 
 interface Props {
   data: TourProps[];
@@ -19,10 +19,53 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
   const lang = useLocale();
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // Debug logging
+  console.log('SignatureJourneys - Received data:', data);
+  console.log('SignatureJourneys - Current language:', lang);
+
+  // Error boundary for data validation
+  if (!data || !Array.isArray(data)) {
+    console.error('SignatureJourneys - Invalid data received:', data);
+    return (
+      <div className="w-full max-w-[1800px] mx-auto p-8">
+        <div className="text-center">
+          <AlertCircle className="w-16 h-16 text-red-400 mx-auto mb-4" />
+          <h3 className="text-lg font-medium text-red-900 mb-2">
+            Invalid Data Received
+          </h3>
+          <p className="text-red-600">
+            The tours data is not in the expected format.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   // Memoize filtered tours to avoid unnecessary re-renders
   const filteredTours = useMemo(() => {
-    return data.filter(tour => tour && tour.slug && tour.title);
-  }, [data]);
+    const filtered = data.filter(tour => {
+      // Check if tour exists and has required fields
+      if (!tour || !tour._id) return false;
+      
+      // Check if tour has title in the current language
+      const title = tour.title?.[lang as keyof TranslationsProps];
+      if (!title || title.trim() === '') return false;
+      
+      // Check if tour has description in the current language
+      const description = tour.description?.[lang as keyof TranslationsProps];
+      if (!description || description.trim() === '') return false;
+      
+      // Check if tour has required numeric fields
+      if (typeof tour.price !== 'number' || tour.price < 0) return false;
+      if (typeof tour.tourDays !== 'number' || tour.tourDays < 1) return false;
+      if (typeof tour.difficulty !== 'number' || tour.difficulty < 1 || tour.difficulty > 3) return false;
+      
+      return true;
+    });
+    
+    console.log('SignatureJourneys - Filtered tours:', filtered.length);
+    return filtered;
+  }, [data, lang]);
 
   // Memoize scroll function to prevent unnecessary re-renders
   const scrollByCard = useCallback((direction: "left" | "right") => {
@@ -42,8 +85,18 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
 
   // Handle tour click with error handling
   const handleTourClick = useCallback((slug: string) => {
-    if (slug) {
-      router.push(`/tour/${slug}`);
+    if (slug && slug.trim() !== '') {
+      try {
+        router.push(`/tour/${slug}`);
+      } catch (error) {
+        console.error('Error navigating to tour:', error);
+        // Fallback: try to navigate to tours page
+        router.push('/tours');
+      }
+    } else {
+      console.warn('Tour slug is missing or empty');
+      // Fallback: navigate to tours page
+      router.push('/tours');
     }
   }, [router]);
 
@@ -54,11 +107,19 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
         <div className="text-center">
           <AlertCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-lg font-medium text-gray-900 mb-2">
-            No Tours Available
+            {t("noToursAvailable")}
           </h3>
-          <p className="text-gray-500">
-            Tours data is not available at the moment.
+          <p className="text-gray-500 mb-4">
+            {t("toursNotAvailable")}
           </p>
+          {/* Debug information */}
+          <div className="text-left bg-gray-100 p-4 rounded-lg max-w-md mx-auto">
+            <h4 className="font-semibold mb-2">{t("debugInformation")}</h4>
+            <p className="text-sm text-gray-600">{t("rawDataLength")}: {data?.length || 0}</p>
+            <p className="text-sm text-gray-600">{t("filteredTours")}: {filteredTours?.length || 0}</p>
+            <p className="text-sm text-gray-600">{t("currentLanguage")}: {lang}</p>
+            <p className="text-sm text-gray-600">{t("apiUrl")}: {process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}</p>
+          </div>
         </div>
       </div>
     );
@@ -104,15 +165,19 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
             <div className="relative h-48 overflow-hidden">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src={`${process.env.NEXT_PUBLIC_API_URL || 'https://centralia-travel-agency-back.onrender.com'}${item.images[0]}`}
-                alt={item.title[lang as keyof TranslationsProps]}
+                src={item.image ? getSingleImageUrl(item.image) : '/placeholder-tour.svg'}
+                alt={item.title[lang as keyof TranslationsProps] || 'Tour image'}
                 loading="lazy"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/placeholder-tour.svg';
+                }}
               />
               
               {/* Tour Days Badge */}
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
                 <span className="text-sm font-semibold text-gray-800">
-                  {item.tourDays} {t("dayItem")}
+                  {item.tourDays || 1} {t("dayItem")}
                 </span>
               </div>
             </div>
@@ -124,12 +189,12 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
                 style={{ fontFamily: "Playfair Display" }}
                 className="text-xl font-bold mb-3 text-[#1B4332] line-clamp-2 leading-tight"
               >
-                {item.title[lang as keyof TranslationsProps]}
+                {item.title?.[lang as keyof TranslationsProps] || 'Untitled Tour'}
               </h4>
 
               {/* Description */}
               <p className="text-[#6C757D] text-sm mb-4 line-clamp-2 leading-relaxed">
-                {item.description[lang as keyof TranslationsProps]}
+                {item.description?.[lang as keyof TranslationsProps] || 'No description available'}
               </p>
 
               {/* Difficulty & Country */}
@@ -138,10 +203,11 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
                   <span className="text-sm">{t("difficultyTitle")}:</span>
                   <div className="flex gap-1">
                     {[1, 2, 3].map((level) => {
+                      const difficulty = item.difficulty || 1;
                       let color = "bg-gray-400";
-                      if (item.difficulty === 1 && level === 1) color = "bg-green-500";
-                      else if (item.difficulty === 2 && level <= 2) color = "bg-yellow-500";
-                      else if (item.difficulty === 3) color = "bg-red-500";
+                      if (difficulty === 1 && level === 1) color = "bg-green-500";
+                      else if (difficulty === 2 && level <= 2) color = "bg-yellow-500";
+                      else if (difficulty === 3) color = "bg-red-500";
                       
                       return (
                         <span
@@ -154,15 +220,15 @@ const SignatureJourneys: FC<Props> = ({ data }) => {
                 </div>
                 
                 <span className="bg-gray-100 text-sm text-[#1B4332] capitalize px-3 py-1 rounded-full font-semibold">
-                  {item.country[lang as keyof TranslationsProps]}
+                  {item.country?.[lang as keyof TranslationsProps] || 'Unknown Country'}
                 </span>
               </div>
 
               {/* Price & Button */}
-              <div className="flex items-center justify-between">
+              <div className="flex flex-wrap gap-2 items-center justify-between">
                 <div>
                   <p className="text-2xl font-bold text-[#1B4332]">
-                    ${item.price.toLocaleString()}
+                    ${(item.price || 0).toLocaleString()}
                   </p>
                   <span className="text-sm text-[#6C757D]">
                     {t("priceItem")}

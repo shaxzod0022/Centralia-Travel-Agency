@@ -191,7 +191,9 @@
       "description": "Expert guides, cultural insights, and practical tips to help you make the most of your Central Asian adventure",
       "btn": "Visit Our Blog",
       "cardBtn": "Read More",
-      "read": "min read"
+      "read": "min read",
+      "noBlogsAvailable": "No Blog Posts Available",
+      "noBlogsDescription": "Blog posts are not available at the moment."
     },
     "activityAndStories": {
       "btn": "View All Photo",
@@ -301,6 +303,68 @@
     "title": "Journey Wisdom",
     "description": "Gain valuable tips, cultural knowledge, and expert advice to make every step of your journey richer and more meaningful, wherever your travels take you."
   },
+  "Blog": {
+    "title": "Travel Blog & Insights",
+    "subtitle": "Discover stories, tips, and inspiration from our travel experts and fellow adventurers",
+    "noBlogs": {
+      "title": "No Blog Posts Available",
+      "description": "Blog posts are not available at the moment. Please check back later."
+    },
+    "timeAgo": {
+      "today": "Today",
+      "daysAgo": "{days} days ago",
+      "weeksAgo": "{weeks} weeks ago",
+      "monthsAgo": "{months} months ago"
+    },
+    "unknownDate": "Unknown date",
+    "status": {
+      "published": "Published"
+    },
+    "unknownAuthor": "Unknown Author",
+    "readMore": "Read More",
+    "loadMore": "Load More Posts",
+    "backToBlogs": "Back to Blogs",
+    "published": "Published",
+    "views": "Views",
+    "ratings": "ratings",
+    "noRatings": "No ratings",
+    "author": "Author",
+    "additionalInfo": "Additional Information",
+    "tags": "Tags",
+    "like": "Like",
+    "liked": "Liked",
+    "comment": "Comment",
+    "comments": "Comments",
+    "shareThisPost": "Share this post",
+    "leaveComment": "Leave a Comment",
+    "noCommentsYet": "No comments yet",
+    "beFirstToComment": "Be the first to comment!",
+    "relatedPosts": "Related Posts",
+    "relatedPostsDescription": "Explore more travel stories and insights from our blog",
+    "exploreAllPosts": "Explore All Posts",
+    "fullName": "Full Name",
+    "email": "Email",
+    "rating": "Rating",
+    "enterFullName": "Enter your full name",
+    "enterEmail": "Enter your email",
+    "selectRating": "Select rating",
+    "excellent": "Excellent",
+    "veryGood": "Very Good",
+    "good": "Good",
+    "fair": "Fair",
+    "poor": "Poor",
+    "shareYourThoughts": "Share your thoughts about this blog post...",
+    "submitComment": "Submit Comment",
+    "submitting": "Submitting...",
+    "commentSubmitted": "Comment submitted successfully!",
+    "commentSubmissionFailed": "Failed to submit comment. Please try again.",
+    "reply": "Reply",
+    "contentNotAvailable": "Content not available",
+    "latestTravelInsights": "Latest Travel Insights",
+    "articles": "Articles",
+    "expertWriters": "Expert Writers",
+    "travelTips": "Travel Tips"
+  },
   "TourPage": {
     "day": "day",
     "group": "Group",
@@ -324,7 +388,11 @@
     "info": "Additional information",
     "infoPlaceholder": "Please provide as many relevant details as possible.",
     "btn": "Submit",
-    "call": "Book a call"
+    "call": "Book a call",
+    "expert": "Talk to our travel expert",
+    "groupDiscount": "Group discount",
+    "standardPrice": "Standard price",
+    "totalPrice": "Total price"
   },
   "MeetingPage": {
     "title": "Meeting",

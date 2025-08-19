@@ -57,11 +57,11 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
     // Validate form
     const errors: Record<string, string> = {};
     
-    if (!formData.firstName.trim()) errors.firstName = 'First name is required';
-    if (!formData.lastName.trim()) errors.lastName = 'Last name is required';
-    if (!formData.email.trim()) errors.email = 'Email is required';
-    if (inc < 1) errors.numberOfPeople = 'Number of people must be at least 1';
-    if (!formData.tourDate) errors.tourDate = 'Tour date is required';
+    if (!formData.firstName.trim()) errors.firstName = t("validationErrors.firstNameRequired");
+    if (!formData.lastName.trim()) errors.lastName = t("validationErrors.lastNameRequired");
+    if (!formData.email.trim()) errors.email = t("validationErrors.emailRequired");
+    if (inc < 1) errors.numberOfPeople = t("validationErrors.numberOfPeopleMin");
+    if (!formData.tourDate) errors.tourDate = t("validationErrors.tourDateRequired");
     
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
@@ -85,7 +85,6 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
         tourSlug: tourSlug
       };
 
-      console.log('Submitting order:', orderData);
       const response = await OrderService.createOrder(orderData);
       
       if (response && response.success) {
@@ -102,11 +101,11 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
         });
         setFormErrors({});
       } else {
-        setSubmitError('Failed to create order. Please try again.');
+        setSubmitError(t("orderErrors.failedToCreate"));
       }
     } catch (error) {
       console.error('Error creating order:', error);
-      setSubmitError('An error occurred while creating the order.');
+      setSubmitError(t("orderErrors.errorOccurred"));
     } finally {
       setIsSubmitting(false);
     }
@@ -118,12 +117,12 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
       <div className={`lg:w-[34%] mb-5 w-full p-5 border border-green-300 rounded-xl ${styles.flexCol} md:gap-5 gap-3 bg-green-50`}>
         <div className="text-center">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-green-800 mb-2">Booking Successful!</h3>
+          <h3 className="text-xl font-bold text-green-800 mb-2">{t("bookingSuccessful")}</h3>
           <p className="text-center text-green-600 font-medium">
-            Your tour has been booked successfully. We&apos;ll send you a confirmation email shortly.
+            {t("bookingSuccessMessage")}
           </p>
           <p className="text-sm text-green-500">
-            Redirecting back to form...
+            {t("redirectingMessage")}
           </p>
         </div>
       </div>
@@ -279,7 +278,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
                 <Users className="w-full" />
               </span>
               <p className="font-semibold mt-2">{t("group")}</p>
-              <p className="text-sm text-gray-600">40% discount</p>
+              <p className="text-sm text-gray-600">{t("groupDiscount")}</p>
             </div>
           </label>
           <label className="flex-1 cursor-pointer">
@@ -296,7 +295,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
                 <User className="w-full" />
               </span>
               <p className="font-semibold mt-2">{t("individual")}</p>
-              <p className="text-sm text-gray-600">Standard price</p>
+              <p className="text-sm text-gray-600">{t("standardPrice")}</p>
             </div>
           </label>
         </div>
@@ -329,7 +328,7 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
 
         {/* Price Display */}
         <div className={`${styles.flexBetween} bg-gray-50 p-3 rounded-lg`}>
-          <p className={`${styles.p}`}>Total Price:</p>
+          <p className={`${styles.p}`}>{t("totalPrice")}:</p>
           <p className={`${styles.p} text-green-950 font-semibold text-lg`}>
             ${calculatePrice().toLocaleString()}
           </p>
@@ -354,20 +353,20 @@ const Booking: React.FC<BookingProps> = ({ tourSlug, tourPrice }) => {
         {/* Submit Button */}
         <Btn 
           myClass="font-semibold" 
-          title={isSubmitting ? "Creating Order..." : t("btn")}
+          title={isSubmitting ? t("creatingOrder") : t("btn")}
           disabled={isSubmitting}
         />
       </form>
 
       {/* Expert Contact */}
-      <div className={`${styles.flex} gap-2 w-full`}>
+      <div className={`${styles.flex} border rounded-xl p-3 border-gray-400 gap-2 w-full`}>
         <img
-          className="rounded-full w-24 h-24 object-cover"
+          className="rounded-full w-20 h-20 object-cover"
           src="https://thumbs.dreamstime.com/b/consulting-expert-advice-support-service-business-concept-98129276.jpg"
           alt="Expert"
         />
         <div>
-          <p className="mb-2">Expert</p>
+          <p className="mb-2">{t("expert")}</p>
           <Btn
             onClick={() => router.push("/meeting")}
             myClass="!w-full rounded-lg"

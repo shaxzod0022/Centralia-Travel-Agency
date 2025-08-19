@@ -23,36 +23,29 @@ const HomePage = async (): Promise<React.JSX.Element> => {
   let blogs: BlogProps[] = [];
 
   try {
-    console.log('Fetching countries data...');
     const countriesData = await CountryService.getAllCountries();
     countries = countriesData || [];
-    console.log(`Countries fetched: ${countries.length} countries`);
   } catch (error) {
     console.error('Error fetching countries:', error);
     // Continue with empty array
   }
 
   try {
-    console.log('Fetching tours data...');
     const toursData = await TourService.getAllTours();
     tours = toursData || [];
-    console.log(`Tours fetched: ${tours.length} tours`);
+    console.log('HomePage - Tours fetched:', tours.length);
   } catch (error) {
-    console.error('Error fetching tours:', error);
-    // Continue with empty array
+    console.error('HomePage - Error fetching tours:', error);
+    tours = [];
   }
 
   try {
-    console.log('Fetching blogs data...');
     const blogsData = await BlogService.getAllBlogs();
     blogs = blogsData || [];
-    console.log(`Blogs fetched: ${blogs.length} blogs`);
   } catch (error) {
     console.error('Error fetching blogs:', error);
     // Continue with empty array
   }
-
-  console.log(blogs);
 
   return (
     <div className={`mt-10`}>

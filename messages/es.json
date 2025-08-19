@@ -96,7 +96,9 @@
       "description": "Guías de expertos, ideas culturales y consejos prácticos para aprovechar al máximo tu aventura en Asia Central",
       "btn": "Visita nuestro blog",
       "cardBtn": "Leer más",
-      "read": "min de lectura"
+      "read": "min de lectura",
+      "noBlogsAvailable": "No hay entradas de blog disponibles",
+      "noBlogsDescription": "Las entradas del blog no están disponibles en este momento."
     },
     "activityAndStories": {
       "btn": "Ver todas las fotos",
@@ -241,6 +243,68 @@
     "title": "Sabiduría de Viaje",
     "description": "Obtén valiosos consejos, conocimientos culturales y asesoramiento experto para que cada paso de tu viaje sea más rico y significativo, dondequiera que te lleven tus aventuras."
   },
+  "Blog": {
+    "title": "Blog de Viajes e Ideas",
+    "subtitle": "Descubre historias, consejos e inspiración de nuestros expertos en viajes y compañeros aventureros",
+    "noBlogs": {
+      "title": "No hay entradas de blog disponibles",
+      "description": "Las entradas del blog no están disponibles en este momento. Por favor, vuelve más tarde."
+    },
+    "timeAgo": {
+      "today": "Hoy",
+      "daysAgo": "hace {days} días",
+      "weeksAgo": "hace {weeks} semanas",
+      "monthsAgo": "hace {months} meses"
+    },
+    "unknownDate": "Fecha desconocida",
+    "status": {
+      "published": "Publicado"
+    },
+    "unknownAuthor": "Autor desconocido",
+    "readMore": "Leer más",
+    "loadMore": "Cargar más entradas",
+    "backToBlogs": "Volver al blog",
+    "published": "Publicado",
+    "views": "Vistas",
+    "ratings": "valoraciones",
+    "noRatings": "Sin valoraciones",
+    "author": "Autor",
+    "additionalInfo": "Información adicional",
+    "tags": "Etiquetas",
+    "like": "Me gusta",
+    "liked": "Me gustó",
+    "comment": "Comentario",
+    "comments": "Comentarios",
+    "shareThisPost": "Compartir esta entrada",
+    "leaveComment": "Dejar un comentario",
+    "noCommentsYet": "Aún no hay comentarios",
+    "beFirstToComment": "¡Sé el primero en comentar!",
+    "relatedPosts": "Entradas relacionadas",
+    "relatedPostsDescription": "Explora más historias de viajes e ideas de nuestro blog",
+    "exploreAllPosts": "Explorar todas las entradas",
+    "fullName": "Nombre completo",
+    "email": "Correo electrónico",
+    "rating": "Valoración",
+    "enterFullName": "Ingresa tu nombre completo",
+    "enterEmail": "Ingresa tu correo electrónico",
+    "selectRating": "Selecciona valoración",
+    "excellent": "Excelente",
+    "veryGood": "Muy bueno",
+    "good": "Bueno",
+    "fair": "Regular",
+    "poor": "Malo",
+    "shareYourThoughts": "Comparte tus pensamientos sobre esta entrada del blog...",
+    "submitComment": "Enviar comentario",
+    "submitting": "Enviando...",
+    "commentSubmitted": "¡Comentario enviado exitosamente!",
+    "commentSubmissionFailed": "No se pudo enviar el comentario. Por favor, inténtalo de nuevo.",
+    "reply": "Responder",
+    "contentNotAvailable": "Contenido no disponible",
+    "latestTravelInsights": "Últimas Ideas de Viaje",
+    "articles": "Artículos",
+    "expertWriters": "Escritores Expertos",
+    "travelTips": "Consejos de Viaje"
+  },
   "TourPage": {
     "day": "día",
     "group": "Grupo",
@@ -264,7 +328,11 @@
     "info": "Información adicional",
     "infoPlaceholder": "Por favor, proporciona tantos detalles relevantes como sea posible.",
     "btn": "Enviar",
-    "call":"Reservar una llamada"
+    "call":"Reservar una llamada",
+    "expert": "Habla con nuestro experto en viajes",
+    "groupDiscount": "Descuento de grupo",
+    "standardPrice": "Precio estándar",
+    "totalPrice": "Precio total"
   },
   "MeetingPage": {
     "title": "Reunión",

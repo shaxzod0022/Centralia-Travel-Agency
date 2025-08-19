@@ -96,7 +96,9 @@
       "description": "专家指南、文化见解和实用建议，助您充分体验中亚之旅",
       "btn": "访问我们的博客",
       "cardBtn": "阅读更多",
-      "read": "分钟阅读"
+      "read": "分钟阅读",
+      "noBlogsAvailable": "暂无博客文章",
+      "noBlogsDescription": "博客文章暂时不可用。"
     },
     "activityAndStories": {
       "btn": "查看所有照片",
@@ -241,6 +243,68 @@
     "title": "旅行智慧",
     "description": "无论您的旅程通向何处，获取宝贵的建议、文化知识和专家指导，让您的每一步旅行更加充实和有意义。"
   },
+  "Blog": {
+    "title": "旅行博客与见解",
+    "subtitle": "发现来自我们旅行专家和同行冒险者的故事、建议和灵感",
+    "noBlogs": {
+      "title": "暂无博客文章",
+      "description": "博客文章暂时不可用。请稍后再来查看。"
+    },
+    "timeAgo": {
+      "today": "今天",
+      "daysAgo": "{days}天前",
+      "weeksAgo": "{weeks}周前",
+      "monthsAgo": "{months}个月前"
+    },
+    "unknownDate": "未知日期",
+    "status": {
+      "published": "已发布"
+    },
+    "unknownAuthor": "未知作者",
+    "readMore": "阅读更多",
+    "loadMore": "加载更多文章",
+    "backToBlogs": "返回博客",
+    "published": "已发布",
+    "views": "浏览量",
+    "ratings": "评分",
+    "noRatings": "暂无评分",
+    "author": "作者",
+    "additionalInfo": "附加信息",
+    "tags": "标签",
+    "like": "喜欢",
+    "liked": "已喜欢",
+    "comment": "评论",
+    "comments": "评论",
+    "shareThisPost": "分享这篇文章",
+    "leaveComment": "发表评论",
+    "noCommentsYet": "暂无评论",
+    "beFirstToComment": "成为第一个评论的人！",
+    "relatedPosts": "相关文章",
+    "relatedPostsDescription": "探索我们博客中更多旅行故事和见解",
+    "exploreAllPosts": "探索所有文章",
+    "fullName": "全名",
+    "email": "邮箱",
+    "rating": "评分",
+    "enterFullName": "输入您的全名",
+    "enterEmail": "输入您的邮箱",
+    "selectRating": "选择评分",
+    "excellent": "优秀",
+    "veryGood": "很好",
+    "good": "好",
+    "fair": "一般",
+    "poor": "差",
+    "shareYourThoughts": "分享您对这篇博客文章的想法...",
+    "submitComment": "提交评论",
+    "submitting": "提交中...",
+    "commentSubmitted": "评论提交成功！",
+    "commentSubmissionFailed": "评论提交失败。请重试。",
+    "reply": "回复",
+    "contentNotAvailable": "内容不可用",
+    "latestTravelInsights": "最新旅行见解",
+    "articles": "文章",
+    "expertWriters": "专家作者",
+    "travelTips": "旅行贴士"
+  },
   "TourPage": {
     "day": "天",
     "group": "团体",
@@ -263,7 +327,12 @@
     "tourDate": "您想什么时候出行？",
     "info": "附加信息",
     "infoPlaceholder": "请尽可能提供相关细节。",
-    "btn": "提交"
+    "btn": "提交",
+    "call": "预约通话",
+    "expert": "与我们的旅行专家交谈",
+    "groupDiscount": "团体折扣",
+    "standardPrice": "标准价格",
+    "totalPrice": "总价格"
   },
   "MeetingPage": {
     "title": "会议",

@@ -8,6 +8,7 @@ interface AuthorDto {
 export interface Comment {
   _id: string;
   blogId: string;
+  blogSlug?: string; // Add blog slug for better tracking
   fullName: string;
   email: string;
   rating: number;
@@ -24,14 +25,17 @@ export interface BlogProps {
   summary: TranslationsProps;
   content: TranslationsProps;
   additionalInfo: TranslationsProps;
-  coverImage: string;
+  coverImage?: string;
   author: AuthorDto;
   tags: string[];
-  category?: TranslationsProps;
-  views?: number;
-  ratingAvg?: number;
-  ratingCount?: number;
-  publishedAt?: string;
-  status: string;
+  views: number;
+  ratingAvg: number;
+  ratingCount: number;
   comments?: Comment[];
+  likes: string[];
+  likeCount: number;
+  publishedAt?: string;
+  status: "draft" | "published";
+  createdAt?: string;
+  updatedAt?: string;
 }

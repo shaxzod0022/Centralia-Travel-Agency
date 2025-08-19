@@ -9,11 +9,17 @@ export const getImageUrl = (imagePath: string): string => {
   
   // If it's a relative path, construct the full URL
   if (imagePath.startsWith('/')) {
-    return `https://centralia-travel-agency-back.onrender.com${imagePath}`;
+    return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}${imagePath}`;
   }
   
   // If it's just a filename, construct the full path
-  return `https://centralia-travel-agency-back.onrender.com/uploads/tours/${imagePath}`;
+  return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}/uploads/tours/${imagePath}`;
+};
+
+// Utility function to get image URL with fallback (for single image fields)
+export const getSingleImageUrl = (image: string | undefined): string => {
+  if (!image) return '/placeholder-tour.svg';
+  return getImageUrl(image);
 };
 
 // Utility function to get the first image URL from an array

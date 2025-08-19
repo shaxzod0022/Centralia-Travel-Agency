@@ -1,12 +1,13 @@
 "use client";
 import { styles } from "@/styles/styles";
 import { useLocale, useTranslations } from "next-intl";
-import React, { FC, useRef, useMemo, useCallback } from "react";
+import React, { FC, useRef, useMemo, useCallback, useState, useEffect } from "react";
 import Btn from "../helpers/Btn";
 import { ArrowRight, ChevronLeft, ChevronRight, AlertCircle, Calendar, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { BlogProps } from "@/interfaces/insights.interface";
 import { TranslationsProps } from "@/interfaces/helper.interface";
+import { getSingleImageUrl } from "@/utils/imageUtils";
 
 interface Props {
   data: BlogProps[];
@@ -17,6 +18,7 @@ const TravelInsights: FC<Props> = ({ data }) => {
   const t = useTranslations("HomePage.travelInsights");
   const lang = useLocale();
   const scrollRef = useRef<HTMLDivElement>(null);
+
 
   // Memoize filtered blogs to avoid unnecessary re-renders
   const filteredBlogs = useMemo(() => {
@@ -42,7 +44,6 @@ const TravelInsights: FC<Props> = ({ data }) => {
   // Handle blog click with error handling
   const handleBlogClick = useCallback((slug: string) => {
     if (slug) {
-      console.log('Frontend: Navigating to blog:', slug);
       router.push(`/blog/${slug}`);
     }
   }, [router]);
@@ -54,10 +55,10 @@ const TravelInsights: FC<Props> = ({ data }) => {
         <div className="text-center">
           <AlertCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-lg font-medium text-gray-900 mb-2">
-            No Blog Posts Available
+            {t("noBlogsAvailable")}
           </h3>
           <p className="text-gray-500">
-            Blog posts are not available at the moment.
+            {t("noBlogsDescription")}
           </p>
         </div>
       </div>
@@ -105,9 +106,13 @@ const TravelInsights: FC<Props> = ({ data }) => {
             <div className="relative h-48 overflow-hidden">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src={`${process.env.NEXT_PUBLIC_API_URL || 'https://centralia-travel-agency-back.onrender.com'}${item.coverImage}`}
+                src={item.coverImage ? getSingleImageUrl(item.coverImage) : '/placeholder-blog.svg'}
                 alt={item.title[lang as keyof TranslationsProps]}
                 loading="lazy"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/placeholder-blog.svg';
+                }}
               />
               
               {/* Category Badge */}

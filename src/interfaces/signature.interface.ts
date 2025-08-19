@@ -3,7 +3,7 @@ import { TranslationsProps } from "./helper.interface";
 export interface ItineraryProps {
   title: TranslationsProps;
   description: TranslationsProps;
-  images: string[];
+  image?: string; // Match backend schema
 }
 
 export interface TourProps {
@@ -18,7 +18,7 @@ export interface TourProps {
   season: TranslationsProps;
   price: number;
   tourDays: number;
-  images: string[];
+  image?: string; // Make optional to match backend schema
   includedInPrice: TranslationsProps[];
   whatToTake: TranslationsProps[];
   dayComment: TranslationsProps[];

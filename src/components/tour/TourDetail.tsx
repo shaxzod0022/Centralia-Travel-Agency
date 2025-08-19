@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import React, { FC, useState } from "react";
-import { getImageUrl } from "@/utils/imageUtils";
+import { getSingleImageUrl } from "@/utils/imageUtils";
 
 interface Props {
   data?: TourProps;
@@ -36,10 +36,7 @@ const TourDetail: FC<Props> = ({ data }) => {
     bool: false,
     item: "",
   });
-  const [hid, setHid] = useState<{ bool: boolean; id: string }>({
-    bool: false,
-    id: "",
-  });
+  const [expandedDay, setExpandedDay] = useState<string | null>(null);
 
   // Check if data exists and has required fields
   if (!data) {
@@ -54,6 +51,17 @@ const TourDetail: FC<Props> = ({ data }) => {
   // Helper function to safely check if array data exists and has elements
   const hasArrayData = (data: unknown): data is Array<unknown> => {
     return Array.isArray(data) && data.length > 0;
+  };
+
+  // Handle day expansion - only one day can be expanded at a time
+  const handleDayToggle = (dayTitle: string) => {
+    if (expandedDay === dayTitle) {
+      // If clicking the same day, close it
+      setExpandedDay(null);
+    } else {
+      // If clicking a different day, close the previous one and open the new one
+      setExpandedDay(dayTitle);
+    }
   };
 
   return (
@@ -165,16 +173,9 @@ const TourDetail: FC<Props> = ({ data }) => {
               className={`cursor-pointer relative border border-gray-400 rounded-xl sm:flex-row flex-col sm:items-center items-start`}
             >
               <div
-                onClick={() =>
-                  setHid({
-                    ...hid,
-                    bool: !hid.bool,
-                    id: item.title[lang as keyof TranslationsProps],
-                  })
-                }
+                onClick={() => handleDayToggle(item.title[lang as keyof TranslationsProps])}
                 className={`overflow-hidden transition-all rounded-xl border-l-8 border-l-green-500 px-5 duration-300 ease-in-out ${
-                  hid.bool &&
-                  hid.id === item.title[lang as keyof TranslationsProps]
+                  expandedDay === item.title[lang as keyof TranslationsProps]
                     ? "max-h-[1000px] py-5"
                     : "max-h-0"
                 }`}
@@ -186,48 +187,48 @@ const TourDetail: FC<Props> = ({ data }) => {
                     {t("day")} {idx + 1}:{" "}
                     {item.title[lang as keyof TranslationsProps]}
                   </span>
-                  <ChevronRight
+                  <ChevronDown
                     className={`${
-                      hid.bool &&
-                      item.title[lang as keyof TranslationsProps] === hid.id &&
-                      "rotate-90"
+                      expandedDay === item.title[lang as keyof TranslationsProps]
+                        ? "rotate-180"
+                        : "rotate-0"
                     } transition-all duration-300`}
                   />
                 </p>
                 <p className={`${styles.p} mb-5`}>
                   {item.description[lang as keyof TranslationsProps]}
                 </p>
-                {hasArrayData(item.images) && (
+                {item.image && (
                   <div className={`${styles.flex} flex-wrap gap-2`}>
-                    {item.images.map((image, x) => (
-                      <img
-                        src={getImageUrl(image)}
-                        key={x}
-                        alt={item.title[lang as keyof TranslationsProps]}
-                        className="md:w-40 w-[47%] rounded"
-                      />
-                    ))}
+                    <img
+                      src={getSingleImageUrl(item.image)}
+                      alt={item.title[lang as keyof TranslationsProps]}
+                      className="md:w-40 w-[47%] rounded"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = '/placeholder-tour.svg';
+                      }}
+                    />
                   </div>
                 )}
               </div>
               <div
                 onClick={() =>
-                  setHid({
-                    ...hid,
-                    bool: !hid.bool,
-                    id: item.title[lang as keyof TranslationsProps],
-                  })
+                  handleDayToggle(item.title[lang as keyof TranslationsProps])
                 }
                 className={`${styles.flex} ${
-                  hid.bool &&
-                  hid.id === item.title[lang as keyof TranslationsProps] &&
+                  expandedDay === item.title[lang as keyof TranslationsProps] &&
                   "opacity-0 absolute pointer-events-none"
                 } hover:bg-gray-100 rounded-xl gap-3 transition-all duration-200 ease-in-out`}
               >
                 <img
                   className="sm:w-40 sm:h-28 h-24 w-40 object-cover rounded-xl"
-                  src={getImageUrl(item.images?.[0])}
+                  src={item.image ? getSingleImageUrl(item.image) : '/placeholder-tour.svg'}
                   alt={item.title[lang as keyof TranslationsProps]}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/placeholder-tour.svg';
+                  }}
                 />
                 <div
                   className={`${styles.flexBetween} gap-5 !flex-nowrap pr-5 w-full`}
@@ -241,9 +242,9 @@ const TourDetail: FC<Props> = ({ data }) => {
 
                   <ChevronRight
                     className={`${
-                      hid.bool &&
-                      item.title[lang as keyof TranslationsProps] === hid.id &&
-                      "rotate-90"
+                      expandedDay === item.title[lang as keyof TranslationsProps]
+                        ? "rotate-90"
+                        : "rotate-0"
                     } transition-all duration-300`}
                   />
                 </div>

@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import React, { FC, useState } from "react";
 import TourDetail from "./TourDetail";
 import Booking from "./Booking";
-import { getImageUrl } from "@/utils/imageUtils";
+import { getSingleImageUrl } from "@/utils/imageUtils";
 
 interface Props {
   data?: TourProps;
@@ -28,10 +28,10 @@ const TourInfo: FC<Props> = ({ data }) => {
     );
   }
 
-  // Check if images array exists and has items
-  const hasImages = Array.isArray(data.images) && data.images.length > 0;
+  // Check if tour has an image
+  const hasImage = data.image && data.image.trim() !== '';
   
-  if (!hasImages) {
+  if (!hasImage) {
     return (
       <div className="text-center py-20">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Tour Images Not Available</h2>
@@ -40,15 +40,18 @@ const TourInfo: FC<Props> = ({ data }) => {
     );
   }
 
+  // Create an array with the single image for the slider logic
+  const tourImages = [data.image];
+
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? data.images.length - 1 : prev - 1
+      prev === 0 ? tourImages.length - 1 : prev - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev === data.images.length - 1 ? 0 : prev + 1
+      prev === tourImages.length - 1 ? 0 : prev + 1
     );
   };
 
@@ -63,7 +66,7 @@ const TourInfo: FC<Props> = ({ data }) => {
       
       {/* Image Gallery */}
       <div className="relative mb-5 md:p-20 p-4 bg-green-950 rounded-2xl inset-0 flex items-center justify-center">
-        {data.images.length > 1 && (
+        {tourImages.length > 1 && (
           <button
             onClick={prevSlide}
             className="absolute left-5 text-white hover:text-gray-300 transition cursor-pointer z-10"
@@ -73,12 +76,12 @@ const TourInfo: FC<Props> = ({ data }) => {
         )}
         
         <img
-          src={getImageUrl(data.images[currentIndex])}
+          src={getSingleImageUrl(tourImages[currentIndex])}
           alt={`${data?.title?.[lang as keyof TranslationsProps] || 'Tour'} - Image ${currentIndex + 1}`}
           className="w-full md:h-80 sm:h-60 h-44 rounded-xl object-cover"
         />
         
-        {data.images.length > 1 && (
+        {tourImages.length > 1 && (
           <button
             onClick={nextSlide}
             className="absolute right-5 text-white hover:text-gray-300 transition cursor-pointer z-10"
@@ -88,9 +91,9 @@ const TourInfo: FC<Props> = ({ data }) => {
         )}
         
         {/* Image Indicators */}
-        {data.images.length > 1 && (
+        {tourImages.length > 1 && (
           <div className="absolute bottom-5 flex gap-2">
-            {data.images.map((_, idx) => (
+            {tourImages.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
@@ -109,9 +112,8 @@ const TourInfo: FC<Props> = ({ data }) => {
       >
         <TourDetail data={data} />
         <Booking 
-          price={data?.price} 
-          tourId={data?._id} 
-          tourSlug={data?.slug} // Pass tourSlug to Booking component
+          tourSlug={data?.slug || ''} 
+          tourPrice={data?.price || 0} 
         />
       </div>
     </div>
