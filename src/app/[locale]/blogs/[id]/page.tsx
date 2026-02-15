@@ -10,6 +10,7 @@ import { SEO, SEOData } from "@/interfaces/seo.interface";
 import { blogsClient } from "@/lib/apolloClient";
 import type { Metadata } from "next";
 import { buildAlternates, sanitizeUrl } from "@/lib/seo/buildAlternates";
+import { notFound } from "next/navigation";
 
 // ISR: 1 hour cache
 export const revalidate = 3600;
@@ -73,6 +74,16 @@ export async function generateMetadata({
     }
   } catch (error) {
     console.error("❌ Blogs seo error:", error);
+  }
+
+  if (!seo) {
+    return {
+      title: "Blog Not Found",
+      robots: {
+        index: false, // Google'ga: "Bu sahifani indeksingdan o'chir" deydi
+        follow: false,
+      },
+    };
   }
 
   // URL tuzish
@@ -338,10 +349,7 @@ export default async function BlogOnePage({ params }: BlogOnePageProps) {
   // Agar blog topilmasa yoki asosiy maydonlar bo'sh bo'lsa
   // ID kerak emas, faqat title va content bo'lsa ham yetarli
   if (!blog || !blog.title || !blog.content) {
-    return new Response("Data not found or permanently removed", {
-      status: 404,
-      headers: { "Content-Type": "text/plain" },
-    });
+    notFound();
   }
 
   return (

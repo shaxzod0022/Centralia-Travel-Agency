@@ -15,6 +15,7 @@ import {
   TourCompleteQueryResponse,
 } from "@/interfaces/tourComplete.interface";
 import { DataTourOption, TourOption } from "@/interfaces/calendar.interface";
+import { notFound } from "next/navigation";
 
 // ISR: revalidate every 5 minutes for fresh tour data while enabling CDN caching
 export const revalidate = 300;
@@ -72,6 +73,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   } catch (error) {
     console.error("Tour SEO error:", error);
+  }
+
+  if (!seo) {
+    return {
+      title: "Tour Not Found",
+      robots: {
+        index: false, // Google'ga: "Bu sahifani indeksingdan o'chir" deydi
+        follow: false,
+      },
+    };
   }
 
   // URL tuzish
@@ -231,10 +242,7 @@ export default async function TourOne({ params }: Props) {
   }
 
   if (!completeTour || !completeTour.gallery) {
-    return new Response("Data not found or permanently removed", {
-      status: 404,
-      headers: { "Content-Type": "text/plain" },
-    });
+    notFound();
   }
 
   return (

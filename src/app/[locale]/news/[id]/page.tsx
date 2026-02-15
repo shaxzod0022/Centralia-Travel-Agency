@@ -10,7 +10,8 @@ import { GET_NEWSBYSLUG } from "@/gql/getNewsBySlug";
 import { GET_NEWS } from "@/gql/getNews";
 import { setRequestLocale } from "next-intl/server";
 import { NewsBySlugData, NewsProps } from "@/interfaces/news.interface";
-import { NewsOne, NoNews } from "@/components";
+import { NewsOne } from "@/components";
+import { notFound } from "next/navigation";
 
 // ISR: 1 hour cache
 export const revalidate = 3600;
@@ -74,6 +75,16 @@ export async function generateMetadata({
     }
   } catch (error) {
     console.error("❌ News seo error:", error);
+  }
+
+  if (!seo) {
+    return {
+      title: "News Not Found",
+      robots: {
+        index: false, // Google'ga: "Bu sahifani indeksingdan o'chir" deydi
+        follow: false,
+      },
+    };
   }
 
   // URL tuzish
@@ -304,10 +315,7 @@ export default async function NewsOnePage({ params }: NewsOnePageProps) {
   // Agar news topilmasa yoki asosiy maydonlar bo'sh bo'lsa
   // ID kerak emas, faqat title va content bo'lsa ham yetarli
   if (!news || !news.title || !news.content) {
-    return new Response("Data not found or permanently removed", {
-      status: 404,
-      headers: { "Content-Type": "text/plain" },
-    });
+    notFound();
   }
 
   return (

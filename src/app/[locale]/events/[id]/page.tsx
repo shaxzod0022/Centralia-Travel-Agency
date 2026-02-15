@@ -11,6 +11,7 @@ import { GET_EVENTS } from "@/gql/getEvents";
 import { setRequestLocale } from "next-intl/server";
 import { EventsBySlugData, EventsProps } from "@/interfaces/events.interface";
 import { EventsOne, NoEvents } from "@/components";
+import { notFound } from "next/navigation";
 
 // ISR: 1 hour cache
 export const revalidate = 3600;
@@ -74,6 +75,16 @@ export async function generateMetadata({
     }
   } catch (error) {
     console.error("❌ Events seo error:", error);
+  }
+
+  if (!seo) {
+    return {
+      title: "Event Not Found",
+      robots: {
+        index: false, // Google'ga: "Bu sahifani indeksingdan o'chir" deydi
+        follow: false,
+      },
+    };
   }
 
   // URL tuzish
@@ -307,10 +318,7 @@ export default async function EventsOnePage({ params }: EventsOnePageProps) {
   // Agar events  topilmasa yoki asosiy maydonlar bo'sh bo'lsa
   // ID kerak emas, faqat title va content bo'lsa ham yetarli
   if (!events || !events.title || !events.content) {
-    return new Response("Data not found or permanently removed", {
-      status: 404,
-      headers: { "Content-Type": "text/plain" },
-    });
+    notFound();
   }
 
   return (
