@@ -1,0 +1,959 @@
+{
+  "metadata": {
+    "title": "Centralia Travel Agency | Zentralasien Touren",
+    "description": "Premium-Touren und Reisepakete in Usbekistan, Kasachstan, Kirgisistan, Tadschikistan und Turkmenistan.",
+    "keywords": [
+      "zentralasien tours",
+      "seidenstraße reisen",
+      "premium reisen",
+      "centralia travel agency"
+    ],
+    "ogTitle": "Centralia Travel Agency",
+    "ogDescription": "Erleben Sie die besten Reiseerfahrungen in Zentralasien.",
+    "twitterCard": "summary_large_image"
+  },
+  "seoHome": {
+    "title": "Centralia Travel Agency | Zentralasien & Seidenstraße Reisen",
+    "description": "Hochwertige Rundreisen durch Usbekistan, Kasachstan, Kirgisistan, Tadschikistan und Turkmenistan.",
+    "keywords": [
+      "zentralasien reisen",
+      "seidenstraße tour",
+      "usbekistan rundreise"
+    ],
+    "ogTitle": "Reisen in Zentralasien | Centralia Travel Agency",
+    "ogDescription": "Premium-Touren entlang der Seidenstraße in Zentralasien."
+  },
+  "seoAbout": {
+    "title": "Über Uns | Centralia Travel Agency — Experten für Zentralasien & Seidenstraßenreisen",
+    "description": "Erfahren Sie mehr über Centralia Travel Agency, einen zuverlässigen Reiseveranstalter für hochwertige Rundreisen durch Zentralasien.",
+    "keywords": [
+      "über centralia travel",
+      "reiseveranstalter zentralasien",
+      "seidenstraße experten",
+      "usbekistan reiseagentur"
+    ],
+    "ogTitle": "Über Centralia Travel Agency",
+    "ogDescription": "Entdecken Sie unsere Mission, Erfahrung und Leidenschaft für außergewöhnliche Reisen entlang der Seidenstraße."
+  },
+  "seoService": {
+    "title": "Unsere Dienstleistungen | Centralia Travel Agency – Zentralasien Reisen",
+    "description": "Professionelle Reisedienstleistungen: maßgeschneiderte Touren, Hotelbuchungen, Transport, Visa-Service und Reiseleiter in Zentralasien.",
+    "keywords": [
+      "zentralasien reise dienstleistungen",
+      "seidenstraße touren",
+      "maßgeschneiderte reisen"
+    ],
+    "ogTitle": "Reisedienstleistungen in Zentralasien | Centralia Travel Agency",
+    "ogDescription": "Geführte Touren, Transport, Hotels, Visa-Unterstützung und individuelle Reisepläne."
+  },
+  "seoContact": {
+    "title": "Kontakt | Centralia Travel Agency – Kontaktieren Sie uns",
+    "description": "Kontaktieren Sie Centralia Travel Agency für Reiseanfragen, Buchungen, Support und Informationen zu Zentralasien-Touren.",
+    "keywords": [
+      "kontakt zentralasien reisen",
+      "centralia travel kontakt",
+      "seidenstraße tours kontakt"
+    ],
+    "ogTitle": "Kontakt – Centralia Travel Agency",
+    "ogDescription": "Professionelle Unterstützung für Reisen und Touren in Zentralasien."
+  },
+  "seoBlogs": {
+    "title": "Zentralasien Reiseblog – Reiseführer & Tipps",
+    "description": "Professioneller Reiseblog über Zentralasien. Reiseführer, Routen und Tipps für Usbekistan, Kasachstan und die Seidenstraße.",
+    "keywords": [
+      "zentralasien reiseblog",
+      "usbekistan reisen",
+      "seidenstraße tourismus",
+      "kasachstan reiseführer",
+      "reisen zentralasien"
+    ],
+    "ogTitle": "Zentralasien Reiseblog",
+    "ogDescription": "Experten-Reiseführer und Tipps für Reisen durch Zentralasien.",
+    "twitterTitle": "Zentralasien Reiseblog",
+    "twitterDescription": "Reisen Sie durch Zentralasien mit Expertenwissen."
+  },
+  "seoB2B": {
+    "title": "Reisebüros & B2B | Centralia Travel Agency Partnerschaften",
+    "description": "Werden Sie Partner von Centralia Travel Agency für Premium-Reisen in Zentralasien. Exklusive B2B-Lösungen für Reisebüros, Veranstalter und Firmenkunden.",
+    "keywords": [
+      "reisebüros partnerschaft",
+      "B2B reisen zentralasien",
+      "veranstalter partnerschaft",
+      "centralia travel B2B"
+    ],
+    "ogTitle": "Centralia Travel Agency | B2B & Reisebüros",
+    "ogDescription": "Professionelle B2B-Reiselösungen, exklusive Angebote und individuelle Zentralasien-Touren für Agenturen und Firmenpartner."
+  },
+  "seoNews": {
+    "title": "Reisenachrichten & Updates | Centralia Travel Agency",
+    "description": "Bleiben Sie auf dem Laufenden mit den neuesten Reisenachrichten, Zielaktualisierungen, Tourankündigungen und Einblicken von Centralia Travel Agency in Zentralasien und entlang der Seidenstraße.",
+    "keywords": [
+      "Reisenachrichten Zentralasien",
+      "Seidenstraße Reise-Updates",
+      "Centralia Travel Nachrichten",
+      "Usbekistan Reisen Nachrichten",
+      "Kasachstan Tourismus Updates"
+    ],
+    "ogTitle": "Reisenachrichten & Updates | Centralia Travel Agency",
+    "ogDescription": "Entdecken Sie die neuesten Reisenachrichten, Tour-Updates und Destinationseinblicke von Centralia Travel Agency in Zentralasien."
+  },
+  "seoEvents": {
+    "title": "Reiseveranstaltungen & Erlebnisse | Centralia Travel Agency",
+    "description": "Entdecken Sie bevorstehende Reiseveranstaltungen, kulturelle Festivals, Sondertouren und einzigartige Reiseerlebnisse von Centralia Travel Agency in Zentralasien und entlang der Seidenstraße.",
+    "keywords": [
+      "Reiseveranstaltungen Zentralasien",
+      "kulturelle Veranstaltungen Seidenstraße",
+      "Centralia Travel Events",
+      "Reisefestivals Usbekistan",
+      "Tourismusveranstaltungen Kasachstan"
+    ],
+    "ogTitle": "Reiseveranstaltungen & Erlebnisse | Centralia Travel Agency",
+    "ogDescription": "Erkunden Sie kommende Reiseveranstaltungen, Festivals und besondere Erlebnisse von Centralia Travel Agency in Zentralasien."
+  },
+  "signUp": {
+    "title": "Registrieren | Centralia Travel Agency",
+    "description": "Melden Sie sich bei Centralia Travel Agency an und entdecken Sie Premium-Touren in Zentralasien. Einfache Registrierung und sichere Kontoerstellung.",
+    "keywords": [
+      "konto erstellen centralia",
+      "registrieren reiseagentur",
+      "zentralasien tours registrierung",
+      "centralia travel konto"
+    ],
+    "ogTitle": "Centralia Travel Agency | Registrieren",
+    "ogDescription": "Werden Sie noch heute Mitglied bei Centralia Travel Agency und entdecken Sie Premium-Touren in Zentralasien.",
+    "twitterCard": "summary_large_image"
+  },
+  "logIn": {
+    "title": "Login | Centralia Travel Agency",
+    "description": "Melden Sie sich bei Ihrem Centralia Travel Agency-Konto an, um Ihre Touren und Buchungen zu verwalten. Sicherer und einfacher Login.",
+    "keywords": [
+      "login centralia",
+      "anmelden reiseagentur",
+      "zentralasien tours login",
+      "centralia konto zugang"
+    ],
+    "ogTitle": "Centralia Travel Agency | Login",
+    "ogDescription": "Greifen Sie auf Ihr Konto zu, um Premium-Touren und Reisepakete in Zentralasien zu verwalten.",
+    "twitterCard": "summary_large_image"
+  },
+  "header": {
+    "navigationLinks": [
+      {
+        "path": "/",
+        "label": "Startseite"
+      },
+      {
+        "path": "/about",
+        "label": "Über uns"
+      },
+      {
+        "path": "/tours",
+        "label": "Touren"
+      },
+      {
+        "path": "/services",
+        "label": "Dienstleistungen"
+      },
+      {
+        "path": "/blogs",
+        "label": "Blogs"
+      },
+      {
+        "path": "/b2b",
+        "label": "Reiseagenturen & B2B"
+      },
+      {
+        "path": "/contact",
+        "label": "Kontakt"
+      }
+    ],
+    "news": "Nachrichten",
+    "events": "Veranstaltungen",
+    "profile": "Profil",
+    "login": "Einloggen oder registrieren",
+    "support": "Support"
+  },
+  "buttons": {
+    "headBtn1": "Abenteuerreisen",
+    "headBtn2": "Für Reiseveranstalter"
+  },
+  "footer": {
+    "news": "Nachrichten",
+    "events": "Veranstaltungen",
+    "title": "Wir gestalten und realisieren authentische Abenteuerreisen in ganz Zentralasien.",
+    "category": "Navigation",
+    "touch": "Kontakt",
+    "phone": "+998 90 123 45 67",
+    "email": "centralia@gmail.com",
+    "location": "Samarkand, Usbekistan",
+    "work": "Partnerschaften",
+    "b2b": "B2B-Partnerschaft",
+    "post": "Auf Instagram",
+    "bottom": "© 2026 Centralia Reisebüro. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung",
+    "privacyTitle": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
+  },
+  "category": {
+    "title": "Wunder Zentralasiens",
+    "desc": "Wo jedes Land seine eigene Geschichte erzählt",
+    "more": "Touren entdecken"
+  },
+  "destination": {
+    "title": "Beliebte Reiseziele",
+    "desc": "Top Reiseziele",
+    "more": "Alle ansehen",
+    "tours": "Tourenliste"
+  },
+  "popularDes": {
+    "title": "Beliebteste Abenteuerreisen",
+    "desc": "Von hohen Bergen bis zu entlegenen Wüsten – diese Touren zeigen die besten Abenteuererlebnisse Zentralasiens.",
+    "btn": "Jetzt buchen",
+    "day": "Tag",
+    "days": "Tage",
+    "night": "Nacht",
+    "nights": "Nächte",
+    "from": "Ab"
+  },
+  "tourGuides": {
+    "title": "Das Centralia-Team",
+    "desc": "Unsere Experten vor Ort",
+    "btn": "Jetzt buchen"
+  },
+  "blogsHome": {
+    "title": "Geschichten, Routen & Abenteuer-Einblicke",
+    "desc": "Aus unserem Blog",
+    "btn": "Weiterlesen",
+    "btnHead": "Weitere Artikel ansehen",
+    "read": "Min. Lesezeit",
+    "view": "Aufrufe"
+  },
+  "gallery": {
+    "title": "Zahlen, die bewegen",
+    "desc": "Machen Sie Ihre Reise noch angenehmer"
+  },
+  "comments": {
+    "title": "Was Reisende über Centralia sagen",
+    "desc": "Erfahrungsberichte unserer Gäste",
+    "btn": "Weiterlesen"
+  },
+  "plan": {
+    "title": "Persönliche Reiseroute",
+    "desc": "Lassen Sie uns Ihr Abenteuer planen",
+    "description": "Teilen Sie uns mit, wohin Sie reisen möchten, wie abenteuerlustig Sie sind und wie viel Zeit Sie haben. Wir gestalten eine individuelle Route durch Zentralasien – abgestimmt auf Ihre Interessen, Ihr Tempo und Ihr Erfahrungsniveau.",
+    "more": "Individuelle Reise anfragen",
+    "trip": "Individuell geplante Reiserouten",
+    "tripDesc": "Jede Route wird von Grund auf neu entworfen – basierend auf Ihren Wünschen, der Saison und Ihrem Abenteuerlevel.",
+    "guide": "Lokale Abenteuerexperten",
+    "guideDesc": "Geplant von Profis, die Berge, Wüsten und abgelegene Regionen aus erster Hand kennen.",
+    "item3": "Sicherheit & Logistik inklusive",
+    "item3Desc": "Transport, Genehmigungen, Ausrüstung und Betreuung – vollständig organisiert und zuverlässig."
+  },
+  "blogs": {
+    "btn": "Mehr lesen",
+    "blog": "Blog",
+    "travel": "Reisen",
+    "writer": "von",
+    "author": "Autor",
+    "min": "Min",
+    "title": "Unser Blog",
+    "desc": "Reisegeschichten, Experten-Tipps und Zielort-Führer",
+    "read": "Min. Lesezeit",
+    "view": "Aufrufe",
+    "share": "Teilen",
+    "like": "Das könnte Ihnen auch gefallen"
+  },
+  "create": {
+    "title": "Registrieren",
+    "name": "Vor- und Nachname",
+    "nameInput": "Geben Sie Ihren Vor- und Nachnamen ein",
+    "nameError": "Bitte geben Sie Vor- und Nachname ein",
+    "phone": "Telefonnummer",
+    "phoneInput": "+123",
+    "email": "E-Mail-Adresse",
+    "emailInput": "Geben Sie Ihre E-Mail-Adresse ein",
+    "password": "Passwort",
+    "passwordInput": "Geben Sie Ihr Passwort ein",
+    "confirmPassword": "Passwort bestätigen",
+    "confirmPasswordInput": "Wiederholen Sie Ihr Passwort",
+    "passwordWeak": "Schwach",
+    "passwordMedium": "Mittel",
+    "passwordStrong": "Stark",
+    "passwordMismatch": "Passwörter stimmen nicht überein",
+    "passwordWeakMsg": "Verwenden Sie ein stärkeres Passwort (mind. 8 Zeichen mit Groß-/Kleinbuchstaben, Zahl und Sonderzeichen)",
+    "enterPasswordFirst": "Geben Sie zuerst Ihr Passwort ein, um die Bestätigung zu aktivieren",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "submitSuccess": "Registrierung erfolgreich",
+    "submitAgreeMissing": "Bitte akzeptieren Sie die Bedingungen, um fortzufahren",
+    "private": "Ich stimme zu",
+    "privateLink": "Nutzungsbedingungen und Datenschutz",
+    "submit": "Registrieren",
+    "or": "oder",
+    "google": "Mit Google registrieren",
+    "account": "Haben Sie bereits ein Konto?",
+    "login": "Anmelden"
+  },
+  "login": {
+    "title": "Anmelden",
+    "email": "E-Mail-Adresse",
+    "emailInput": "Geben Sie Ihre E-Mail-Adresse ein",
+    "password": "Passwort",
+    "passwordInput": "Geben Sie Ihr Passwort ein",
+    "forgot": "Passwort vergessen?",
+    "submit": "Einloggen",
+    "or": "oder",
+    "google": "Mit Google anmelden",
+    "account": "Haben Sie kein Konto?",
+    "signUp": "Registrieren"
+  },
+  "forgot": {
+    "title": "Passwort zurücksetzen",
+    "desc": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen sicheren Link zum Zurücksetzen Ihres Passworts.",
+    "email": "E-Mail-Adresse",
+    "emailInput": "Geben Sie Ihre E-Mail-Adresse ein",
+    "submit": "Weiter"
+  },
+  "reset": {
+    "title": "Passwort zurücksetzen",
+    "desc": "Bitte geben Sie ein neues sicheres Passwort für Ihr Konto ein.",
+    "password": "Neues Passwort",
+    "passwordInput": "Neues Passwort eingeben",
+    "confirmPassword": "Passwort bestätigen",
+    "confirmPasswordInput": "Wiederholen Sie Ihr Passwort",
+    "enterPasswordFirst": "Geben Sie zuerst Ihr Passwort ein, um die Bestätigung zu aktivieren",
+    "passwordWeak": "Schwach",
+    "passwordMedium": "Mittel",
+    "passwordStrong": "Stark",
+    "passwordMismatch": "Passwörter stimmen nicht überein",
+    "passwordRequired": "Bitte geben Sie ein Passwort ein",
+    "passwordWeakMsg": "Verwenden Sie ein stärkeres Passwort (mind. 8 Zeichen mit Groß-/Kleinbuchstaben, Zahl und Sonderzeichen)",
+    "invalidToken": "Ungültiges oder fehlendes Token",
+    "invalidTokenDesc": "Der Link zum Zurücksetzen scheint ungültig zu sein. Bitte fordern Sie einen neuen Link an.",
+    "submit": "Passwort zurücksetzen",
+    "resetSuccess": "Ihr Passwort wurde zurückgesetzt",
+    "resetError": "Fehler beim Zurücksetzen des Passworts. Bitte versuchen Sie es später erneut.",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen"
+  },
+  "verifyEmail": {
+    "title": "E-Mail bestätigen",
+    "desc": "Wir haben einen 6-stelligen Bestätigungscode an Ihre E-Mail gesendet. Bitte geben Sie ihn unten ein, um Ihre Adresse zu bestätigen.",
+    "sentTo": "Code gesendet an {email}",
+    "enterCode": "Geben Sie den 6-stelligen Code ein",
+    "submit": "E-Mail bestätigen",
+    "submitLoading": "Überprüfe...",
+    "resend": "Code erneut senden",
+    "resendSent": "Bestätigungscode gesendet",
+    "resendCooldown": "Erneut senden in {seconds}s",
+    "invalidCode": "Ungültiger Code. Bitte überprüfen Sie ihn und versuchen Sie es erneut.",
+    "success": "E-Mail erfolgreich bestätigt",
+    "resendError": "Fehler beim erneuten Senden des Codes. Versuchen Sie es später erneut."
+  },
+  "contacts": {
+    "city": "Samarkand, Usbekistan",
+    "travelOperatorName": "Eldor Nasritdinov",
+    "sitata": "Schreiben Sie an diese E-Mail-Adresse für ein detailliertes Angebot und weitere Informationen: Centralia@travel.com",
+    "consultat": "Unser kostenloser Beratungsservice kann hier täglich angefragt werden: Centralia@travel.com",
+    "title": "Kontaktieren Sie uns",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "message": "Ihre Nachricht",
+    "detailedInformation": "Detaillierte Informationen",
+    "reqFullName": "Vollständiger Name ist erforderlich",
+    "charFullName": "Vollständiger Name muss mindestens 2 Zeichen lang sein",
+    "reqEmail": "E-Mail-Adresse ist erforderlich",
+    "validEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "reqMessage": "Nachricht ist erforderlich",
+    "charMessage": "Nachricht muss mindestens 10 Zeichen lang sein",
+    "validetForm": "Bitte füllen Sie alle Felder korrekt aus",
+    "reqAll": "Alle Felder sind erforderlich",
+    "messageSent": "Nachricht erfolgreich gesendet!",
+    "sendError": "Nachricht konnte nicht gesendet werden",
+    "tryAgain": "Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+    "sending": "Wird gesendet...",
+    "desc": "Planen Sie Ihre nächste Reise",
+    "formTitle": "Kontakt aufnehmen",
+    "description": "Schreiben Sie uns für persönliche Reiseberatung oder Informationen über Gruppenreisen und Last-Minute-Angebote. Alle Reisen sind versichert und sicher.",
+    "btn": "Nachricht senden",
+    "travelAgency": "Reisebüro",
+    "travelOperator": "Reiseveranstalter",
+    "mobileNumber": "Handynummer",
+    "officeNumber": "Büronummer",
+    "quotes": "Zitate",
+    "consulting": "Beratung",
+    "location": "Standort",
+    "give": "Rufen Sie uns an",
+    "write": "Schreiben Sie uns für alle Anliegen"
+  },
+  "services": {
+    "btn": "Mehr lesen",
+    "headTitle": "Unsere Leistungen",
+    "headDesc": "Die besten Reiselösungen für Ihre Reise — sorgfältig geplant, lokal betrieben und umfassend unterstützt.",
+    "shortDesc": "Touristische Sehenswürdigkeiten",
+    "title": "Reiseplanung für das bestmögliche Urlaubserlebnis",
+    "desc": "Willkommen in unserem Reisebüro, das sich auf unvergessliche Reiseerlebnisse spezialisiert. Ob Sie sich an einem tropischen Strand entspannen oder ein kulturelles Abenteuer erleben möchten – wir helfen Ihnen, Ihren Traumurlaub zu planen. Von Flügen und Unterkünften bis hin zu Touren und Aktivitäten kümmern wir uns um alle Details, damit Sie ungestört Erinnerungen sammeln können."
+  },
+  "serviceItems": {
+    "title": "Der perfekte Urlaub wird wahr",
+    "desc": "Lassen Sie uns Ihre nächste Reise planen",
+    "items": [
+      {
+        "img": "Car",
+        "title": "Transport",
+        "desc": "Komfortabler und zuverlässiger Transport in ganz Zentralasien — Flughafentransfers, Intercity-Reisen und Privatfahrzeuge mit professionellen Fahrern."
+      },
+      {
+        "img": "Visa",
+        "title": "Visa-Unterstützung",
+        "desc": "Wir unterstützen Sie bei der Visumbeantragung, bei Einladungsschreiben und der Dokumentation, um eine reibungslose und stressfreie Einreise zu gewährleisten."
+      },
+      {
+        "img": "Tours",
+        "title": "Touren",
+        "desc": "Sorgfältig zusammengestellte Gruppen- und Privatreisen durch Usbekistan und Zentralasien — Kultur, Natur und authentische Erlebnisse."
+      },
+      {
+        "img": "Plan",
+        "title": "Reiseverläufe",
+        "desc": "Unser Expertenteam übernimmt die gesamte Planung und Logistik und stellt Ihnen einen detaillierten Reiseplan bereit."
+      },
+      {
+        "img": "Insurance",
+        "title": "Reiseversicherung",
+        "desc": "Eine Reiseversicherung ist ein wichtiger Bestandteil jeder Reise und bietet Sicherheit und Schutz."
+      },
+      {
+        "img": "B2B",
+        "title": "Corporate & B2B",
+        "desc": "Maßgeschneiderte Reiselösungen für Unternehmen, Konferenzen und Gruppenveranstaltungen mit engagierter Unterstützung."
+      }
+    ]
+  },
+  "helpService": {
+    "title": "Lassen Sie uns jetzt Ihren nächsten Urlaub planen",
+    "desc": "Kontaktieren Sie uns und wir erstellen Ihnen in kürzester Zeit ein Angebot. Entdecken Sie die Welt mit uns! Buchen Sie noch heute Ihr nächstes unvergessliches Abenteuer.",
+    "btn": "KONTAKTIEREN SIE UNS"
+  },
+  "ourNumbers": {
+    "shortDesc": "Immer an Ihrer Seite",
+    "title": "Unsere Zahlen weltweit",
+    "desc": "Unser erfahrenes Team bietet Ihnen persönliche Empfehlungen und Beratung, um eine Reise zu gestalten, die Ihren Wünschen und Ihrem Budget entspricht. Verschiedene Reiseziele auf der ganzen Welt. Dank unserer Expertise stellen wir sicher, dass jeder Aspekt Ihrer Reise gut organisiert ist.",
+    "btn": "MEHR LESEN",
+    "num1": "123",
+    "numDesc1": "Sehenswürdigkeiten mit spezialisierten und kompetenten lokalen Guides",
+    "num2": "123",
+    "numDesc2": "Tage, an denen Sie die Welt bereisen können",
+    "num3": "123",
+    "numDesc3": "Informations- und Servicepunkte in verschiedenen Ländern"
+  },
+  "quote": {
+    "title": "Kontaktieren Sie uns für ein Angebot",
+    "desc": "Personalisierte Reisen",
+    "formTitle": "Planen Sie Ihre nächste Reise",
+    "formDesc": "Schreiben Sie uns für persönliche Reiseberatung oder Informationen zu Gruppenreisen und Last-Minute-Angeboten. Alle Reisen sind sicher und versichert.",
+    "nameInput": "Geben Sie Ihren Namen ein",
+    "emailInput": "Geben Sie Ihre E-Mail ein",
+    "btn": "Absenden"
+  },
+  "about": {
+    "headTitle": "Über uns",
+    "title": "Der perfekte Urlaub wird mit unserem Reisebüro wahr",
+    "shortDesc": "Entdecke die Welt mit uns – ein Abenteuer nach dem anderen.",
+    "desc": "Wir sind ein Team erfahrener Reiseexperten, das sich auf die Planung und Organisation unvergesslicher Reiseerlebnisse spezialisiert hat. Wir bieten eine breite Palette an Dienstleistungen, darunter Flugbuchungen, Hotelreservierungen und mehr.",
+    "btn": "Mehr erfahren",
+    "descVocation": "Exklusive Reiseangebote",
+    "titleVocation": "Buche noch heute deinen Traumurlaub!"
+  },
+  "tours": {
+    "headTitle": "Finde deine nomadische Reise",
+    "detailBtn": "Details",
+    "cartBtn": "In den Warenkorb",
+    "day": "Tag",
+    "days": "Tage",
+    "night": "Nacht",
+    "nights": "Nächte",
+    "from": "Ab",
+    "goToCart": "Zum Warenkorb gehen"
+  },
+  "notFound": {
+    "title": "Seite Nicht Gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.",
+    "buttonLabel": "Zurück zur Startseite",
+    "buttonLabel2": "Zu den Touren gehen"
+  },
+  "eventsNotFound": {
+    "title": "Keine Veranstaltungen verfügbar",
+    "description": "Derzeit sind keine Veranstaltungen verfügbar. Unser Team arbeitet an neuen Veranstaltungen, die bald hier erscheinen werden.",
+    "buttonLabel": "Zurück zur Startseite"
+  },
+  "blogsNotFound": {
+    "title": "Keine Blogs verfügbar",
+    "description": "Derzeit sind keine Blog-Beiträge verfügbar. Unser Team schreibt neue Geschichten, die bald hier erscheinen werden.",
+    "buttonLabel": "Zurück zur Startseite"
+  },
+  "newsNotFound": {
+    "title": "Keine Nachrichten verfügbar",
+    "description": "Derzeit sind keine Nachrichten verfügbar. Unser Team arbeitet an neuen Geschichten, die bald hier erscheinen werden.",
+    "buttonLabel": "Zurück zur Startseite"
+  },
+  "toursNotFound": {
+    "title": "Keine Touren verfügbar",
+    "description": "Derzeit sind keine Touren verfügbar. Unser Team arbeitet an neuen Reisepaketen, die bald hier erscheinen werden.",
+    "buttonLabel": "Zurück zur Startseite"
+  },
+  "search": {
+    "placeholderExplore": "Zentralasien erkunden",
+    "placeholderFind": "Finden Sie Ihre Tour",
+    "placeholderQuestion": "Wohin gehen wir?",
+    "placeholderAdventure": "Dein Abenteuer beginnt hier",
+    "placeholderImpressions": "Erlebnisse suchen",
+    "searching": "Suche...",
+    "noResults": "No se encontraron resultados",
+    "subDesc": "Intente nuevamente con otras palabras clave o talvez use un término genérico",
+    "tours": "Touren",
+    "destinations": "Reiseziele",
+    "tour": "Mehrtägige Tour-Paket",
+    "countries": "Länder",
+    "country": "Land"
+  },
+  "tourDetails": {
+    "goToCart": "Zum Warenkorb gehen",
+    "cartBtn": "In den Warenkorb",
+    "checkAvailability": "Verfügbarkeit prüfen",
+    "similarToursTitle": "Das könnte Ihnen auch gefallen",
+    "similarToursSubtitle": "Mehr Abenteuer für Sie",
+    "travelAgent": "Reisebüro",
+    "agentName": "Eldor",
+    "duration": "Dauer",
+    "highlights": "Tour-Highlights",
+    "technicalLevel": "Technisches Niveau",
+    "minAge": "Mindestalter",
+    "fitnesLevel": "Fitnesslevel",
+    "price": "Preis",
+    "from": "Ab",
+    "enquery": "Anfrageformular",
+    "bookingCall": "Buchungsanruf",
+    "adults": "Erwachsene",
+    "children": "Kinder",
+    "adsOne": "Anzeige Eins",
+    "over": "Über",
+    "under": "Unter",
+    "bookNow": "JETZT BUCHEN FÜR",
+    "day": "Tag",
+    "dayIndex": "Tag",
+    "night": "Nacht",
+    "nights": "Nächte",
+    "days": "Tage",
+    "enjoy": "Genießen Sie das Abenteuer",
+    "incExc": "Inklusive / Ausgeschlossen",
+    "destination": "Reiseziele",
+    "faqs": "Häufige Fragen",
+    "incExcDesc": "Um Ihnen bei der Planung Ihrer Reise zu helfen, haben wir eine Liste zusammengestellt, was in Ihrem Tourpaket enthalten und was nicht enthalten ist. Dies gibt Ihnen ein klares Verständnis dessen, was Sie erwartet, und hilft Ihnen, alle notwendigen Vorkehrungen vor Reisebeginn zu treffen.",
+    "map": "Tourkarte",
+    "mapDesc": "Diese umfassende Karte soll Sie durch eine aufregende Reise mit bemerkenswerten Zielen und fesselnden Erlebnissen führen.",
+    "itenerary": "Reiseplan",
+    "iteneraryDesc": "Wir haben jeden Tag sorgfältig geplant, um Ihnen das bestmögliche Erlebnis zu bieten. Von der Erkundung historischer Sehenswürdigkeiten bis hin zur Verkostung köstlicher lokaler Küche - jeder Tag ist voller Abenteuer und Aufregung. Begleiten Sie uns auf einer Reise durch einige der faszinierendsten Reiseziele der Welt.",
+    "desc": "Beschreibung",
+    "exp": "Was Sie erwartet",
+    "meal": "Mahlzeiten inklusive",
+    "distance": "Entfernung",
+    "km": "km",
+    "hour": "Stunde",
+    "transportation": "Transport",
+    "dayGallery": "Tagesgalerie",
+    "accomManager": "Unterkunftsmanager",
+    "stars": "Sterne",
+    "address": "Adresse",
+    "view": "Auf Karte anzeigen",
+    "in": "Check-in Zeit",
+    "out": "Check-out Zeit",
+    "accomPhotos": "Unterkunftsfotos",
+    "rooms": "Zimmer",
+    "person": "Person",
+    "group": "Gruppe",
+    "private": "Privat",
+    "parti": "Teilnehmer",
+    "perPerson": "pro Person",
+    "perGroup": "pro Gruppe",
+    "meet": "Treffpunkt anzeigen",
+    "startingFrom": "Ab",
+    "selectedD": "Ausgewähltes Datum ist verfügbar",
+    "totalPrice": "Gesamtpreis",
+    "selectCal": "Wählen Sie ein Datum, um verfügbare Touroptionen zu sehen",
+    "selectPar": "Teilnehmer auswählen",
+    "min": "Min",
+    "max": "Max",
+    "pricingGroup": "Preisgestaltung nach Gruppengröße",
+    "people": "Personen",
+    "availFor": "Verfügbar für",
+    "totalPar": "Gesamtzahl der Teilnehmer",
+    "groupSize": "Gruppengröße",
+    "infants": "Säuglinge",
+    "free": "Kostenlos",
+    "tourPrice": "Tourpreis",
+    "addOnsPrice": "Zusatzleistungen",
+    "guide": "Führer: Englisch"
+  },
+  "emptyState": {
+    "title": "Die Reise Hat Noch Nicht Begonnen",
+    "description": "Touren für diese Route sind derzeit nicht verfügbar. Wir arbeiten an neuen Exkursionen. Wir kommen bald mit neuen Angeboten zurück!",
+    "viewOtherTours": "Andere Touren Ansehen",
+    "goBack": "Zurück"
+  },
+  "b2bPage": {
+    "headTitle": "B2B-Lösungen",
+    "title": "Reisebüros und B2B",
+    "fullName": "Vollständiger Name",
+    "whatsappNumber": "Whatsapp-Nummer",
+    "detailedInformation": "Detaillierte Informationen",
+    "btn": "Absenden",
+    "reqFullName": "Vollständiger Name ist erforderlich",
+    "charFullName": "Vollständiger Name muss mindestens 2 Zeichen lang sein",
+    "reqWhats": "Whatsapp-Nummer ist erforderlich",
+    "validWhats": "Bitte geben Sie eine gültige Whatsapp-Nummer ein",
+    "reqDetail": "Detaillierte Informationen sind erforderlich",
+    "charDetail": "Bitte geben Sie detailliertere Informationen an (mindestens 10 Zeichen)",
+    "validetForm": "Bitte füllen Sie alle Felder korrekt aus",
+    "reqAll": "Alle Felder sind erforderlich",
+    "reqSuccess": "Anfrage erfolgreich gesendet!",
+    "reqError": "Etwas ist schief gelaufen",
+    "noResponse": "Keine Antwort vom Server",
+    "tryAgain": "Anfrage fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "sending": "Wird gesendet..."
+  },
+  "tourBookingModal": {
+    "reserving": "Reserviert für",
+    "pReq": "Wissen Sie, wo Sie abgeholt werden möchten?",
+    "pRes1": "Ja, ich wähle einen Abholort auf der Karte",
+    "pRes2": "Nein, verwenden Sie den Standard-Treffpunkt",
+    "title": "Hauptkontaktdaten",
+    "fullName": "Ihr Vor- und Nachname*",
+    "phone": "Telefonnummer",
+    "email": "E-Mail *",
+    "policyReq": "Ich stimme der Datenverarbeitung gemäß der",
+    "policy": "Datenschutzrichtlinie zu.",
+    "send": "Anfrage senden",
+    "proccess": "Wird verarbeitet...",
+    "back": "Zurück",
+    "defMeet": "Standard-Treffpunkt",
+    "succesTitle": "Einreichung erfolgreich",
+    "successDesc": "Ihre Kontakt- und Abholdaten wurden gespeichert. Unser Team wird sich in Kürze bei Ihnen melden.",
+    "goHome": "Zur Startseite gehen",
+    "meetingPoint": "Treffpunkt:",
+    "comment": "Por favor, llegue 5-10 minutos antes para unirse al grupo.",
+    "groupTourNote": "Este tour tiene un punto de encuentro fijo. Debe venir a esta ubicación para unirse al grupo.",
+    "viewOnMap": "Auf Google Maps anzeigen",
+    "cancel": "Abbrechen"
+  },
+  "addOns": {
+    "title": "Zusatzleistungen",
+    "perPerson": "pro Person",
+    "perGroup": "pro Gruppe",
+    "total": "Zusatzleistungen Gesamt",
+    "quantity": "Menge"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Gültig ab: 30. Dezember 2025",
+    "agencyName": "Centralia Reisebüro",
+    "intro": "Das Centralia Reisebüro („wir“, „unser“ oder „uns“) ist dem Schutz Ihrer Privatsphäre verpflichtet. Diese Datenschutzerklärung erläutert, wie wir Ihre persönlichen Daten sammeln, verwenden, speichern und schützen, wenn Sie unsere Website besuchen und Informationen über unsere Formulare übermitteln.\n\nDurch die Nutzung unserer Website und das Absenden eines Formulars erklären Sie sich mit den in dieser Datenschutzerklärung beschriebenen Praktiken einverstanden.",
+    "sections": {
+      "informationWeCollect": {
+        "title": "1. Informationen, die wir sammeln",
+        "content": "Wir sammeln personenbezogene Daten nur, wenn Sie diese freiwillig über Formulare auf unserer Website übermitteln.",
+        "listTitle": "Die Arten von Informationen, die wir sammeln können, umfassen:",
+        "items": [
+          "Vollständiger Name",
+          "E-Mail-Adresse",
+          "Telefonnummer",
+          "Tourdetails und Reisevorlieben",
+          "Informationen zum Treffpunkt oder Abholort",
+          "Zusätzliche Informationen, die Sie in den Formularfeldern angeben möchten"
+        ],
+        "note": "🔒 Wir verlangen keine Benutzerregistrierung und sammeln keine Benutzernamen, Passwörter oder Kontozugangsdaten."
+      },
+      "howWeUseInformation": {
+        "title": "2. Wie wir Ihre Informationen verwenden",
+        "content": "Wir verwenden Ihre personenbezogenen Daten ausschließlich für legitime Geschäftszwecke, darunter:",
+        "items": [
+          "Beantwortung von Anfragen und Buchungsanfragen",
+          "Kontaktaufnahme bezüglich Touren oder Reisedetails",
+          "Organisation der Tourlogistik und Kundensupport",
+          "Verbesserung unserer Dienstleistungen und Kommunikation"
+        ],
+        "note": "Wir verwenden Ihre Daten nicht für automatisierte Entscheidungsfindung oder Marketing-Profiling."
+      },
+      "legalBasis": {
+        "title": "3. Rechtsgrundlage für die Verarbeitung",
+        "content": "Wir verarbeiten Ihre personenbezogenen Daten auf Grundlage von:",
+        "items": [
+          "Ihrer Einwilligung, die Sie bei Absenden eines Formulars erteilen",
+          "Berechtigten Interessen, wie der Beantwortung von Reiseanfragen und der Erbringung unserer Dienstleistungen"
+        ],
+        "note": "Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie uns kontaktieren."
+      },
+      "dataSharing": {
+        "title": "4. Datenweitergabe und Offenlegung",
+        "content": "Wir respektieren Ihre Privatsphäre und verkaufen, vermieten oder handeln nicht mit Ihren personenbezogenen Daten.",
+        "subtitle": "Ihre Informationen dürfen nur weitergegeben werden an:",
+        "items": [
+          "Befugte Mitarbeiter des Centralia Reisebüros",
+          "Vertrauenswürdige Dienstleister (wie E-Mail- oder CRM-Dienste) ausschließlich für betriebliche Zwecke"
+        ],
+        "note": "Alle Parteien sind verpflichtet, Ihre Daten vertraulich und sicher zu behandeln."
+      },
+      "dataStorage": {
+        "title": "5. Datenspeicherung und Sicherheit",
+        "content": "Wir wenden geeignete technische und organisatorische Maßnahmen an, um Ihre personenbezogenen Daten vor folgenden Risiken zu schützen:",
+        "items": [
+          "Unbefugtem Zugriff",
+          "Verlust oder Missbrauch",
+          "Veränderung oder Offenlegung"
+        ],
+        "note": "Ihre Daten werden nur so lange gespeichert, wie es zur Erfüllung ihres beabsichtigten Zwecks oder zur Einhaltung gesetzlicher Verpflichtungen erforderlich ist."
+      },
+      "cookies": {
+        "title": "6. Cookies und Website-Funktionalität",
+        "content": "Unsere Website kann grundlegende Cookies verwenden, um die ordnungsgemäße Funktionalität und Leistung zu gewährleisten.",
+        "subtitle": "Wir verwenden Cookies nicht für:",
+        "items": [
+          "Werbe- oder Marketing-Tracking",
+          "Verhaltensbezogenes Profiling"
+        ],
+        "note": "Sie können Cookies über Ihre Browsereinstellungen verwalten oder deaktivieren."
+      },
+      "yourRights": {
+        "title": "7. Ihre Rechte",
+        "content": "Sie haben das Recht auf:",
+        "items": [
+          "Auskunft über Ihre gespeicherten personenbezogenen Daten",
+          "Berichtigung oder Löschung Ihrer Daten",
+          "Widerruf Ihrer Einwilligung jederzeit",
+          "Auskunft darüber, wie Ihre personenbezogenen Daten verarbeitet werden"
+        ],
+        "note": "Um diese Rechte auszuüben, kontaktieren Sie uns bitte mit den untenstehenden Kontaktdaten."
+      },
+      "thirdPartyLinks": {
+        "title": "8. Links zu Drittanbietern",
+        "content": "Unsere Website kann Links zu Websites Dritter enthalten.\nWir sind nicht verantwortlich für die Datenschutzpraktiken oder Inhalte dieser externen Websites."
+      },
+      "childrenPrivacy": {
+        "title": "9. Datenschutz für Kinder",
+        "content": "Unsere Dienstleistungen sind nicht für Kinder unter 16 Jahren bestimmt.\nWir sammeln nicht wissentlich personenbezogene Daten von Kindern."
+      },
+      "changes": {
+        "title": "10. Änderungen dieser Datenschutzerklärung",
+        "content": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren.\nAlle Änderungen werden auf dieser Seite mit einem aktualisierten Gültigkeitsdatum veröffentlicht."
+      },
+      "contact": {
+        "title": "11. Kontaktinformationen",
+        "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte:",
+        "agency": "Centralia Reisebüro",
+        "email": "📧 E-Mail: travel@centraliatours.com",
+        "phone": "📞 Telefon: +998 91 527 78 11"
+      }
+    }
+  },
+  "termsOfService": {
+    "title": "Nutzungsbedingungen",
+    "agencyName": "Centralia Reisebüro",
+    "lastUpdated": "Gültig ab: 30. Dezember 2025",
+    "intro": "Diese Nutzungsbedingungen („Bedingungen“) regeln Ihre Nutzung der Website des Centralia Reisebüros. Durch den Zugriff auf unsere Website oder das Absenden eines Formulars erklären Sie sich mit diesen Bedingungen einverstanden.",
+    "sections": {
+      "scopeOfServices": {
+        "title": "1. Leistungsumfang",
+        "content": "Das Centralia Reisebüro bietet:",
+        "items": [
+          "Reiseinformationen",
+          "Tourenanfragen und Buchungsanfragen",
+          "Reiseberatung und Koordination"
+        ],
+        "importantNotice": {
+          "title": "⚠️ Wichtiger Hinweis:",
+          "points": [
+            "Über diese Website werden keine Zahlungen abgewickelt.",
+            "Die Website wird nur zur Übermittlung von Anfragen und Buchungsanfragen verwendet.",
+            "Alle Zahlungen, sofern zutreffend, werden offline und separat nach direkter Kommunikation mit unserem Personal abgewickelt."
+          ]
+        }
+      },
+      "noOnlinePayments": {
+        "title": "2. Keine Online-Zahlungen",
+        "content": "Die Website unterstützt keine Online-Zahlungen",
+        "points": [
+          "Es werden keine Kreditkarten-, Debitkarten- oder Online-Zahlungsdaten erfasst",
+          "Das Absenden eines Formulars erfordert keine Zahlung",
+          "Alle Zahlungsvereinbarungen werden außerhalb der Website besprochen und vereinbart."
+        ]
+      },
+      "noUserAccounts": {
+        "title": "3. Keine Benutzerkonten",
+        "content": "Keine Benutzerregistrierung erforderlich",
+        "points": [
+          "Es werden keine Konten erstellt",
+          "Anmeldedaten werden nicht gespeichert",
+          "Alle Kommunikation wird über eingereichte Formulare initiiert."
+        ]
+      },
+      "userResponsibilities": {
+        "title": "4. Benutzerverantwortung",
+        "content": "Durch die Nutzung der Website erklären Sie sich damit einverstanden:",
+        "items": [
+          "Genauere und wahrheitsgemäße Informationen bereitzustellen",
+          "Anfragen nur für legitime Reisezwecke zu stellen",
+          "Auf Missbrauch, Fehlgebrauch oder betrügerische Einreichungen zu verzichten"
+        ],
+        "note": "Sie sind für die Richtigkeit aller von Ihnen bereitgestellten Informationen verantwortlich."
+      },
+      "bookingRequests": {
+        "title": "5. Buchungsanfragen",
+        "content": "Das Absenden eines Formulars garantiert keine Verfügbarkeit oder Bestätigung",
+        "points": [
+          "Eine Buchung wird nur nach direkter Genehmigung durch das Centralia Reisebüro bestätigt",
+          "Wir behalten uns das Recht vor, zusätzliche Informationen anzufordern"
+        ]
+      },
+      "pricesAvailability": {
+        "title": "6. Preise & Verfügbarkeit",
+        "points": [
+          "Angezeigte Preise (falls vorhanden) sind nur indikativ",
+          "Endpreise werden individuell bestätigt",
+          "Die Verfügbarkeit hängt von Partnern und saisonalen Faktoren ab"
+        ]
+      },
+      "changesCancellations": {
+        "title": "7. Änderungen & Stornierungen",
+        "content": "Stornierungs- und Änderungsbedingungen:",
+        "points": [
+          "Werden fallweise festgelegt",
+          "Können je nach Tour und Drittanbietern variieren"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "8. Geistiges Eigentum",
+        "content": "Alle Website-Inhalte, einschließlich Text, Bilder, Marken und Design, sind Eigentum des Centralia Reisebüros und dürfen nicht ohne Erlaubnis wiederverwendet werden."
+      },
+      "thirdPartyServices": {
+        "title": "9. Drittanbieter-Dienstleistungen",
+        "content": "Einige Dienstleistungen können Drittanbieter betreffen.\nDas Centralia Reisebüro haftet nicht für Handlungen oder Ausfälle von Dritten außerhalb seiner Kontrolle."
+      },
+      "limitationOfLiability": {
+        "title": "10. Haftungsbeschränkung",
+        "content": "Wir sind nicht verantwortlich für:",
+        "items": [
+          "Verzögerungen, Stornierungen oder höhere Gewalt",
+          "Körperverletzungen, Verluste oder Schäden außerhalb unserer angemessenen Kontrolle"
+        ],
+        "note": "Die Teilnahme an Reisen erfolgt auf eigenes Risiko."
+      },
+      "privacy": {
+        "title": "11. Datenschutz",
+        "content": "Personenbezogene Daten werden gemäß unserer Datenschutzerklärung behandelt."
+      },
+      "changesToTerms": {
+        "title": "12. Änderungen der Bedingungen",
+        "content": "Wir können diese Bedingungen jederzeit aktualisieren.\nDie fortgesetzte Nutzung der Website stellt die Annahme der aktualisierten Bedingungen dar."
+      },
+      "governingLaw": {
+        "title": "13. Anwendbares Recht",
+        "content": "Diese Bedingungen unterliegen den Gesetzen der Republik Usbekistan."
+      },
+      "contact": {
+        "title": "14. Kontaktinformationen",
+        "content": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte:",
+        "agency": "Centralia Reisebüro",
+        "email": "📧 E-Mail: travel@centraliatours.com",
+        "phone": "📞 Telefon: +998 91 527 78 11"
+      }
+    }
+  },
+  "mapSelector": {
+    "selectPicup": "Bitte wählen Sie einen Standort innerhalb des Abholbereichs aus.",
+    "selected": "Ausgewählter Standort",
+    "click": "Klicken Sie innerhalb des grünen Bereichs, um einen Standort auszuwählen"
+  },
+  "filter": {
+    "filter": "Filter",
+    "country": "Land",
+    "destination": "Reiseziel",
+    "category": "Kategorie",
+    "duration": "Dauer",
+    "season": "Saison",
+    "technical": "Technisches Niveau",
+    "fitness": "Fitness-Level",
+    "price": "Preis",
+    "clear": "Alle löschen",
+    "tours": "Touren",
+    "show": "Anzeigen",
+    "jan": "Januar",
+    "feb": "Februar",
+    "mar": "März",
+    "apr": "April",
+    "may": "Mai",
+    "jun": "Juni",
+    "jul": "Juli",
+    "aug": "August",
+    "sep": "September",
+    "oct": "Oktober",
+    "nov": "November",
+    "dec": "Dezember"
+  },
+  "cart": {
+    "emptyTitle": "Keine Aktivitäten im Warenkorb",
+    "emptyDesc": "Aktivitäten, die Sie Ihrem Warenkorb hinzufügen, bleiben bis zu 30 Minuten hier.",
+    "goTours": "Zu den Touren",
+    "shoppingCart": "Warenkorb",
+    "total": "Gesamtbetrag:",
+    "reserving": "Reserviert für",
+    "datail": "Details",
+    "adult": "Erwachsene",
+    "child": "Kinder",
+    "infant": "Kleinkinder",
+    "group": "Gruppentour",
+    "private": "Private Tour"
+  },
+  "news": {
+    "title": "Nachrichten",
+    "btn": "Mehr lesen",
+    "read": "Min. Lesezeit",
+    "view": "Aufrufe"
+  },
+  "events": {
+    "title": "Veranstaltungen",
+    "btn": "Mehr lesen",
+    "read": "Min. Lesezeit",
+    "view": "Aufrufe"
+  },
+  "enquiry": {
+    "day": "Tag",
+    "days": "Tage",
+    "night": "Nacht",
+    "nights": "Nächte",
+    "pageTitle": "Buchen Sie Ihre Tour",
+    "pageDescription": "Füllen Sie das Formular aus, um eine Buchung anzufragen für",
+    "backToTour": "Zurück zur Tour",
+    "backToTours": "Zurück zu Touren",
+    "loading": "Laden...",
+    "tourNotFound": "Tour nicht gefunden",
+    "tourNotFoundDesc": "Die Tour, die Sie suchen, existiert nicht.",
+    "tourSummary": "Tourübersicht",
+    "duration": "Dauer",
+    "countries": "Länder",
+    "selectedDate": "Gewähltes Datum",
+    "participants": "Teilnehmer",
+    "adults": "Erwachsene",
+    "children": "Kinder",
+    "infants": "Kleinkinder",
+    "total": "Gesamt",
+    "tourType": "Tourtyp",
+    "addOns": "Optionale Zusatzleistungen",
+    "pricePerPerson": "pro Person",
+    "tourPrice": "Tourpreis",
+    "totalPrice": "Gesamtpreis",
+    "formDisclaimer": "Durch das Absenden dieses Formulars fordern Sie eine Buchung an. Unser Team wird sich in Kürze mit Ihnen in Verbindung setzen, um die Verfügbarkeit zu bestätigen und Details abzuschließen.",
+    "noBookingDetails": "Noch keine Buchungsdetails ausgewählt",
+    "startingFrom": "Ab"
+  }
+}

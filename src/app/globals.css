@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+img[alt="icon"],
+link[rel="icon"] ~ img,
+.favicon {
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Faqat scroll tayoqchasi */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* trayni ko‘rsatmaymiz */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #88d747; /* scroll thumb rangi */
+  border-radius: 9999px;
+  border: 2px solid transparent; /* atrofida space */
+}
+
+/* Firefox uchun */
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #88d747 transparent;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE va Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.blog-content img + img {
+  margin-top: 1.5rem; /* vertikal orasini ochadi */
+}
+
+.blog-content p:has(img + img),
+.blog-content div:has(img + img) {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(calc(-100% / 3));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left-to-right {
+  animation: slideLeftToRight 10s linear infinite;
+}
+
+.animate-slide-right-to-left {
+  animation: slideRightToLeft 10s linear infinite;
+}
+
+.animate-none {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1024px) {
+  .animate-slide-left-to-right {
+    animation-duration: 35s;
+  }
+  .animate-slide-right-to-left {
+    animation-duration: 35s;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-slide-left-to-right {
+    animation-duration: 30s;
+  }
+  .animate-slide-right-to-left {
+    animation-duration: 30s;
+  }
+}
+
+/* 1. Standart holat - Eng chetdagi (5-dan keyingi) yoki uzoq slaydlarning barchasi */
+.destination-swiper .swiper-slide {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+
+/* 3. Uzoq qatlam (4- va 5-kartalar uchun maxsus) */
+.destination-swiper .swiper-slide-visible {
+  opacity: 1;
+  filter: blur(2px);
+}
+
+/* 4. Yaqin yon taraflar (Markazdan hisoblaganda 2 va 3-kartalar) */
+.destination-swiper .swiper-slide-next,
+.destination-swiper .swiper-slide-prev {
+  filter: blur(1px);
+  z-index: 20;
+}
+
+/* 5. Markaziy karta (1-karta) */
+.destination-swiper .swiper-slide-active {
+  filter: blur(0px) !important;
+  z-index: 50;
+}
+
+.destination-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #056D50; /* Sizning yashil rang */
+  opacity: 1;
+  background-color: white;
+}
+
+.destination-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  border-radius: 100%;
+  background-color: #6EBB2D;
+  border: 1px solid #6EBB2D !important;
+  transition: all 0.3s ease;
+}

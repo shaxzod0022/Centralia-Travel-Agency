@@ -1,0 +1,962 @@
+{
+  "metadata": {
+    "title": "Centralia Travel Agency | Explore Central Asia Tours",
+    "description": "Premium tours and travel packages across Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan and Turkmenistan.",
+    "keywords": [
+      "central asia tours",
+      "silk road travel",
+      "premium travel",
+      "centralia travel agency"
+    ],
+    "ogTitle": "Centralia Travel Agency",
+    "ogDescription": "Explore the best travel experiences in Central Asia.",
+    "twitterCard": "summary_large_image"
+  },
+  "seoHome": {
+    "title": "Centralia Travel Agency | Discover the Silk Road & Central Asia Tours",
+    "description": "Explore unforgettable trips across Central Asia. Book premium tours to Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan.",
+    "keywords": [
+      "central asia tours",
+      "silk road travel",
+      "uzbekistan tours",
+      "centralia travel agency"
+    ],
+    "ogTitle": "Central Asia Tours | Explore the Silk Road with Centralia Travel Agency",
+    "ogDescription": "Premium travel packages across Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan and Turkmenistan."
+  },
+  "seoAbout": {
+    "title": "About Us | Centralia Travel Agency — Experts in Central Asia & Silk Road Tours",
+    "description": "Learn about Centralia Travel Agency, a trusted tour operator offering premium travel experiences across Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan.",
+    "keywords": [
+      "about centralia travel",
+      "central asia travel agency",
+      "silk road experts",
+      "uzbekistan travel company"
+    ],
+    "ogTitle": "About Centralia Travel Agency | Your Central Asia Experts",
+    "ogDescription": "Discover our mission, experience, and commitment to providing unforgettable journeys along the Silk Road and Central Asia."
+  },
+  "seoService": {
+    "title": "Our Services | Centralia Travel Agency – Discover Central Asia",
+    "description": "Explore professional travel services including custom tours, hotel booking, transportation, visa support, guides, and more across Central Asia.",
+    "keywords": [
+      "central asia travel services",
+      "silk road tours",
+      "custom travel packages",
+      "centralia travel services"
+    ],
+    "ogTitle": "Central Asia Travel Services | Centralia Travel Agency",
+    "ogDescription": "Premium services: guided tours, transportation, hotel bookings, visa support, and custom travel itineraries."
+  },
+  "seoContact": {
+    "title": "Contact Us | Centralia Travel Agency – Get in Touch",
+    "description": "Contact Centralia Travel Agency for tour inquiries, travel support, bookings, and customer service across Central Asia.",
+    "keywords": [
+      "contact centralia",
+      "central asia travel contact",
+      "travel agency support",
+      "silk road tours help"
+    ],
+    "ogTitle": "Contact Centralia Travel Agency",
+    "ogDescription": "Get in touch with our team for professional assistance with Central Asia tours and travel services."
+  },
+  "seoBlogs": {
+    "title": "Central Asia Travel Blog – Expert Guides, Tips & Destinations",
+    "description": "Explore Central Asia with expert travel guides, itineraries, tips and stories. Discover Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan and Turkmenistan.",
+    "keywords": [
+      "central asia travel blog",
+      "uzbekistan travel guide",
+      "silk road travel",
+      "kazakhstan tourism",
+      "kyrgyzstan travel tips",
+      "central asia destinations"
+    ],
+    "ogTitle": "Central Asia Travel Blog – Expert Travel Guides & Tips",
+    "ogDescription": "In-depth travel guides and tips for Central Asia. Discover Silk Road destinations and plan unforgettable journeys.",
+    "twitterTitle": "Central Asia Travel Blog – Expert Travel Guides",
+    "twitterDescription": "Travel smarter in Central Asia with expert guides, itineraries and local tips."
+  },
+  "seoB2B": {
+    "title": "Travel Agents & B2B | Centralia Travel Agency Partnerships",
+    "description": "Partner with Centralia Travel Agency for premium travel packages across Central Asia. Exclusive B2B solutions for travel agents, tour operators, and corporate partners.",
+    "keywords": [
+      "travel agents partnership",
+      "B2B travel central asia",
+      "tour operator partnership",
+      "centralia travel agency B2B"
+    ],
+    "ogTitle": "Centralia Travel Agency | B2B & Travel Agents",
+    "ogDescription": "Professional B2B travel solutions, exclusive offers, and customized Central Asia tours for agencies and corporate partners."
+  },
+  "seoNews": {
+    "title": "Travel News & Updates | Centralia Travel Agency",
+    "description": "Stay updated with the latest travel news, destination updates, tour announcements, and insights from Centralia Travel Agency across Central Asia and the Silk Road.",
+    "keywords": [
+      "central asia travel news",
+      "silk road travel updates",
+      "centralia travel news",
+      "uzbekistan travel news",
+      "kazakhstan tourism updates"
+    ],
+    "ogTitle": "Travel News & Updates | Centralia Travel Agency",
+    "ogDescription": "Explore the latest travel news, tour updates, and destination insights from Centralia Travel Agency across Central Asia."
+  },
+  "seoEvents": {
+    "title": "Travel Events & Experiences | Centralia Travel Agency",
+    "description": "Discover upcoming travel events, cultural festivals, special tours, and unique travel experiences curated by Centralia Travel Agency across Central Asia and the Silk Road.",
+    "keywords": [
+      "central asia travel events",
+      "silk road cultural events",
+      "centralia travel events",
+      "uzbekistan travel festivals",
+      "kazakhstan tourism events"
+    ],
+    "ogTitle": "Travel Events & Experiences | Centralia Travel Agency",
+    "ogDescription": "Explore upcoming travel events, festivals, and special experiences from Centralia Travel Agency across Central Asia."
+  },
+  "signUp": {
+    "title": "Sign Up | Centralia Travel Agency",
+    "description": "Sign up to Centralia Travel Agency and start exploring premium tours across Central Asia. Easy registration and secure account creation.",
+    "keywords": [
+      "sign up centralia",
+      "create account travel agency",
+      "central asia tours registration",
+      "centralia travel account"
+    ],
+    "ogTitle": "Centralia Travel Agency | Sign Up",
+    "ogDescription": "Join Centralia Travel Agency today and explore premium tours in Central Asia.",
+    "twitterCard": "summary_large_image"
+  },
+  "logIn": {
+    "title": "Login | Centralia Travel Agency",
+    "description": "Sign in to your Centralia Travel Agency account to manage your tours and bookings. Secure and easy login.",
+    "keywords": [
+      "login centralia",
+      "sign in travel agency",
+      "central asia tours login",
+      "centralia account access"
+    ],
+    "ogTitle": "Centralia Travel Agency | Login",
+    "ogDescription": "Access your account to manage premium tours and travel packages in Central Asia.",
+    "twitterCard": "summary_large_image"
+  },
+  "header": {
+    "navigationLinks": [
+      {
+        "path": "/",
+        "label": "Home"
+      },
+      {
+        "path": "/about",
+        "label": "About Us"
+      },
+      {
+        "path": "/tours",
+        "label": "Tours"
+      },
+      {
+        "path": "/services",
+        "label": "Services"
+      },
+      {
+        "path": "/blogs",
+        "label": "Blogs"
+      },
+      {
+        "path": "/b2b",
+        "label": "Travel Agents And B2B"
+      },
+      {
+        "path": "/contact",
+        "label": "Contact"
+      }
+    ],
+    "news": "News",
+    "events": "Events",
+    "profile": "Profile",
+    "login": "Log in or sign up",
+    "support": "Support"
+  },
+  "buttons": {
+    "headBtn1": "Adventure tours",
+    "headBtn2": "For tour agents"
+  },
+  "footer": {
+    "news": "News",
+    "events": "Events",
+    "title": "We design and operate authentic adventure travel experiences across Central Asia.",
+    "category": "Navigation",
+    "touch": "Get In Touch",
+    "phone": "+998 94 501 92 72",
+    "email": "travel@centraliatours.com",
+    "location": "Samarkand, Uzbekistan",
+    "work": "Partnerships",
+    "b2b": "B2B Partnership",
+    "post": "On Instagram",
+    "bottom": "Copyright 2026 Centralia Travel Agency. All rights reserved.",
+    "privacy": "Privacy policy",
+    "privacyTitle": "Privacy",
+    "terms": "Terms of service"
+  },
+  "category": {
+    "title": "Marvels of Central Asia",
+    "desc": "Where Each Country Tells a Different Story",
+    "more": "Explore tours"
+  },
+  "destination": {
+    "title": "Popular Destination",
+    "desc": "Top Destination",
+    "more": "Explore Routes",
+    "tours": "Tours Listing"
+  },
+  "popularDes": {
+    "title": "Most requested Adventure tours",
+    "desc": "From high mountains to remote deserts, these tours represent the best adventure experiences Central Asia has to offer.",
+    "btn": "Book Now",
+    "day": "day", 
+    "days": "days",
+    "night": "night",
+    "nights": "nights",
+    "from": "From"
+  },
+  "tourGuides": {
+    "title": "The Centralia team",
+    "desc": "Our Experts in the Field",
+    "btn": "Book Now"
+  },
+  "blogsHome": {
+    "title": "Stories, Routes & Adventure insights",
+    "desc": "From our Blog",
+    "read": "min read",
+    "view": "views",
+    "btn": "Read More",
+    "btnHead": "See More Articles"
+  },
+  "gallery": {
+    "title": "Fields in motion",
+    "desc": "Make Your Tour More Pleasure"
+  },
+  "comments": {
+    "title": "What Travelers say about Centralia",
+    "desc": "Traveler Stories",
+    "btn": "Read More"
+  },
+  "plan": {
+    "title": "Personal itinerary",
+    "desc": "Let’s Plan Your Adventure",
+    "description": "Tell us where you want to go, how adventurous you are, and how much time you have. We’ll design a personalized route across Central Asia, tailored to your interests, pace, and experience level.",
+    "more": "Request a custom trip",
+    "trip": "Custom-Built Itinerary",
+    "tripDesc": "Every route is designed from scratch — based on your preferences, season, and adventure level.",
+    "guide": "Local Adventure Experts",
+    "guideDesc": "Planned by professionals who know the mountains, deserts, and remote regions first-hand.",
+    "item3": "Safety & Logistics Included",
+    "item3Desc": "Transport, permits, equipment, and support — fully organized and reliable."
+  },
+  "blogs": {
+    "btn": "Read More",
+    "title": "Our Blog",
+    "desc": "Travel stories, expert tips & destination guides for your next adventure",
+    "read": "min read",
+    "view": "views",
+    "blog": "Blog",
+    "travel": "Travel",
+    "writer": "by",
+    "author": "Author",
+    "min": "Min",
+    "like": "You may also like"
+  },
+  "create": {
+    "title": "Sign Up",
+    "name": "Name and Surname",
+    "nameInput": "Enter your name and surname",
+    "nameError": "Please enter both your first and last name",
+    "phone": "Phone number",
+    "phoneInput": "+123",
+    "email": "Email address",
+    "emailInput": "Enter your email address",
+    "password": "Password",
+    "passwordInput": "Enter your password",
+    "confirmPassword": "Confirm password",
+    "confirmPasswordInput": "Repeat your password",
+    "passwordWeak": "Weak",
+    "passwordMedium": "Medium",
+    "passwordStrong": "Strong",
+    "passwordMismatch": "Passwords do not match",
+    "passwordWeakMsg": "Use a stronger password (min 8 chars with upper+lower+number+symbol)",
+    "enterPasswordFirst": "Enter your password first to enable confirmation",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "submitSuccess": "Registration successful",
+    "submitAgreeMissing": "Please accept the terms to continue",
+    "private": "I agree with",
+    "privateLink": "Terms and Privacy",
+    "submit": "Sign Up",
+    "or": "or",
+    "google": "Sign Up With Google",
+    "account": "Already have an account?",
+    "login": "Log In"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email address",
+    "emailInput": "Enter your email address",
+    "password": "Password",
+    "passwordInput": "Enter your password",
+    "forgot": "Forgot your password?",
+    "submit": "Sign In",
+    "or": "or",
+    "google": "Sign In With Google",
+    "account": "Don’t have an account?",
+    "signUp": "Sign Up"
+  },
+  "forgot": {
+    "title": "Forgot password",
+    "desc": "Enter your email and we'll send a secure link to reset your password.",
+    "email": "Email address",
+    "emailInput": "Enter your email address",
+    "submit": "Continue"
+  },
+  "reset": {
+    "title": "Reset password",
+    "desc": "Please enter a new secure password for your account.",
+    "password": "New password",
+    "passwordInput": "Enter new password",
+    "confirmPassword": "Confirm password",
+    "confirmPasswordInput": "Repeat your password",
+    "enterPasswordFirst": "Enter your password first to enable confirmation",
+    "passwordWeak": "Weak",
+    "passwordMedium": "Medium",
+    "passwordStrong": "Strong",
+    "passwordMismatch": "Passwords do not match",
+    "passwordRequired": "Please enter a password",
+    "passwordWeakMsg": "Use a stronger password (min 8 chars with upper+lower+number+symbol)",
+    "invalidToken": "Invalid or missing reset token",
+    "invalidTokenDesc": "The reset link looks invalid. Please request a new password reset.",
+    "submit": "Reset password",
+    "resetSuccess": "Your password has been reset",
+    "resetError": "Failed to reset password. Try again later.",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "verifyEmail": {
+    "title": "Verify your email",
+    "desc": "We've sent a 6-digit verification code to your email. Please enter it below to confirm your address.",
+    "sentTo": "Code sent to {email}",
+    "enterCode": "Enter the 6-digit code",
+    "submit": "Verify email",
+    "submitLoading": "Verifying...",
+    "resend": "Resend code",
+    "resendSent": "Verification code sent",
+    "resendCooldown": "Resend in {seconds}s",
+    "invalidCode": "Invalid code. Please check and try again.",
+    "success": "Email verified successfully",
+    "resendError": "Failed to resend code. Try again later."
+  },
+  "contacts": {
+    "city": "Samarkand, Uzbekistan",
+    "travelOperatorName": "Eldor Nasritdinov",
+    "sitata": "Write to this email for a detailed quotation Centralia@travel.com and information.",
+    "consultat": "Our free consultation service can be requested here Centralia@travel.com every day.",
+    "title": "Contact Us",
+    "fullName": "Full name",
+    "email": "Email address",
+    "message": "Your message",
+    "detailedInformation": "Detailed information",
+    "reqFullName": "Full name is required",
+    "charFullName": "Full name must be at least 2 characters",
+    "reqEmail": "Email address is required",
+    "validEmail": "Please enter a valid email address",
+    "reqMessage": "Message is required",
+    "charMessage": " Message must be at least 10 characters",
+    "validetForm": "Please fill in all fields correctly",
+    "reqAll": "All fields are required",
+    "messageSent": "Message sent successfully!",
+    "sendError": "Failed to send message",
+    "tryAgain": "Failed to send request. Please try again.",
+    "networkError": "Network error. Please check your connection.",
+    "sending": "Sending...",
+    "desc": "Plan tour Next Trip",
+    "formTitle": "Get in Touch",
+    "description": "Write to us for personalized travel advice or for information on group travel and last minute travel, all travel is insured and safe.",
+    "btn": "Send Message",
+    "travelAgency": "Travel Agency",
+    "travelOperator": "Travel Operator",
+    "mobileNumber": "Mobile Number",
+    "officeNumber": "Office Number",
+    "quotes": "Quotes",
+    "consulting": "Consulting",
+    "location": "Location",
+    "give": "Give us a call",
+    "write": "Write for anything"
+  },
+  "services": {
+    "btn": "Read More",
+    "headTitle": "Our Services",
+    "headDesc": "The best travel solutions for your journey — carefully designed, locally operated, and fully supported.",
+    "shortDesc": "Tourist Hotspots",
+    "title": "Trip Planning for the Best Travel Experience Possible",
+    "desc": "Welcome to our travel agency, where we specialize in providing our clients with unforgettable travel experiences.Whether you're looking to relax on a tropical beach or embark on a cultural adventure, we can help you plan your dream vacation. From flights and accommodations to tours and activities, we'll handle all the details, so you can focus on making memories."
+  },
+  "serviceItems": {
+    "title": "Perfect Vacation come True",
+    "desc": "Let us help you plan your next adventure",
+    "items": [
+      {
+        "img": "Car",
+        "title": "Transportation",
+        "desc": "Comfortable and reliable transportation across Central Asia — airport transfers, intercity travel, and private vehicles with professional drivers."
+      },
+      {
+        "img": "Visa",
+        "title": "Visa Support",
+        "desc": "We assist you with visa guidance, invitation letters, and documentation to ensure a smooth and stress-free entry."
+      },
+      {
+        "img": "Tours",
+        "title": "Tours",
+        "desc": "Carefully curated group and private tours across Uzbekistan and Central Asia — culture, nature, and authentic experiences."
+      },
+      {
+        "img": "Plan",
+        "title": "Travel itineraries",
+        "desc": "Our team of experts will take care of all the planning and logistics, providing you with a detailed itinerary."
+      },
+      {
+        "img": "Insurance",
+        "title": "Travel Insurance",
+        "desc": "Travel insurance is an essential part of any trip, providing peace of mind and protection."
+      },
+      {
+        "img": "B2B",
+        "title": "Corporate & B2B",
+        "desc": "Tailored travel solutions for businesses, conferences, and group events with dedicated support."
+      }
+    ]
+  },
+  "helpService": {
+    "title": "Let us Help you Plan your Next Getaway Now",
+    "desc": "Contact our agency and we will get you a quote in a very short time. Discover the world with us! Book your next unforgettable adventure today.",
+    "btn": "CONTACT US"
+  },
+  "ourNumbers": {
+    "shortDesc": "Always by your side",
+    "title": "Our Numbers in the World",
+    "desc": "Our team of experienced travel experts can provide you with personalized recommendations and advice to create a trip that suits your preferences and budget. Various destinations around the world. With our knowledge and expertise in the travel industry, we ensure that all aspects of your trip.",
+    "btn": "READ MORE",
+    "num1": "123",
+    "numDesc1": "Attractions with specialized and competent local guide",
+    "num2": "123",
+    "numDesc2": "Days in which you can travel the world",
+    "num3": "123",
+    "numDesc3": "Information and assistance points in the countries"
+  },
+  "quote": {
+    "title": "Contact us for a Quote",
+    "desc": "Personalized Trips",
+    "formTitle": "Plan your Next Trip",
+    "formDesc": "Write to us for personalized travel advice or for information on group travel and last minute travel, all travel is insured and safe.",
+    "nameInput": "Type your name",
+    "emailInput": "Insert your email",
+    "btn": "Submit"
+  },
+  "about": {
+    "headTitle": "About Us",
+    "title": "The perfect Vocation come true with our Travel Agency",
+    "shortDesc": "Explore the world with us, one adventure at a time.",
+    "desc": "We are a team of experienced travel experts who specialize in planning and organizing unforgettable travel experiences for our clients with a wide range of travel services, including flight bookings, hotel reservations and more.",
+    "btn": "Read More",
+    "descVocation": "Exclusive travel deals",
+    "titleVocation": "Book your dream vacation today!"
+  },
+  "tours": {
+    "headTitle": "Find your nomadic tour",
+    "detailBtn": "Details",
+    "cartBtn": "Add to cart",
+    "day": "day",
+    "days": "days",
+    "night": "night",
+    "nights": "nights",
+    "from": "From",
+    "goToCart": "Go to Cart"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or may have been moved.",
+    "buttonLabel": "Go Back to Home",
+    "buttonLabel2": "Go to Tours"
+  },
+  "eventsNotFound": {
+    "title": "No Events Available",
+    "description": "Currently, there are no events available. Our team is working on creating new events, and they will appear here soon.",
+    "buttonLabel": "Back to Home"
+  },
+  "blogsNotFound": {
+    "title": "No Blogs Available",
+    "description": "Currently there are no blog posts available. Our team is writing new stories which will appear here soon.",
+    "buttonLabel": "Go Back to Home"
+  },
+  "newsNotFound": {
+    "title": "No News Available",
+    "description": "Currently there are no news updates available. Our team is working on new stories which will appear here soon.",
+    "buttonLabel": "Go Back to Home"
+  },
+  "toursNotFound": {
+    "title": "No Tours Available",
+    "description": "Currently there are no tours available. Our team is working on new tour packages which will appear here soon.",
+    "buttonLabel": "Go Back to Home"
+  },
+  "search": {
+    "placeholderExplore": "Explore Central Asia",
+    "placeholderFind": "Find your tour",
+    "placeholderQuestion": "Where are we going?",
+    "placeholderAdventure": "Your adventure starts here",
+    "placeholderImpressions": "Search for experiences",
+    "searching": "Searching...",
+    "noResults": "No results found",
+    "subDesc": "Please try again with another keywords or maybe use generic term",
+    "tours": "Tours",
+    "destinations": "Destinations",
+    "tour": "Multi-day Tour Package",
+    "countries": "Countries",
+    "country": "Country"
+  },
+  "tourDetails": {
+    "goToCart": "Go to Cart",
+    "travelAgent": "Travel Agent",
+    "agentName": "Eldor",
+    "duration": "Duration",
+    "highlights": "Tour Highlights",
+    "technicalLevel": "Technical Level",
+    "minAge": "Min Age",
+    "fitnesLevel": "Fitness Level",
+    "price": "Price",
+    "from": "From",
+    "enquery": "Enquiry Form",
+    "bookingCall": "Booking Call",
+    "adults": "Adults",
+    "children": "Children",
+    "adsOne": "Ads One",
+    "over": "Over",
+    "under": "Under",
+    "bookNow": "BOOK NOW FOR",
+    "day": "day",
+    "dayIndex": "Day",
+    "days": "days",
+    "night": "night",
+    "nights": "nights",
+    "enjoy": "Enjoy the Adventure",
+    "incExc": "Included / Excluded",
+    "destination": "Destinations",
+    "faqs": "FAQs",
+    "incExcDesc": "To help you plan your trip, we have put together a list of what's included and what's not included in your tour package. This will give you a clear understanding of what to expect and help you make any necessary arrangements before your journey begins.",
+    "map": "Tour Map",
+    "mapDesc": "This comprehensive map is designed to guide you through an exciting journey filled with remarkable destinations and captivating experiences.",
+    "itenerary": "Itinerary",
+    "iteneraryDesc": "We have carefully planned out each day to give you the best possible experience. From exploring historic landmarks to tasting delicious local cuisine, each day is packed with adventure and excitement. Join us as we take you on a journey through some of the most fascinating destinations in the world.",
+    "desc": "Description",
+    "exp": "What to Expect",
+    "meal": "Meals Included",
+    "distance": "Distance",
+    "km": "km",
+    "hour": "hour",
+    "transportation": "Transportation",
+    "dayGallery": "Day Gallery",
+    "accomManager": "Accommodation Manager",
+    "stars": "Stars",
+    "address": "Address",
+    "view": "View On Map",
+    "in": "Check-in Time",
+    "out": "Check-out Time",
+    "accomPhotos": "Accommodation Photos",
+    "rooms": "Rooms",
+    "person": "person",
+    "group": "Group",
+    "private": "Private",
+    "parti": "participants",
+    "perPerson": "per person",
+    "perGroup": "per group",
+    "meet": "View meeting point",
+    "startingFrom": "Starting from",
+    "selectedD": "Selected date is available",
+    "totalPrice": "Total Price",
+    "selectCal": "Select a date to see available tour options",
+    "selectPar": "Select Participants",
+    "min": "Min",
+    "max": "Max",
+    "pricingGroup": "Pricing by Group Size",
+    "people": "people",
+    "availFor": "Available for",
+    "totalPar": "Total Participants",
+    "groupSize": "Group Size",
+    "infants": "Infants",
+    "free": "Free",
+    "tourPrice": "Tour Price",
+    "addOnsPrice": "Add-Ons",
+    "guide": "Guide: English",
+    "cartBtn": "Add to cart",
+    "checkAvailability": "Check availability",
+    "similarToursTitle": "You Might Also Like",
+    "similarToursSubtitle": "More Adventures For You"
+  },
+  "emptyState": {
+    "title": "Journey Not Started Yet",
+    "description": "Tours for this route are not currently available. We are working on new excursions. We'll be back soon with new offers!",
+    "viewOtherTours": "View Other Tours",
+    "goBack": "Go Back"
+  },
+  "b2bPage": {
+    "headTitle": "B2B Solutions",
+    "title": "Travel agents and B2B",
+    "fullName": "Full name",
+    "whatsappNumber": "Whatsapp number",
+    "detailedInformation": "Detailed information",
+    "btn": "Submit",
+    "reqFullName": "Full name is required",
+    "charFullName": "Full name must be at least 2 characters",
+    "reqWhats": "WhatsApp number is required",
+    "validWhats": "Please enter a valid WhatsApp number",
+    "reqDetail": "Detailed information is required",
+    "charDetail": "Please provide more detailed information (at least 10 characters)",
+    "validetForm": "Please fill in all fields correctly",
+    "reqAll": "All fields are required",
+    "reqSuccess": "Request sent successfully!",
+    "reqError": "Something went wrong",
+    "tryAgain": "Failed to send request. Please try again.",
+    "noResponse": "No response from server",
+    "sending": "Sending..."
+  },
+  "tourBookingModal": {
+    "pReq": "Do you know where you want to be picked up?",
+    "pRes1": "Yes, I’ll choose a pickup location on the map",
+    "pRes2": "No, use the default meeting point",
+    "title": "Main contact details",
+    "fullName": "Your name and last name*",
+    "phone": "Phone number",
+    "email": "Email *",
+    "policyReq": "I agree to data processing under the",
+    "policy": "Privacy Policy.",
+    "send": "Send request",
+    "proccess": "Processing...",
+    "back": "Back",
+    "defMeet": "Default Meeting Point",
+    "succesTitle": "Submission successful",
+    "successDesc": "Your contact and pickup details have been saved. Our team will contact you shortly.",
+    "goHome": "Go to home page",
+    "meetingPoint": "Meeting Point:",
+    "comment": "Please arrive 5–10 minutes early to join the group.",
+    "groupTourNote": "This tour has a fixed meeting point. You must come to this location to join the group.",
+    "viewOnMap": "View on Google Maps",
+    "cancel": "Cancel",
+    "reserving": "Reserved for"
+  },
+  "addOns": {
+    "title": "Add ons",
+    "perPerson": "per person",
+    "perGroup": "per group",
+    "total": "Add-Ons Total",
+    "quantity": "Quantity"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Effective Date: December 30, 2025",
+    "agencyName": "Centralia Travel Agency",
+    "intro": "Centralia Travel Agency (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website and submit information through our forms.\n\nBy using our website and submitting any form, you agree to the practices described in this Privacy Policy.",
+    "sections": {
+      "informationWeCollect": {
+        "title": "1. Information We Collect",
+        "content": "We collect personal information only when you voluntarily submit it through forms on our website.",
+        "listTitle": "The types of information we may collect include:",
+        "items": [
+          "Full name",
+          "Email address",
+          "Phone number",
+          "Tour details and travel preferences",
+          "Meeting point or pickup location information",
+          "Any additional information you choose to provide in form fields"
+        ],
+        "note": "🔒 We do not require user registration and do not collect usernames, passwords, or account credentials."
+      },
+      "howWeUseInformation": {
+        "title": "2. How We Use Your Information",
+        "content": "We use your personal information solely for legitimate business purposes, including:",
+        "items": [
+          "Responding to inquiries and booking requests",
+          "Contacting you regarding tours or travel details",
+          "Organizing tour logistics and customer support",
+          "Improving our services and communication"
+        ],
+        "note": "We do not use your data for automated decision-making or marketing profiling."
+      },
+      "legalBasis": {
+        "title": "3. Legal Basis for Processing",
+        "content": "We process your personal data based on:",
+        "items": [
+          "Your consent, provided when you submit a form",
+          "Legitimate interests, such as responding to travel requests and delivering our services"
+        ],
+        "note": "You may withdraw your consent at any time by contacting us."
+      },
+      "dataSharing": {
+        "title": "4. Data Sharing and Disclosure",
+        "content": "We respect your privacy and do not sell, rent, or trade your personal data.",
+        "subtitle": "Your information may be shared only with:",
+        "items": [
+          "Authorized staff members of Centralia Travel Agency",
+          "Trusted third-party service providers (such as email or CRM services) strictly for operational purposes"
+        ],
+        "note": "All parties are required to keep your data confidential and secure."
+      },
+      "dataStorage": {
+        "title": "5. Data Storage and Security",
+        "content": "We apply appropriate technical and organizational measures to protect your personal information from:",
+        "items": [
+          "Unauthorized access",
+          "Loss or misuse",
+          "Alteration or disclosure"
+        ],
+        "note": "Your data is stored only for as long as necessary to fulfill its intended purpose or to comply with legal obligations."
+      },
+      "cookies": {
+        "title": "6. Cookies and Website Functionality",
+        "content": "Our website may use basic cookies to ensure proper functionality and performance.",
+        "subtitle": "We do not use cookies for:",
+        "items": [
+          "Advertising or marketing tracking",
+          "Behavioral profiling"
+        ],
+        "note": "You can manage or disable cookies through your browser settings."
+      },
+      "yourRights": {
+        "title": "7. Your Rights",
+        "content": "You have the right to:",
+        "items": [
+          "Request access to your personal data",
+          "Request correction or deletion of your data",
+          "Withdraw your consent at any time",
+          "Ask how your personal data is being processed"
+        ],
+        "note": "To exercise these rights, please contact us using the details below."
+      },
+      "thirdPartyLinks": {
+        "title": "8. Third-Party Links",
+        "content": "Our website may contain links to third-party websites.\nWe are not responsible for the privacy practices or content of those external websites."
+      },
+      "childrenPrivacy": {
+        "title": "9. Children's Privacy",
+        "content": "Our services are not intended for children under the age of 16.\nWe do not knowingly collect personal information from children."
+      },
+      "changes": {
+        "title": "10. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time.\nAny changes will be posted on this page with an updated effective date."
+      },
+      "contact": {
+        "title": "11. Contact Information",
+        "content": "If you have any questions about this Privacy Policy or how your personal data is handled, please contact us:",
+        "agency": "Centralia Travel Agency",
+        "email": "📧 Email: travel@centraliatours.com",
+        "phone": "📞 Phone: +998 91 527 78 11"
+      }
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "agencyName": "Centralia Travel Agency",
+    "lastUpdated": "Effective Date: December 30, 2025",
+    "intro": "These Terms of Service (\"Terms\") govern your use of the Centralia Travel Agency website. By accessing our website or submitting any form, you agree to these Terms.",
+    "sections": {
+      "scopeOfServices": {
+        "title": "1. Scope of Services",
+        "content": "Centralia Travel Agency provides:",
+        "items": [
+          "Travel information",
+          "Tour inquiries and booking requests",
+          "Travel consultations and coordination"
+        ],
+        "importantNotice": {
+          "title": "⚠️ Important Notice:",
+          "points": [
+            "No payments are processed through this website.",
+            "The website is used only to submit inquiries and booking requests.",
+            "All payments, if applicable, are handled offline and separately, after direct communication with our staff."
+          ]
+        }
+      },
+      "noOnlinePayments": {
+        "title": "2. No Online Payments",
+        "content": "The website does not support online payments",
+        "points": [
+          "No credit card, debit card, or online payment data is collected",
+          "Submitting a form does not require any payment",
+          "Any payment arrangements are discussed and agreed upon outside the website."
+        ]
+      },
+      "noUserAccounts": {
+        "title": "3. No User Accounts",
+        "content": "No user registration is required",
+        "points": [
+          "No accounts are created",
+          "No login credentials are stored",
+          "All communication is initiated via submitted forms."
+        ]
+      },
+      "userResponsibilities": {
+        "title": "4. User Responsibilities",
+        "content": "By using the website, you agree to:",
+        "items": [
+          "Provide accurate and truthful information",
+          "Submit inquiries for legitimate travel purposes only",
+          "Refrain from misuse, abuse, or fraudulent submissions"
+        ],
+        "note": "You are responsible for the accuracy of all information you provide."
+      },
+      "bookingRequests": {
+        "title": "5. Booking Requests",
+        "content": "Form submission does not guarantee availability or confirmation",
+        "points": [
+          "A booking is confirmed only after direct approval by Centralia Travel Agency",
+          "We reserve the right to request additional information"
+        ]
+      },
+      "pricesAvailability": {
+        "title": "6. Prices & Availability",
+        "points": [
+          "Prices shown (if any) are indicative only",
+          "Final prices are confirmed individually",
+          "Availability depends on partners and seasonal factors"
+        ]
+      },
+      "changesCancellations": {
+        "title": "7. Changes & Cancellations",
+        "content": "Cancellation and modification terms:",
+        "points": [
+          "Are provided on a case-by-case basis",
+          "May vary depending on the tour and third-party partners"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "8. Intellectual Property",
+        "content": "All website content, including text, images, branding, and design, is the property of Centralia Travel Agency and may not be reused without permission."
+      },
+      "thirdPartyServices": {
+        "title": "9. Third-Party Services",
+        "content": "Some services may involve third-party providers.\nCentralia Travel Agency is not liable for actions or failures of third parties beyond its control."
+      },
+      "limitationOfLiability": {
+        "title": "10. Limitation of Liability",
+        "content": "We are not responsible for:",
+        "items": [
+          "Delays, cancellations, or force majeure events",
+          "Personal injury, loss, or damage beyond our reasonable control"
+        ],
+        "note": "Travel participation is at your own risk."
+      },
+      "privacy": {
+        "title": "11. Privacy",
+        "content": "Personal data is handled in accordance with our Privacy Policy."
+      },
+      "changesToTerms": {
+        "title": "12. Changes to Terms",
+        "content": "We may update these Terms at any time.\nContinued use of the website constitutes acceptance of updated Terms."
+      },
+      "governingLaw": {
+        "title": "13. Governing Law",
+        "content": "These Terms are governed by the laws of the Republic of Uzbekistan."
+      },
+      "contact": {
+        "title": "14. Contact Information",
+        "content": "For any questions regarding these Terms, contact us:",
+        "agency": "Centralia Travel Agency",
+        "email": "📧 Email: travel@centraliatours.com",
+        "phone": "📞 Phone: +998 91 527 78 11"
+      }
+    }
+  },
+  "mapSelector": {
+    "selectPicup": "Please select a location inside the pickup area.",
+    "selected": "Selected location",
+    "click": "Click inside the green area to select location"
+  },
+  "filter": {
+    "filter": "Filter",
+    "country": "Country",
+    "destination": "Destination",
+    "category": "Category",
+    "duration": "Duration",
+    "season": "Season",
+    "technical": "Technical level",
+    "fitness": "Fitness level",
+    "price": "Price",
+    "clear": "Clear all",
+    "tours": "Tours",
+    "show": "Show",
+    "jan": "January",
+    "feb": "February",
+    "mar": "March",
+    "apr": "April",
+    "may": "May",
+    "jun": "June",
+    "jul": "July",
+    "aug": "August",
+    "sep": "September",
+    "oct": "October",
+    "nov": "November",
+    "dec": "December"
+  },
+  "cart": {
+    "emptyTitle": "No activities in your cart",
+    "emptyDesc": "Activities you add to your cart stay here for up to 30 minutes.",
+    "goTours": "Go to Tours",
+    "shoppingCart": "Shopping cart",
+    "total": "Total amount:",
+    "reserving": "Reserved for",
+    "datail": "Details",
+    "adult": "Adults",
+    "child": "Children",
+    "infant": "Infants",
+    "group": "Group tour",
+    "private": "Private tour"
+  },
+  "news": {
+    "title": "News",
+    "btn": "Read More",
+    "read": "min read",
+    "view": "views"
+  },
+  "events": {
+    "title": "Events",
+    "btn": "Read More",
+    "read": "min read",
+    "view": "views"
+  },
+  "enquiry": {
+    "day": "day",
+    "days": "days",
+    "night": "night",
+    "nights": "nights",
+    "pageTitle": "Book Your Tour",
+    "pageDescription": "Complete the form below to request a booking for",
+    "backToTour": "Back to Tour",
+    "backToTours": "Back to Tours",
+    "loading": "Loading...",
+    "tourNotFound": "Tour Not Found",
+    "tourNotFoundDesc": "The tour you're looking for doesn't exist.",
+    "tourSummary": "Tour Summary",
+    "duration": "Duration",
+    "countries": "Countries",
+    "selectedDate": "Selected Date",
+    "participants": "Participants",
+    "adults": "Adults",
+    "children": "Children",
+    "infants": "Infants",
+    "total": "Total",
+    "tourType": "Tour Type",
+    "addOns": "Optional Add-Ons",
+    "pricePerPerson": "per person",
+    "tourPrice": "Tour Price",
+    "totalPrice": "Total Price",
+    "formDisclaimer": "By submitting this form, you're requesting a booking. Our team will contact you shortly to confirm availability and finalize details.",
+    "noBookingDetails": "No booking details selected yet",
+    "startingFrom": "Starting from"
+  }
+}
